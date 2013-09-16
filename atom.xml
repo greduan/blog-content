@@ -2,67 +2,14 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 	<title>EduanTech</title>
 	<subtitle>A hacker's advice for Mac OS X, s2Member and web development.</subtitle>
-	<link href="https://greduan.github.io//atom.xml" rel="self" />
-	<link href="https://greduan.github.io/" />
-	<updated>2013-09-16T18:34:07.208Z</updated>
-	<id>https://greduan.github.io/</id>
+	<link href="http://greduan.github.io//atom.xml" rel="self" />
+	<link href="http://greduan.github.io/" />
+	<updated>2013-09-16T19:07:58.473Z</updated>
+	<id>http://greduan.github.io/</id>
 	<author>
 		<name>Eduan Lavaque</name>
 		<email>eduanlavaque@gmail.com</email>
 	</author>
 
-	
-		<entry>
-			<title>Test post with all the things</title>
-			<link href="https://greduan.github.io//2013/08/test-post.html"/>
-			<updated>2013-08-23T00:00:00.000Z</updated>
-			<id>https://greduan.github.io//2013/08/test-post.html</id>
-			<content type="html">&lt;p&gt;&lt;a href=&quot;#&quot;&gt;This is a not visited link.&lt;/a&gt; &lt;a href=&quot;http://www.s2member.com&quot;&gt;This is a visited link.&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;
-	&lt;h1&gt;Heading text&lt;/h1&gt;
-&lt;/p&gt;
-&lt;p&gt;
-	&lt;h2&gt;Heading text&lt;/h2&gt;
-&lt;/p&gt;
-&lt;p&gt;
-	&lt;h3&gt;Heading text&lt;/h3&gt;
-&lt;/p&gt;
-&lt;p&gt;
-	&lt;h4&gt;Heading text&lt;/h4&gt;
-&lt;/p&gt;
-&lt;p&gt;
-	&lt;h5&gt;Heading text&lt;/h5&gt;
-&lt;/p&gt;
-&lt;p&gt;
-	&lt;h6&gt;Heading text&lt;/h6&gt;
-&lt;/p&gt;
-&lt;p&gt;&lt;hr&gt;&lt;/p&gt;
-&lt;p&gt;&lt;blockquote&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, ad repudiandae recusandae ab molestiae animi fugiat beatae possimus laborum soluta. Numquam aliquam magni consequatur mollitia omnis cupiditate dolore velit. Cumque.&lt;/blockquote&gt;&lt;/p&gt;
-&lt;pre class=&quot;highlighted&quot;&gt;&lt;code class=&quot;css&quot;&gt;&lt;span class=&quot;id&quot;&gt;#content&lt;/span&gt; &lt;span class=&quot;rules&quot;&gt;{
-  &lt;span class=&quot;rule&quot;&gt;&lt;span class=&quot;attribute&quot;&gt;color&lt;/span&gt;:&lt;span class=&quot;value&quot;&gt;&lt;span class=&quot;hexcolor&quot;&gt;#fff&lt;/span&gt;;&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;rule&quot;&gt;}&lt;/span&gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;code&gt;Some small code...&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, aliquam nobis blanditiis inventore ex modi quas sequi vel nulla officiis iusto quasi. Odio illo alias beatae similique totam perferendis voluptatibus!&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;pre class=&quot;highlighted&quot;&gt;&lt;code class=&quot;nginx&quot;&gt;&lt;span class=&quot;title&quot;&gt;Lorem&lt;/span&gt; ipsum dolor sit amet, consectetur adipisicing elit. Autem, delectus, quo, ut, dignissimos incidunt recusandae quasi facere eum veritatis deleniti animi ullam laboriosam tempora officiis dolores culpa placeat enim doloremque.&lt;/code&gt;&lt;/pre&gt;&lt;/p&gt;
-&lt;p&gt;&lt;abbr title=&quot;Knowledge Base Article&quot;&gt;KBA&lt;/abbr&gt;&lt;/p&gt;
-&lt;p&gt;&lt;b&gt;Bold&lt;/b&gt; and &lt;strong&gt;Strong&lt;/strong&gt; content. &lt;i&gt;Italic&lt;/i&gt; and &lt;em&gt;Emphasized&lt;/em&gt; content.&lt;/p&gt;</content>
-		</entry>
-	
-		<entry>
-			<title>The Switch to DocPad</title>
-			<link href="https://greduan.github.io//2013/06/the-switch-to-docpad.html"/>
-			<updated>2013-06-16T00:00:00.000Z</updated>
-			<id>https://greduan.github.io//2013/06/the-switch-to-docpad.html</id>
-			<content type="html">&lt;p&gt;Well I finally switched to something else than WordPress.&lt;/p&gt;
-
-&lt;p&gt;I switched to &lt;a href=&quot;http://docpad.org&quot;&gt;DocPad&lt;/a&gt;, the &lt;a href=&quot;http://nodejs.org/&quot;&gt;Node.js&lt;/a&gt; based static website generator. It&amp;#8217;s a static website generator but if you wish it can be completely dynamic.&lt;/p&gt;
-
-&lt;p&gt;I am using Markdown to write my posts. Using &lt;a href=&quot;http://coffeekup.org/&quot;&gt;CoffeeKup&lt;/a&gt; and &lt;a href=&quot;https://github.com/sstephenson/eco&quot;&gt;Eco&lt;/a&gt; as templating languages and &lt;a href=&quot;http://coffeescript.org/&quot;&gt;CoffeeScript&lt;/a&gt; for the JavaScript logic.&lt;/p&gt;
-
-&lt;p&gt;Also now my website is being hosted by my good friend&amp;#8217;s server, so that&amp;#8217;s nice. It&amp;#8217;s being hosted by &lt;a href=&quot;http://realiseweb.nl&quot;&gt;Realiseweb&lt;/a&gt;, &lt;a href=&quot;https://github.com/DanielVoogsgerd&quot;&gt;Daniel Voogsgerd&amp;#8217;s&lt;/a&gt; company.&lt;/p&gt;
-
-&lt;p&gt;That is all. Hope you like the changes. :)&lt;/p&gt;</content>
-		</entry>
 	
 </feed>
