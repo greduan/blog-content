@@ -4,12 +4,28 @@
 	<subtitle>A hacker's advice for Mac OS X, s2Member and web development.</subtitle>
 	<link href="http://greduan.github.io//atom.xml" rel="self" />
 	<link href="http://greduan.github.io/" />
-	<updated>2013-09-16T19:07:58.473Z</updated>
+	<updated>2013-09-16T20:17:01.092Z</updated>
 	<id>http://greduan.github.io/</id>
 	<author>
 		<name>Eduan Lavaque</name>
 		<email>eduanlavaque@gmail.com</email>
 	</author>
 
+	
+		<entry>
+			<title>The Switch to DocPad</title>
+			<link href="http://greduan.github.io//posts/the-switch-to-docpad.html"/>
+			<updated>2013-06-16T00:00:00.000Z</updated>
+			<id>http://greduan.github.io//posts/the-switch-to-docpad.html</id>
+			<content type="html">&lt;p&gt;Well I finally switched to something else than WordPress.&lt;/p&gt;
+
+&lt;p&gt;I switched to &lt;a href=&quot;http://docpad.org&quot;&gt;DocPad&lt;/a&gt;, the &lt;a href=&quot;http://nodejs.org/&quot;&gt;Node.js&lt;/a&gt; based static website generator. It&amp;#8217;s a static website generator but if you wish it can be completely dynamic.&lt;/p&gt;
+
+&lt;p&gt;I am using Markdown to write my posts. Using &lt;a href=&quot;http://coffeekup.org/&quot;&gt;CoffeeKup&lt;/a&gt; and &lt;a href=&quot;https://github.com/sstephenson/eco&quot;&gt;Eco&lt;/a&gt; as templating languages and &lt;a href=&quot;http://coffeescript.org/&quot;&gt;CoffeeScript&lt;/a&gt; for the JavaScript logic.&lt;/p&gt;
+
+&lt;p&gt;Also, now my website is being hosted by GitHub Pages, so that&amp;#8217;s cool.&lt;/p&gt;
+
+&lt;p&gt;That is all. Hope you like the changes. :)&lt;/p&gt;</content>
+		</entry>
 	
 </feed>
