@@ -4,7 +4,7 @@
 	<subtitle>A hacker's advice for Mac OS X, s2Member and web development.</subtitle>
 	<link href="http://greduan.github.io//atom.xml" rel="self" />
 	<link href="http://greduan.github.io/" />
-	<updated>2013-09-16T20:17:01.092Z</updated>
+	<updated>2013-09-23T21:50:13.660Z</updated>
 	<id>http://greduan.github.io/</id>
 	<author>
 		<name>Eduan Lavaque</name>
@@ -21,7 +21,7 @@
 
 &lt;p&gt;I switched to &lt;a href=&quot;http://docpad.org&quot;&gt;DocPad&lt;/a&gt;, the &lt;a href=&quot;http://nodejs.org/&quot;&gt;Node.js&lt;/a&gt; based static website generator. It&amp;#8217;s a static website generator but if you wish it can be completely dynamic.&lt;/p&gt;
 
-&lt;p&gt;I am using Markdown to write my posts. Using &lt;a href=&quot;http://coffeekup.org/&quot;&gt;CoffeeKup&lt;/a&gt; and &lt;a href=&quot;https://github.com/sstephenson/eco&quot;&gt;Eco&lt;/a&gt; as templating languages and &lt;a href=&quot;http://coffeescript.org/&quot;&gt;CoffeeScript&lt;/a&gt; for the JavaScript logic.&lt;/p&gt;
+&lt;p&gt;I am using Markdown to write my posts. Using &lt;a href=&quot;http://coffeekup.org/&quot;&gt;CoffeeKup&lt;/a&gt; and &lt;a href=&quot;https://github.com/sstephenson/eco&quot;&gt;Eco&lt;/a&gt; as templating languages and &lt;a href=&quot;http://coffeescript.org/&quot;&gt;CoffeeScript&lt;/a&gt; for the JavaScript logic. And I am using &lt;a href=&quot;http://sass-lang.com/&quot;&gt;SCSS&lt;/a&gt; for the CSS, of course.&lt;/p&gt;
 
 &lt;p&gt;Also, now my website is being hosted by GitHub Pages, so that&amp;#8217;s cool.&lt;/p&gt;
 
