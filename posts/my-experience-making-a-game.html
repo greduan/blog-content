@@ -1,0 +1,73 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8" /><meta http-equiv="X-UA-Compatible" content="ie=edge,chrome=1" /><meta http-equiv="content-type" content="text/html; charset=utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" /><link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" /><meta name="generator" content="DocPad v6.53.4" /><link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml" /><title>My Experience Making a Game - EduanTech</title><meta name="title" content="My Experience Making a Game - EduanTech" /><meta name="author" content="Eduán Lávaque" /><meta name="email" content="eduanlavaque@gmail.com" /><meta name="description" content="A hacker's blog." /><meta name="keywords" content="greduan, eduán lávaque, blog, web development, clojure" /><link href="http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic" rel="stylesheet" type="text/css" /><link rel="stylesheet" href="/css/all.min.css" /><!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]--></head><body><div id="wrapper"><div id="header"><header role="banner"><nav role="navigation"><ul><li><a class="not-menu-current" href="/index.html" title="Homepage">Homepage</a><div class="arrow"></div></li><li><a class="not-menu-current" href="/posts.html" title="Posts">Posts</a><div class="arrow"></div></li><li><a class="not-menu-current" href="/about.html" title="About Me">About Me</a><div class="arrow"></div></li><li><a class="not-menu-current" href="/contact.html" title="Contact">Contact</a><div class="arrow"></div></li></ul></nav></header></div><div id="content"><main role="main"><article class="post"><header><h1>My Experience Making a Game</h1><div class="meta">Written by <a href="http://greduan.github.io" rel="author">Eduán Lávaque</a> on <time datetime="2013-10-20">20 October 2013</time>.</div></header><p>In this post I&#8217;m gonna be going over my personal experience while making a game
+using Clojure as the language and using an <a href="https://en.wikipedia.org/wiki/Entity_component_system">ECS structure</a> for the code.</p>
+
+<p>This will not be a &#8220;Hey I made Pong!&#8221; post. This is a real game that I will
+develop and eventually (hopefully) make a profit from.</p>
+
+<p>Some things to make clear. I did not know I was going to use Clojure for the
+language or use an ECS structure for the code. This is what I arrived at after
+lots of thinking and research.</p>
+
+<p>I&#8217;m hoping this post will be of useful insight to those that are considering
+making game, especially if they&#8217;re making it using Clojure or the ECS
+structure.</p>
+
+<h2 id="decidingonthelanguage">Deciding on the language</h2>
+
+<p>Of course I didn&#8217;t wake up and go &#8220;Clojure is the way to go.&#8221; It was several
+weeks of me considering all the options that I considered fit for my needs.</p>
+
+<p>The languages I considered were Go, C, C++, Common Lisp, JavaScript, Python and
+a couple of others I think.</p>
+
+<p>So why did I choose Clojure? Several reasons but the most obvious are:</p>
+
+<ul>
+<li>It&#8217;s Lisp. Can&#8217;t argue with that.</li>
+<li>It compiles into JVM bytecode.</li>
+<li>Rich Hickey is smart.</li>
+</ul>
+
+<p>Let&#8217;s look at the second point.</p>
+
+<h3 id="itcompilesintojvmbytecode">It compiles into JVM bytecode</h3>
+
+<p>So why is this a selling point?</p>
+
+<p>It means my code is automatically cross platform (as long as the user has Java
+installed on his computer).</p>
+
+<p>It also means that I have access to all the libraries Java has.</p>
+
+<p>Both of these reasons are big deciding factors. Write my code once with a huge
+amount of libraries I can use if I wish.</p>
+
+<p>Oh and I also have access to any help users have requested in the past for
+Java.</p>
+
+<h2 id="decidingonthearchitecture">Deciding on the architecture</h2>
+
+<p>Once I decided I had to choose between OOP and ECS. This really wasn&#8217;t really
+a hard decision.</p>
+
+<p>I just had to understand how both worked pros and cons and stuff. However for
+me the pros are much better for ECS.</p>
+
+<p>This really came to me listening to my gut. This wasn&#8217;t a <em>really</em> logical
+decision besides &#8220;go with it, you think better with it&#8221;.</p>
+
+<p>And so far it&#8217;s been working pretty well. Onto more exciting stuff!</p>
+
+<h2 id="learningclojure">Learning Clojure</h2>
+
+<p>Yes, I decided I wanted to use Clojure before being able to speak in it, deal
+with it.</p>
+
+<p>This wasn&#8217;t a bad experience. I&#8217;m familiar with the concept of lists and I like
+it. I&#8217;m not uncomfortable with parentheses and brackets either.</p>
+
+<p>I&#8217;m also a fast learner so I can learn from guessing the code I&#8217;m reading, as
+long as I know the language basics.</p>
+
+<p>I used <a href="http://blackstag.com/blog.posting?id=5">Tim Robinson&#8217;s Clojure tutorial for beginners</a> in order to learn how
+to read and write Clojure.</p></article></main></div><div id="footer"><footer role="contentinfo"><p><a href="https://github.com/Greduan/eduantech.docpad/blob/master/LICENSE.md" title="License Terms">License Terms</a>. Powered by <a href="http://docpad.org/">DocPad</a>.</p></footer></div></div><script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script><script src="/js/all.min.js"></script></body></html>

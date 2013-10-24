@@ -1,3 +1,4 @@
+/*! main.js */
 // Activate CSS emoticonization
 $('#wrapper').emoticonize();
 

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 	<title>EduanTech</title>
-	<subtitle>A hacker's advice for Mac OS X, s2Member and web development.</subtitle>
+	<subtitle>A hacker's blog.</subtitle>
 	<link href="http://greduan.github.io/atom.xml" rel="self" />
 	<link href="http://greduan.github.io" />
-	<updated>2013-10-24T14:12:57.253Z</updated>
+	<updated>2013-10-24T23:33:48.911Z</updated>
 	<id>http://greduan.github.io</id>
 	<author>
-		<name>Eduan Lavaque</name>
+		<name>Eduán Lávaque</name>
 		<email>eduanlavaque@gmail.com</email>
 	</author>
 
@@ -17,45 +17,173 @@
 			<link href="http://greduan.github.io/posts/open-source-games-without-going-poor.html"/>
 			<updated>2013-10-23T00:00:00.000Z</updated>
 			<id>http://greduan.github.io/posts/open-source-games-without-going-poor.html</id>
-			<content type="html">&lt;p&gt;&lt;strong&gt;TL;DR: Release your game for a fee, after a certain amount of time release source code, continue selling pre-compiled version to public. Open source games.&lt;/strong&gt;&lt;/p&gt;
+			<content type="html">&lt;p&gt;&lt;strong&gt;TL;DR: Release your game for a fee, after a certain amount of time release
+source code, continue selling pre-compiled version to public. Open source
+games.&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;So what&amp;#8217;s the idea? What do you mean open source games?&lt;/p&gt;
+&lt;p&gt;So what&amp;#8217;s the idea? What do I mean with open source games?&lt;/p&gt;
 
-&lt;p&gt;Well, as I&amp;#8217;m sure most of you know, I love open source. I try to make everything I use open source whenever possible. There are lot of great projects I use and sometimes contribute to that are open source. For example Clojure, Vim, Chromium (all of which I use) or DocPad (to which I contribute).&lt;/p&gt;
+&lt;p&gt;I love open source. I try to make everything I use open source whenever
+possible. There are lot of great projects I use and sometimes contribute to
+that are open source. For example Clojure, Vim, Chromium (all of which I use)
+or DocPad (to which I contribute).&lt;/p&gt;
 
-&lt;p&gt;I also love games, I mean who doesn&amp;#8217;t? Doesn&amp;#8217;t have to be video games for it to be a game, there&amp;#8217;s also physical games like Tag, Hide-and-Seek etc. They are all free, open source, they&amp;#8217;re just an idea, you see kids modifying games in order to make them more interesting all the time! Most video games aren&amp;#8217;t open source however. You pay for a game, you play it, finish it (or complete it), move on to the next game. The games that are open source are so simple there isn&amp;#8217;t any gain in making them not open source, if anything you lose from making them closed source.&lt;/p&gt;
+&lt;p&gt;I also love games, I mean who doesn&amp;#8217;t? Doesn&amp;#8217;t have to be video games for it
+to be a game, there&amp;#8217;s also physical games like Tag, Hide-and-Seek etc. They are
+all free, open source, they&amp;#8217;re just an idea, you see kids modifying games in
+order to make them more interesting all the time! Most video games aren&amp;#8217;t open
+source however. You pay for a game, you play it, finish it (or complete it),
+move on to the next game. The games that &lt;em&gt;are&lt;/em&gt; open source are so simple there
+isn&amp;#8217;t any gain in making them not open source, if anything you lose from making
+them closed source.&lt;/p&gt;
 
-&lt;p&gt;A lot of, if not all developers love open source. However, a lot of us developers make games for a living. We can&amp;#8217;t make them open source, we would have to live off of donations, which are inconsistent if there are donations and if there aren&amp;#8217;t well&amp;#8230; we&amp;#8217;re in deep shit if we don&amp;#8217;t have a job.&lt;/p&gt;
+&lt;p&gt;A lot of, if not all developers love open source. However, a lot of us
+developers make games for a living. We can&amp;#8217;t make them open source, we would
+have to live off of donations, which are inconsistent if there are donations
+and if there aren&amp;#8217;t well&amp;#8230; we&amp;#8217;re in deep shit if we don&amp;#8217;t have a job.&lt;/p&gt;
 
-&lt;p&gt;Now, this is an idea I had that tries to solve that. Us open source lovers who want to make a decent living off of making &lt;em&gt;open source&lt;/em&gt; games will be able to do this with this idea I had.&lt;/p&gt;
+&lt;p&gt;Now, this is an idea I had that tries to solve that. Us open source lovers who
+want to make a decent living off of making &lt;em&gt;open source&lt;/em&gt; games will be able to
+do this with this idea I had.&lt;/p&gt;
 
-&lt;p&gt;The idea is simple, release the game to the public for a fee as usual, however after an agreed amount of time which you decide release the game&amp;#8217;s source. Make it open source. However, continue selling the pre-compiled game to the public.&lt;/p&gt;
+&lt;p&gt;The idea is simple, release the game to the public for a fee as usual, however
+after an agreed amount of time which you decide release the game&amp;#8217;s source. Make
+it open source. However, continue selling the pre-compiled game to the public.&lt;/p&gt;
 
-&lt;p&gt;So it&amp;#8217;s really a simple idea. You release the game for a fee for a certain amount of time in order to make a living or at least make up for what you lost in the development process. After that certain amount of time is up you release the source.&lt;/p&gt;
+&lt;p&gt;So it&amp;#8217;s really a simple idea. You release the game for a fee for a certain
+amount of time in order to make a living or at least make up for what you lost
+in the development process. After that certain amount of time is up you release
+the source.&lt;/p&gt;
 
-&lt;p&gt;This makes the game open source however you are still making an income from non-techie users or just nice users.&lt;/p&gt;
+&lt;p&gt;This makes the game open source however you are still making an income from
+non-techie users or just nice users.&lt;/p&gt;
 
-&lt;p&gt;So why would this work? Smart users would just wait a year or whatever and compile the source and done, they won&amp;#8217;t pay anything, why would they? They&amp;#8217;re &lt;em&gt;smart&lt;/em&gt; about it. This idea is just a recipe for disaster!&lt;/p&gt;
+&lt;p&gt;So why would this work? Smart users would just wait a year or whatever and
+compile the source and done, they won&amp;#8217;t pay anything, why would they? They&amp;#8217;re
+&lt;em&gt;smart&lt;/em&gt; about it. This idea is just a recipe for disaster!&lt;/p&gt;
 
-&lt;p&gt;Well, the way I see it, if your game is good enough, people won&amp;#8217;t care about paying for it. They won&amp;#8217;t mind keeping you alive by giving you $5 or whatever your game costs. In fact they would be glad that you made that game. AND, as an added bonus, if they&amp;#8217;re interested in the game&amp;#8217;s source code to see how you figured out this holy-crap-that-looks-crazy thing in your game, they can do that.&lt;/p&gt;
+&lt;p&gt;Well, the way I see it, if your game is good enough, people won&amp;#8217;t care about
+paying for it. They won&amp;#8217;t mind keeping you alive by giving you $5 or whatever
+your game costs. In fact they would be glad that you made that game. AND, as an
+added bonus, if they&amp;#8217;re interested in the game&amp;#8217;s source code to see how you
+figured out this holy-crap-that-looks-crazy thing in your game, they can do
+that.&lt;/p&gt;
 
-&lt;p&gt;Of course, there&amp;#8217;ll be the users that just compile the game, play it, finish and complete it and uninstall it, never touching it again. How many users are like that? In my experience with people, not many.&lt;/p&gt;
+&lt;p&gt;Most probably if the don&amp;#8217;t pay for your game it&amp;#8217;s because they want some sort
+of trial period or they can&amp;#8217;t even afford the game anyway. So really you&amp;#8217;re not
+losing much.&lt;/p&gt;
 
-&lt;p&gt;So this is a trust issue. Do you trust your users enough to be nice enough to let you live? Or not? I trust them, they&amp;#8217;re playing my awesome game, why wouldn&amp;#8217;t they want to keep me alive for me to make more games?&lt;/p&gt;
+&lt;p&gt;Of course, there&amp;#8217;ll be the users that just compile the game, play it, finish
+and complete it and uninstall it, never touching it again. How many users are
+like that? In my experience with people, not many.&lt;/p&gt;
 
-&lt;p&gt;You can look at it the other way, maybe people are interested in your game not for the game itself, but the code. They approach your game&amp;#8217;s code because you figured something out that they&amp;#8217;ve had a hard time figuring out. They figure out stuff for you that you did wrong and make pull requests.&lt;/p&gt;
+&lt;p&gt;So this is a trust issue. Do you trust your users enough to be nice enough to
+let you live? Or not? I trust them, they&amp;#8217;re playing my awesome game, why
+wouldn&amp;#8217;t they want to keep me alive for me to make more games?&lt;/p&gt;
 
-&lt;p&gt;So you have an income one way or another. Be it through code or money. If they help with the code they help with the overall game so the sales would be better, for example.&lt;/p&gt;
+&lt;p&gt;You can look at it the other way, maybe people are interested in your game not
+for the game itself, but the code. They approach your game&amp;#8217;s code because you
+figured something out that they&amp;#8217;ve had a hard time figuring out. They figure
+out stuff for you that you did wrong and make pull requests.&lt;/p&gt;
 
-&lt;p&gt;This is just a crazy but not impossible idea I had while thinking on my bed, so it&amp;#8217;s not really fleshed out, since there isn&amp;#8217;t anything to flesh out.&lt;/p&gt;
+&lt;p&gt;So you have an income one way or another. Be it through code or money. If they
+help with the code they help with the overall game so the sales would be
+better, for example.&lt;/p&gt;
 
-&lt;p&gt;Also it&amp;#8217;s kinda hastily written, so if there&amp;#8217;s something you think could be said better in this post feel free to &lt;a href=&quot;https://github.com/Greduan/eduantech.docpad/blob/master/src/render/posts/open-source-games-without-going-poor.html.md&quot;&gt;modify it&lt;/a&gt; and make a pull request for it!&lt;/p&gt;
+&lt;p&gt;This is just a crazy but not impossible idea I had while thinking on my bed, so
+it&amp;#8217;s not really fleshed out, since there isn&amp;#8217;t anything to flesh out.&lt;/p&gt;
+
+&lt;p&gt;Also it&amp;#8217;s kinda hastily written, so if there&amp;#8217;s something you think could be
+said better in this post feel free to &lt;a href=&quot;https://github.com/Greduan/eduantech.docpad/blob/master/src/render/posts/open-source-games-without-going-poor.html.md&quot;&gt;modify it&lt;/a&gt; and make a pull request
+for it!&lt;/p&gt;
 
 &lt;p&gt;Here is some further reading you might be interested in:&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://raamdev.com/income-ethics-series/&quot;&gt;Income Ethics - Raam Dev&lt;/a&gt; - A very deep look into a similar subject, he mentions something similar in &lt;a href=&quot;http://raamdev.com/income-ethics-series/#public_domain&quot;&gt;this section&lt;/a&gt; of his post.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://raamdev.com/income-ethics-series/&quot;&gt;Income Ethics - Raam Dev&lt;/a&gt; - A very deep look into a similar subject, he
+ mentions something extremly similar to this idea in &lt;a href=&quot;http://raamdev.com/income-ethics-series/#public_domain&quot;&gt;this section&lt;/a&gt; of his
+ post.&lt;/li&gt;
 &lt;/ul&gt;</content>
+		</entry>
+	
+		<entry>
+			<title>My Experience Making a Game</title>
+			<link href="http://greduan.github.io/posts/my-experience-making-a-game.html"/>
+			<updated>2013-10-21T00:00:00.000Z</updated>
+			<id>http://greduan.github.io/posts/my-experience-making-a-game.html</id>
+			<content type="html">&lt;p&gt;In this post I&amp;#8217;m gonna be going over my personal experience while making a game
+using Clojure as the language and using an &lt;a href=&quot;https://en.wikipedia.org/wiki/Entity_component_system&quot;&gt;ECS structure&lt;/a&gt; for the code.&lt;/p&gt;
+
+&lt;p&gt;This will not be a &amp;#8220;Hey I made Pong!&amp;#8221; post. This is a real game that I will
+develop and eventually (hopefully) make a profit from.&lt;/p&gt;
+
+&lt;p&gt;Some things to make clear. I did not know I was going to use Clojure for the
+language or use an ECS structure for the code. This is what I arrived at after
+lots of thinking and research.&lt;/p&gt;
+
+&lt;p&gt;I&amp;#8217;m hoping this post will be of useful insight to those that are considering
+making game, especially if they&amp;#8217;re making it using Clojure or the ECS
+structure.&lt;/p&gt;
+
+&lt;h2 id=&quot;decidingonthelanguage&quot;&gt;Deciding on the language&lt;/h2&gt;
+
+&lt;p&gt;Of course I didn&amp;#8217;t wake up and go &amp;#8220;Clojure is the way to go.&amp;#8221; It was several
+weeks of me considering all the options that I considered fit for my needs.&lt;/p&gt;
+
+&lt;p&gt;The languages I considered were Go, C, C++, Common Lisp, JavaScript, Python and
+a couple of others I think.&lt;/p&gt;
+
+&lt;p&gt;So why did I choose Clojure? Several reasons but the most obvious are:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;It&amp;#8217;s Lisp. Can&amp;#8217;t argue with that.&lt;/li&gt;
+&lt;li&gt;It compiles into JVM bytecode.&lt;/li&gt;
+&lt;li&gt;Rich Hickey is smart.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Let&amp;#8217;s look at the second point.&lt;/p&gt;
+
+&lt;h3 id=&quot;itcompilesintojvmbytecode&quot;&gt;It compiles into JVM bytecode&lt;/h3&gt;
+
+&lt;p&gt;So why is this a selling point?&lt;/p&gt;
+
+&lt;p&gt;It means my code is automatically cross platform (as long as the user has Java
+installed on his computer).&lt;/p&gt;
+
+&lt;p&gt;It also means that I have access to all the libraries Java has.&lt;/p&gt;
+
+&lt;p&gt;Both of these reasons are big deciding factors. Write my code once with a huge
+amount of libraries I can use if I wish.&lt;/p&gt;
+
+&lt;p&gt;Oh and I also have access to any help users have requested in the past for
+Java.&lt;/p&gt;
+
+&lt;h2 id=&quot;decidingonthearchitecture&quot;&gt;Deciding on the architecture&lt;/h2&gt;
+
+&lt;p&gt;Once I decided I had to choose between OOP and ECS. This really wasn&amp;#8217;t really
+a hard decision.&lt;/p&gt;
+
+&lt;p&gt;I just had to understand how both worked pros and cons and stuff. However for
+me the pros are much better for ECS.&lt;/p&gt;
+
+&lt;p&gt;This really came to me listening to my gut. This wasn&amp;#8217;t a &lt;em&gt;really&lt;/em&gt; logical
+decision besides &amp;#8220;go with it, you think better with it&amp;#8221;.&lt;/p&gt;
+
+&lt;p&gt;And so far it&amp;#8217;s been working pretty well. Onto more exciting stuff!&lt;/p&gt;
+
+&lt;h2 id=&quot;learningclojure&quot;&gt;Learning Clojure&lt;/h2&gt;
+
+&lt;p&gt;Yes, I decided I wanted to use Clojure before being able to speak in it, deal
+with it.&lt;/p&gt;
+
+&lt;p&gt;This wasn&amp;#8217;t a bad experience. I&amp;#8217;m familiar with the concept of lists and I like
+it. I&amp;#8217;m not uncomfortable with parentheses and brackets either.&lt;/p&gt;
+
+&lt;p&gt;I&amp;#8217;m also a fast learner so I can learn from guessing the code I&amp;#8217;m reading, as
+long as I know the language basics.&lt;/p&gt;
+
+&lt;p&gt;I used &lt;a href=&quot;http://blackstag.com/blog.posting?id=5&quot;&gt;Tim Robinson&amp;#8217;s Clojure tutorial for beginners&lt;/a&gt; in order to learn how
+to read and write Clojure.&lt;/p&gt;</content>
 		</entry>
 	
 		<entry>
