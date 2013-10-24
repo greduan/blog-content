@@ -4,7 +4,7 @@
 	<subtitle>A hacker's advice for Mac OS X, s2Member and web development.</subtitle>
 	<link href="http://greduan.github.io/atom.xml" rel="self" />
 	<link href="http://greduan.github.io" />
-	<updated>2013-10-20T21:50:45.687Z</updated>
+	<updated>2013-10-24T02:00:10.776Z</updated>
 	<id>http://greduan.github.io</id>
 	<author>
 		<name>Eduan Lavaque</name>
@@ -13,15 +13,58 @@
 
 	
 		<entry>
+			<title>Open Source Games Without Going Poor</title>
+			<link href="http://greduan.github.io/posts/open-source-games-without-going-poor.html"/>
+			<updated>2013-10-23T00:00:00.000Z</updated>
+			<id>http://greduan.github.io/posts/open-source-games-without-going-poor.html</id>
+			<content type="html">&lt;p&gt;&lt;strong&gt;TL;DR: Release your game for a fee, after a certain amount of time release source code, continue selling pre-compiled version to public. Open source games.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;So what&amp;#8217;s the idea? What do you mean open source games?&lt;/p&gt;
+
+&lt;p&gt;Well, as I&amp;#8217;m sure most of you know, I love open source. I try to make everything I use open source whenever possible. There are lot of great projects I use and sometimes contribute to that are open source. For example Clojure, Vim, Chromium (all of which I use) or DocPad (to which I contribute).&lt;/p&gt;
+
+&lt;p&gt;I also love games, I mean who doesn&amp;#8217;t? Doesn&amp;#8217;t have to be video games for it to be a game, there&amp;#8217;s also hysical games like Tag, Hide-and-Seek etc. They are all free, open source, they&amp;#8217;re just an idea, you see kids modifying games in order to make them more interesting all the time! Most video games aren&amp;#8217;t open source however. You pay for a game, you play it, finish it (or complete it), move on to the next game. The games that are open source are so simple there isn&amp;#8217;t any gain in making them not open source, if anything you lose from making them closed source.&lt;/p&gt;
+
+&lt;p&gt;A lot of, if not all developers love open source. However, a lot of us developers make games for a living. We can&amp;#8217;t make them open source, we would have to live off of donations, which are inconsistent if there are donations and if there aren&amp;#8217;t well&amp;#8230; we&amp;#8217;re in deep shit if we don&amp;#8217;t have a job.&lt;/p&gt;
+
+&lt;p&gt;Now, this is an idea I had that tries to solve that. Us open source lovers who want to make a decent living off of making &lt;em&gt;open source&lt;/em&gt; games will be able to do this with this idea I had.&lt;/p&gt;
+
+&lt;p&gt;The idea is simple, release the game to the public for a fee as usual, however after an agreed amount of time which you decide release the game&amp;#8217;s source. Make it open source. However, continue selling the pre-compiled game to the public.&lt;/p&gt;
+
+&lt;p&gt;So it&amp;#8217;s really a simple idea. You release the game for a fee for a certain amount of time in order to make a living or at least make up for what you lost in the development process. After that certain amount of time is up you releas the source.&lt;/p&gt;
+
+&lt;p&gt;This makes the game open source however you are still making an income from non-techie users or just nice users.&lt;/p&gt;
+
+&lt;p&gt;So why would this work? Smart users would just wait a year or whatever and compile the source and done, they won&amp;#8217;t pay anything, why would they? They&amp;#8217;re &lt;em&gt;smart&lt;/em&gt; about it. This idea is just a recipe for disaster!&lt;/p&gt;
+
+&lt;p&gt;Well, the way I see it, if your game is good enough, people won&amp;#8217;t care about paying for it. They won&amp;#8217;t mind keeping you alive by giving you $5 or whatever your game costs. In fact they would be glad that you made that game. AND, as an added bonus, if they&amp;#8217;re interested in the game&amp;#8217;s source code to see how you figured out this holy-crap-that-looks-crazy thing in your game, they can do that.&lt;/p&gt;
+
+&lt;p&gt;Of course, there&amp;#8217;ll be the users that just compile the game, play it, finish and complete it and uninstall it, never touching it again. How many users are like that? In my experience with people, not many.&lt;/p&gt;
+
+&lt;p&gt;So this is a trust issue. Do you trust your users enough to be nice enough to let you live? Or not? I trust them, they&amp;#8217;re playing my awesome game, why wouldn&amp;#8217;t they want to keep me alive for me to make more games?&lt;/p&gt;
+
+&lt;p&gt;You can look at it the other way, maybe people are interested in your game not for the game itself, but the code. They approach your game&amp;#8217;s code because you figured something out that they&amp;#8217;ve had a hard time figuring out. They figure out stuff for you that you did wrong and make pull requests.&lt;/p&gt;
+
+&lt;p&gt;So you have an income one way or another. Be it through code or money. If they help with the code they help with the overall game so the sales would be better, for example.&lt;/p&gt;
+
+&lt;p&gt;This is just a crazy but not impossible idea I had while thinking on my bed, so it&amp;#8217;s not really fleshed out, since there isn&amp;#8217;t anything to flesh out.&lt;/p&gt;
+
+&lt;p&gt;Also it&amp;#8217;s kinda hastily written, so if there&amp;#8217;s something you think could be said better in this post feel free to &lt;a href=&quot;https://github.com/Greduan/eduantech.docpad/blob/master/src/render/posts/open-source-games-without-going-poor.html.md&quot;&gt;modify it&lt;/a&gt; and make a pull request for it!&lt;/p&gt;</content>
+		</entry>
+	
+		<entry>
 			<title>The Switch to DocPad</title>
 			<link href="http://greduan.github.io/posts/the-switch-to-docpad.html"/>
 			<updated>2013-06-16T00:00:00.000Z</updated>
 			<id>http://greduan.github.io/posts/the-switch-to-docpad.html</id>
 			<content type="html">&lt;p&gt;Well I finally switched to something else than WordPress.&lt;/p&gt;
 
-&lt;p&gt;I switched to &lt;a href=&quot;http://docpad.org&quot;&gt;DocPad&lt;/a&gt;, the &lt;a href=&quot;http://nodejs.org/&quot;&gt;Node.js&lt;/a&gt; based static website generator. It&amp;#8217;s a static website generator but if you wish it can be completely dynamic.&lt;/p&gt;
+&lt;p&gt;I switched to &lt;a href=&quot;http://docpad.org&quot;&gt;DocPad&lt;/a&gt;, the &lt;a href=&quot;http://nodejs.org/&quot;&gt;Node.js&lt;/a&gt; based static website generator.
+It&amp;#8217;s a static website generator but if you wish it can be completely dynamic.&lt;/p&gt;
 
-&lt;p&gt;I am using Markdown to write my posts. Using &lt;a href=&quot;http://coffeekup.org/&quot;&gt;CoffeeKup&lt;/a&gt; and &lt;a href=&quot;https://github.com/sstephenson/eco&quot;&gt;Eco&lt;/a&gt; as templating languages and &lt;a href=&quot;http://coffeescript.org/&quot;&gt;CoffeeScript&lt;/a&gt; for the JavaScript logic. And I am using &lt;a href=&quot;http://sass-lang.com/&quot;&gt;SCSS&lt;/a&gt; for the CSS, of course.&lt;/p&gt;
+&lt;p&gt;I am using Markdown to write my posts. Using &lt;a href=&quot;http://coffeekup.org/&quot;&gt;CoffeeKup&lt;/a&gt; and &lt;a href=&quot;https://github.com/sstephenson/eco&quot;&gt;Eco&lt;/a&gt; as
+templating languages and &lt;a href=&quot;http://coffeescript.org/&quot;&gt;CoffeeScript&lt;/a&gt; for the JavaScript logic. And I am
+using &lt;a href=&quot;http://sass-lang.com/&quot;&gt;SCSS&lt;/a&gt; for the CSS, of course.&lt;/p&gt;
 
 &lt;p&gt;Also, now my website is being hosted by GitHub Pages, so that&amp;#8217;s cool.&lt;/p&gt;
 
