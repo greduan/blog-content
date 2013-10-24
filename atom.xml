@@ -4,7 +4,7 @@
 	<subtitle>A hacker's advice for Mac OS X, s2Member and web development.</subtitle>
 	<link href="http://greduan.github.io/atom.xml" rel="self" />
 	<link href="http://greduan.github.io" />
-	<updated>2013-10-24T02:00:10.776Z</updated>
+	<updated>2013-10-24T14:12:57.253Z</updated>
 	<id>http://greduan.github.io</id>
 	<author>
 		<name>Eduan Lavaque</name>
@@ -23,7 +23,7 @@
 
 &lt;p&gt;Well, as I&amp;#8217;m sure most of you know, I love open source. I try to make everything I use open source whenever possible. There are lot of great projects I use and sometimes contribute to that are open source. For example Clojure, Vim, Chromium (all of which I use) or DocPad (to which I contribute).&lt;/p&gt;
 
-&lt;p&gt;I also love games, I mean who doesn&amp;#8217;t? Doesn&amp;#8217;t have to be video games for it to be a game, there&amp;#8217;s also hysical games like Tag, Hide-and-Seek etc. They are all free, open source, they&amp;#8217;re just an idea, you see kids modifying games in order to make them more interesting all the time! Most video games aren&amp;#8217;t open source however. You pay for a game, you play it, finish it (or complete it), move on to the next game. The games that are open source are so simple there isn&amp;#8217;t any gain in making them not open source, if anything you lose from making them closed source.&lt;/p&gt;
+&lt;p&gt;I also love games, I mean who doesn&amp;#8217;t? Doesn&amp;#8217;t have to be video games for it to be a game, there&amp;#8217;s also physical games like Tag, Hide-and-Seek etc. They are all free, open source, they&amp;#8217;re just an idea, you see kids modifying games in order to make them more interesting all the time! Most video games aren&amp;#8217;t open source however. You pay for a game, you play it, finish it (or complete it), move on to the next game. The games that are open source are so simple there isn&amp;#8217;t any gain in making them not open source, if anything you lose from making them closed source.&lt;/p&gt;
 
 &lt;p&gt;A lot of, if not all developers love open source. However, a lot of us developers make games for a living. We can&amp;#8217;t make them open source, we would have to live off of donations, which are inconsistent if there are donations and if there aren&amp;#8217;t well&amp;#8230; we&amp;#8217;re in deep shit if we don&amp;#8217;t have a job.&lt;/p&gt;
 
@@ -31,7 +31,7 @@
 
 &lt;p&gt;The idea is simple, release the game to the public for a fee as usual, however after an agreed amount of time which you decide release the game&amp;#8217;s source. Make it open source. However, continue selling the pre-compiled game to the public.&lt;/p&gt;
 
-&lt;p&gt;So it&amp;#8217;s really a simple idea. You release the game for a fee for a certain amount of time in order to make a living or at least make up for what you lost in the development process. After that certain amount of time is up you releas the source.&lt;/p&gt;
+&lt;p&gt;So it&amp;#8217;s really a simple idea. You release the game for a fee for a certain amount of time in order to make a living or at least make up for what you lost in the development process. After that certain amount of time is up you release the source.&lt;/p&gt;
 
 &lt;p&gt;This makes the game open source however you are still making an income from non-techie users or just nice users.&lt;/p&gt;
 
@@ -49,7 +49,13 @@
 
 &lt;p&gt;This is just a crazy but not impossible idea I had while thinking on my bed, so it&amp;#8217;s not really fleshed out, since there isn&amp;#8217;t anything to flesh out.&lt;/p&gt;
 
-&lt;p&gt;Also it&amp;#8217;s kinda hastily written, so if there&amp;#8217;s something you think could be said better in this post feel free to &lt;a href=&quot;https://github.com/Greduan/eduantech.docpad/blob/master/src/render/posts/open-source-games-without-going-poor.html.md&quot;&gt;modify it&lt;/a&gt; and make a pull request for it!&lt;/p&gt;</content>
+&lt;p&gt;Also it&amp;#8217;s kinda hastily written, so if there&amp;#8217;s something you think could be said better in this post feel free to &lt;a href=&quot;https://github.com/Greduan/eduantech.docpad/blob/master/src/render/posts/open-source-games-without-going-poor.html.md&quot;&gt;modify it&lt;/a&gt; and make a pull request for it!&lt;/p&gt;
+
+&lt;p&gt;Here is some further reading you might be interested in:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://raamdev.com/income-ethics-series/&quot;&gt;Income Ethics - Raam Dev&lt;/a&gt; - A very deep look into a similar subject, he mentions something similar in &lt;a href=&quot;http://raamdev.com/income-ethics-series/#public_domain&quot;&gt;this section&lt;/a&gt; of his post.&lt;/li&gt;
+&lt;/ul&gt;</content>
 		</entry>
 	
 		<entry>
