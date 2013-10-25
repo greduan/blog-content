@@ -4,7 +4,7 @@
 	<subtitle>A hacker's blog.</subtitle>
 	<link href="http://greduan.github.io/atom.xml" rel="self" />
 	<link href="http://greduan.github.io" />
-	<updated>2013-10-24T23:33:48.911Z</updated>
+	<updated>2013-10-25T00:00:16.106Z</updated>
 	<id>http://greduan.github.io</id>
 	<author>
 		<name>Eduán Lávaque</name>
@@ -104,86 +104,6 @@ for it!&lt;/p&gt;
  mentions something extremly similar to this idea in &lt;a href=&quot;http://raamdev.com/income-ethics-series/#public_domain&quot;&gt;this section&lt;/a&gt; of his
  post.&lt;/li&gt;
 &lt;/ul&gt;</content>
-		</entry>
-	
-		<entry>
-			<title>My Experience Making a Game</title>
-			<link href="http://greduan.github.io/posts/my-experience-making-a-game.html"/>
-			<updated>2013-10-21T00:00:00.000Z</updated>
-			<id>http://greduan.github.io/posts/my-experience-making-a-game.html</id>
-			<content type="html">&lt;p&gt;In this post I&amp;#8217;m gonna be going over my personal experience while making a game
-using Clojure as the language and using an &lt;a href=&quot;https://en.wikipedia.org/wiki/Entity_component_system&quot;&gt;ECS structure&lt;/a&gt; for the code.&lt;/p&gt;
-
-&lt;p&gt;This will not be a &amp;#8220;Hey I made Pong!&amp;#8221; post. This is a real game that I will
-develop and eventually (hopefully) make a profit from.&lt;/p&gt;
-
-&lt;p&gt;Some things to make clear. I did not know I was going to use Clojure for the
-language or use an ECS structure for the code. This is what I arrived at after
-lots of thinking and research.&lt;/p&gt;
-
-&lt;p&gt;I&amp;#8217;m hoping this post will be of useful insight to those that are considering
-making game, especially if they&amp;#8217;re making it using Clojure or the ECS
-structure.&lt;/p&gt;
-
-&lt;h2 id=&quot;decidingonthelanguage&quot;&gt;Deciding on the language&lt;/h2&gt;
-
-&lt;p&gt;Of course I didn&amp;#8217;t wake up and go &amp;#8220;Clojure is the way to go.&amp;#8221; It was several
-weeks of me considering all the options that I considered fit for my needs.&lt;/p&gt;
-
-&lt;p&gt;The languages I considered were Go, C, C++, Common Lisp, JavaScript, Python and
-a couple of others I think.&lt;/p&gt;
-
-&lt;p&gt;So why did I choose Clojure? Several reasons but the most obvious are:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;It&amp;#8217;s Lisp. Can&amp;#8217;t argue with that.&lt;/li&gt;
-&lt;li&gt;It compiles into JVM bytecode.&lt;/li&gt;
-&lt;li&gt;Rich Hickey is smart.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Let&amp;#8217;s look at the second point.&lt;/p&gt;
-
-&lt;h3 id=&quot;itcompilesintojvmbytecode&quot;&gt;It compiles into JVM bytecode&lt;/h3&gt;
-
-&lt;p&gt;So why is this a selling point?&lt;/p&gt;
-
-&lt;p&gt;It means my code is automatically cross platform (as long as the user has Java
-installed on his computer).&lt;/p&gt;
-
-&lt;p&gt;It also means that I have access to all the libraries Java has.&lt;/p&gt;
-
-&lt;p&gt;Both of these reasons are big deciding factors. Write my code once with a huge
-amount of libraries I can use if I wish.&lt;/p&gt;
-
-&lt;p&gt;Oh and I also have access to any help users have requested in the past for
-Java.&lt;/p&gt;
-
-&lt;h2 id=&quot;decidingonthearchitecture&quot;&gt;Deciding on the architecture&lt;/h2&gt;
-
-&lt;p&gt;Once I decided I had to choose between OOP and ECS. This really wasn&amp;#8217;t really
-a hard decision.&lt;/p&gt;
-
-&lt;p&gt;I just had to understand how both worked pros and cons and stuff. However for
-me the pros are much better for ECS.&lt;/p&gt;
-
-&lt;p&gt;This really came to me listening to my gut. This wasn&amp;#8217;t a &lt;em&gt;really&lt;/em&gt; logical
-decision besides &amp;#8220;go with it, you think better with it&amp;#8221;.&lt;/p&gt;
-
-&lt;p&gt;And so far it&amp;#8217;s been working pretty well. Onto more exciting stuff!&lt;/p&gt;
-
-&lt;h2 id=&quot;learningclojure&quot;&gt;Learning Clojure&lt;/h2&gt;
-
-&lt;p&gt;Yes, I decided I wanted to use Clojure before being able to speak in it, deal
-with it.&lt;/p&gt;
-
-&lt;p&gt;This wasn&amp;#8217;t a bad experience. I&amp;#8217;m familiar with the concept of lists and I like
-it. I&amp;#8217;m not uncomfortable with parentheses and brackets either.&lt;/p&gt;
-
-&lt;p&gt;I&amp;#8217;m also a fast learner so I can learn from guessing the code I&amp;#8217;m reading, as
-long as I know the language basics.&lt;/p&gt;
-
-&lt;p&gt;I used &lt;a href=&quot;http://blackstag.com/blog.posting?id=5&quot;&gt;Tim Robinson&amp;#8217;s Clojure tutorial for beginners&lt;/a&gt; in order to learn how
-to read and write Clojure.&lt;/p&gt;</content>
 		</entry>
 	
 		<entry>
