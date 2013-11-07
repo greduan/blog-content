@@ -4,7 +4,7 @@
 	<subtitle>A web developer and software engineer that loves free software (as in freedom).</subtitle>
 	<link href="http://greduan.github.io/atom.xml" rel="self" />
 	<link href="http://greduan.github.io" />
-	<updated>2013-11-07T19:36:46.863Z</updated>
+	<updated>2013-11-07T20:07:23.888Z</updated>
 	<id>http://greduan.github.io</id>
 	<author>
 		<name>Eduán Lávaque</name>
@@ -24,30 +24,25 @@ suggestions for a better title but I won&amp;#8217;t change the title.&lt;/p&gt;
 &lt;p&gt;So let me explain why I chose this title. That&amp;#8217;s what this post is about.&lt;/p&gt;
 
 &lt;p&gt;There is a popular saying that Vim users love to use against Emacs users in the
-holy editor wars. That saying is &amp;quot;Emacs would make a great OS, if only it had a
-good text editor. Or something along those lines.&lt;/p&gt;
+holy editor wars. That saying is &amp;#8220;Emacs would make a great OS, if only it had a
+good text editor.&amp;#8221; or something along those lines.&lt;/p&gt;
 
 &lt;p&gt;And I can sort of agree with that. Emacs&amp;#8217; editor is not superior to Vim&amp;#8217;s in
 almost any front. But let&amp;#8217;s look at the bright side of that saying.&lt;/p&gt;
 
 &lt;p&gt;They&amp;#8217;re criticizing the text editor. But they&amp;#8217;re acknowledging it as an OS. In
 other words it apparently can be extended immensely. And it has proven to be
-able to do just that. It has just about anything that can be done in text:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Mail reader&lt;/li&gt;
-&lt;li&gt;News reader&lt;/li&gt;
-&lt;li&gt;Chat&lt;/li&gt;
-&lt;li&gt;Calendar&lt;/li&gt;
-&lt;/ul&gt;
+able to do just that. It has just about anything that can be done in text. Email
+reader, news reader, chat, calendar, you name it. And if it isn&amp;#8217;t already
+implemented, go ahead and do it yourself! ;)&lt;/p&gt;
 
 &lt;p&gt;And of course, it can be extended immensely towards developing. Debuggers, the
-CLI, automatic &lt;code&gt;make&lt;/code&gt; functionality, people have made it an IDE as well. So
+CLI, automatic compiling functionality, people have made it an IDE as well. So
 it&amp;#8217;s limits are practically none. Oh and let&amp;#8217;s not forget about the language
-you use to customize it. Emacs Lisp, A.K.A. Elisp. It&amp;#8217;s own dialect of Lisp.
+you use to customize it. Emacs Lisp, A.K.A. Elisp; It&amp;#8217;s own dialect of Lisp.
 You can&amp;#8217;t get a lot more customizable than that.&lt;/p&gt;
 
-&lt;p&gt;Enter Light Table!&lt;/p&gt;
+&lt;p&gt;Except you can&amp;#8230; Enter Light Table!&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;http://www.lighttable.com/&quot;&gt;Light Table&lt;/a&gt; is one of the new kids on the block.
 It is coded in &lt;a href=&quot;http://clojure.org/clojurescript&quot;&gt;ClojureScript&lt;/a&gt;, a Lisp
@@ -55,14 +50,13 @@ dialect that essentially compiles to JS. The other new kid is
 &lt;a href=&quot;https://github.com/limetext/lime&quot;&gt;Lime&lt;/a&gt;, but he still hasn&amp;#8217;t got a working
 frontend (at the time of writing).&lt;/p&gt;
 
-&lt;p&gt;Now, the fact that it&amp;#8217;s an editing environment written in JS isn&amp;#8217;t all that
-special today, with these popping up quickly. But what makes it unique is it&amp;#8217;s
-customizability.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://www.chris-granger.com/&quot;&gt;Chris Granger&lt;/a&gt; (the main dev of Light Table)
-has created a unique architecture with Light Table. (As I understand it) you can add or
-remove anything and everything. Well maybe not everything since you&amp;#8217;ll always
-want some stuff there but you know what I mean.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.chris-granger.com/&quot;&gt;Chris Granger&lt;/a&gt; (the main dev of Light Table) has
+created a unique architecture with Light Table. (As I understand it) you can add
+or remove anything and everything. Well maybe not everything since you&amp;#8217;ll always
+want some stuff there but you know what I mean. Think about the ECS (&lt;a href=&quot;http://en.wikipedia.org/wiki/Entity_component_system&quot;&gt;Entity
+Component System&lt;/a&gt;), that&amp;#8217;s
+almost &lt;em&gt;exactly&lt;/em&gt; what Light Table has as an architecture. It is the first text
+editor of it&amp;#8217;s kind in this sense.&lt;/p&gt;
 
 &lt;p&gt;He has created a very interesting system with Light Table where the basic text
 editor is loaded by default. All of the text editor you get by default are just
@@ -73,6 +67,9 @@ you get where I&amp;#8217;m going with this.&lt;/p&gt;
 competitor for Emacs as well in terms of customizability. Think about it, it&amp;#8217;s
 written in ClojureScript, a Lisp dialect, you can add or remove behaviours, to
 the point where you can make it a NotePad or a browser.&lt;/p&gt;
+
+&lt;p&gt;The main point is, it&amp;#8217;s got (almost) no limit on what can be added &lt;em&gt;and&lt;/em&gt; no
+limit on what can be removed, something Emacs is missing.&lt;/p&gt;
 
 &lt;p&gt;JS is it&amp;#8217;s limit. If you can&amp;#8217;t do it with JS (and
 &lt;a href=&quot;http://nodejs.org/&quot;&gt;Node.js&lt;/a&gt;) you can&amp;#8217;t do it in Light Table. But if you can

@@ -5,30 +5,25 @@ suggestions for a better title but I won&#8217;t change the title.</p>
 <p>So let me explain why I chose this title. That&#8217;s what this post is about.</p>
 
 <p>There is a popular saying that Vim users love to use against Emacs users in the
-holy editor wars. That saying is &quot;Emacs would make a great OS, if only it had a
-good text editor. Or something along those lines.</p>
+holy editor wars. That saying is &#8220;Emacs would make a great OS, if only it had a
+good text editor.&#8221; or something along those lines.</p>
 
 <p>And I can sort of agree with that. Emacs&#8217; editor is not superior to Vim&#8217;s in
 almost any front. But let&#8217;s look at the bright side of that saying.</p>
 
 <p>They&#8217;re criticizing the text editor. But they&#8217;re acknowledging it as an OS. In
 other words it apparently can be extended immensely. And it has proven to be
-able to do just that. It has just about anything that can be done in text:</p>
-
-<ul>
-<li>Mail reader</li>
-<li>News reader</li>
-<li>Chat</li>
-<li>Calendar</li>
-</ul>
+able to do just that. It has just about anything that can be done in text. Email
+reader, news reader, chat, calendar, you name it. And if it isn&#8217;t already
+implemented, go ahead and do it yourself! ;)</p>
 
 <p>And of course, it can be extended immensely towards developing. Debuggers, the
-CLI, automatic <code>make</code> functionality, people have made it an IDE as well. So
+CLI, automatic compiling functionality, people have made it an IDE as well. So
 it&#8217;s limits are practically none. Oh and let&#8217;s not forget about the language
-you use to customize it. Emacs Lisp, A.K.A. Elisp. It&#8217;s own dialect of Lisp.
+you use to customize it. Emacs Lisp, A.K.A. Elisp; It&#8217;s own dialect of Lisp.
 You can&#8217;t get a lot more customizable than that.</p>
 
-<p>Enter Light Table!</p>
+<p>Except you can&#8230; Enter Light Table!</p>
 
 <p><a href="http://www.lighttable.com/">Light Table</a> is one of the new kids on the block.
 It is coded in <a href="http://clojure.org/clojurescript">ClojureScript</a>, a Lisp
@@ -36,14 +31,13 @@ dialect that essentially compiles to JS. The other new kid is
 <a href="https://github.com/limetext/lime">Lime</a>, but he still hasn&#8217;t got a working
 frontend (at the time of writing).</p>
 
-<p>Now, the fact that it&#8217;s an editing environment written in JS isn&#8217;t all that
-special today, with these popping up quickly. But what makes it unique is it&#8217;s
-customizability.</p>
-
-<p><a href="http://www.chris-granger.com/">Chris Granger</a> (the main dev of Light Table)
-has created a unique architecture with Light Table. (As I understand it) you can add or
-remove anything and everything. Well maybe not everything since you&#8217;ll always
-want some stuff there but you know what I mean.</p>
+<p><a href="http://www.chris-granger.com/">Chris Granger</a> (the main dev of Light Table) has
+created a unique architecture with Light Table. (As I understand it) you can add
+or remove anything and everything. Well maybe not everything since you&#8217;ll always
+want some stuff there but you know what I mean. Think about the ECS (<a href="http://en.wikipedia.org/wiki/Entity_component_system">Entity
+Component System</a>), that&#8217;s
+almost <em>exactly</em> what Light Table has as an architecture. It is the first text
+editor of it&#8217;s kind in this sense.</p>
 
 <p>He has created a very interesting system with Light Table where the basic text
 editor is loaded by default. All of the text editor you get by default are just
@@ -54,6 +48,9 @@ you get where I&#8217;m going with this.</p>
 competitor for Emacs as well in terms of customizability. Think about it, it&#8217;s
 written in ClojureScript, a Lisp dialect, you can add or remove behaviours, to
 the point where you can make it a NotePad or a browser.</p>
+
+<p>The main point is, it&#8217;s got (almost) no limit on what can be added <em>and</em> no
+limit on what can be removed, something Emacs is missing.</p>
 
 <p>JS is it&#8217;s limit. If you can&#8217;t do it with JS (and
 <a href="http://nodejs.org/">Node.js</a>) you can&#8217;t do it in Light Table. But if you can
