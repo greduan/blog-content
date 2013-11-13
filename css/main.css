@@ -111,7 +111,8 @@ pre {
   overflow: auto;
   white-space: pre;
   text-align: left;
-  padding: 5px 5px; }
+  width: 100%;
+  display: block; }
 
 /* GLOBAL STYLES */
 html {
