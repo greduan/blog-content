@@ -4,7 +4,7 @@
 	<subtitle>A web developer and software engineer that loves free software (as in freedom).</subtitle>
 	<link href="http://greduan.github.io/atom.xml" rel="self" />
 	<link href="http://greduan.github.io" />
-	<updated>2013-11-14T03:27:56.124Z</updated>
+	<updated>2013-11-14T03:34:50.821Z</updated>
 	<id>http://greduan.github.io</id>
 	<author>
 		<name>Eduán Lávaque</name>
@@ -18,9 +18,9 @@
 			<updated>2013-11-13T00:00:00.000Z</updated>
 			<id>http://greduan.github.io/posts/switching-from-zsh-to-fish.html</id>
 			<content type="html">&lt;p&gt;In this post I&amp;#39;ll be talking about my experience with switching from zsh (&lt;strong&gt;Z&lt;/strong&gt;
-&lt;strong&gt;sh&lt;/strong&gt;ell) to fish (&lt;strong&gt;F&lt;/strong&gt;riendly &lt;strong&gt;I&lt;/strong&gt;nteractive &lt;strong&gt;sh&lt;/strong&gt;ell). I&amp;#39;m not gonna talk
-about how or why it&amp;#39;s better than the other shells, I&amp;#39;m only gonna talk about
-the process of switching.&lt;/p&gt;
+ &lt;strong&gt;sh&lt;/strong&gt;ell) to fish (&lt;strong&gt;F&lt;/strong&gt;riendly &lt;strong&gt;I&lt;/strong&gt;nteractive &lt;strong&gt;sh&lt;/strong&gt;ell). I&amp;#39;m not gonna
+talk about how or why it&amp;#39;s better than the other shells, I&amp;#39;m only gonna talk
+about the process of switching.&lt;/p&gt;
 &lt;p&gt;Where to start... well, how about starting with the fact that I tried to do the
 switch before? I did try to do the switch before, I don&amp;#39;t remember exactly what
 problems I had last time but I&amp;#39;m pretty sure it was something with Vim or
@@ -55,7 +55,7 @@ post feel free to
 &lt;a href=&quot;https://github.com/Greduan/eduantech.docpad/blob/master/src/render/posts/switching-from-zsh-to-fish.html.md&quot;&gt;modify it&lt;/a&gt;
 and make a pull request for it!&lt;/p&gt;
 &lt;p&gt;Thank you for reading! You can share your thoughts with me through email at
-&lt;a href=&quot;&amp;#x6d;&amp;#97;&amp;#x69;&amp;#x6c;&amp;#x74;&amp;#x6f;&amp;#x3a;&amp;#x65;&amp;#100;&amp;#117;&amp;#x61;&amp;#x6e;&amp;#x6c;&amp;#x61;&amp;#118;&amp;#97;&amp;#x71;&amp;#x75;&amp;#101;&amp;#64;&amp;#x67;&amp;#109;&amp;#97;&amp;#105;&amp;#x6c;&amp;#46;&amp;#99;&amp;#111;&amp;#109;&quot;&gt;&amp;#x65;&amp;#100;&amp;#117;&amp;#x61;&amp;#x6e;&amp;#x6c;&amp;#x61;&amp;#118;&amp;#97;&amp;#x71;&amp;#x75;&amp;#101;&amp;#64;&amp;#x67;&amp;#109;&amp;#97;&amp;#105;&amp;#x6c;&amp;#46;&amp;#99;&amp;#111;&amp;#109;&lt;/a&gt;. :)&lt;/p&gt;
+&lt;a href=&quot;&amp;#109;&amp;#x61;&amp;#105;&amp;#x6c;&amp;#116;&amp;#x6f;&amp;#x3a;&amp;#x65;&amp;#100;&amp;#x75;&amp;#97;&amp;#110;&amp;#x6c;&amp;#x61;&amp;#x76;&amp;#97;&amp;#113;&amp;#x75;&amp;#101;&amp;#64;&amp;#x67;&amp;#109;&amp;#97;&amp;#x69;&amp;#x6c;&amp;#x2e;&amp;#x63;&amp;#x6f;&amp;#x6d;&quot;&gt;&amp;#x65;&amp;#100;&amp;#x75;&amp;#97;&amp;#110;&amp;#x6c;&amp;#x61;&amp;#x76;&amp;#97;&amp;#113;&amp;#x75;&amp;#101;&amp;#64;&amp;#x67;&amp;#109;&amp;#97;&amp;#x69;&amp;#x6c;&amp;#x2e;&amp;#x63;&amp;#x6f;&amp;#x6d;&lt;/a&gt;. :)&lt;/p&gt;
 </content>
 		</entry>
 	
@@ -125,7 +125,7 @@ years pass after it&amp;#39;s full release and it is more mature.&lt;/p&gt;
 &lt;a href=&quot;https://github.com/Greduan/eduantech.docpad/blob/master/src/render/posts/light-table-the-new-emacs.html.md&quot;&gt;modify it&lt;/a&gt;
 and make a pull request for it!&lt;/p&gt;
 &lt;p&gt;Thank you for reading! You can share your thoughts with me through email at
-&lt;a href=&quot;&amp;#109;&amp;#97;&amp;#105;&amp;#108;&amp;#116;&amp;#x6f;&amp;#x3a;&amp;#x65;&amp;#100;&amp;#x75;&amp;#x61;&amp;#x6e;&amp;#108;&amp;#97;&amp;#x76;&amp;#x61;&amp;#113;&amp;#117;&amp;#x65;&amp;#64;&amp;#103;&amp;#x6d;&amp;#x61;&amp;#105;&amp;#x6c;&amp;#x2e;&amp;#99;&amp;#x6f;&amp;#x6d;&quot;&gt;&amp;#x65;&amp;#100;&amp;#x75;&amp;#x61;&amp;#x6e;&amp;#108;&amp;#97;&amp;#x76;&amp;#x61;&amp;#113;&amp;#117;&amp;#x65;&amp;#64;&amp;#103;&amp;#x6d;&amp;#x61;&amp;#105;&amp;#x6c;&amp;#x2e;&amp;#99;&amp;#x6f;&amp;#x6d;&lt;/a&gt;. :)&lt;/p&gt;
+&lt;a href=&quot;&amp;#x6d;&amp;#x61;&amp;#x69;&amp;#108;&amp;#116;&amp;#x6f;&amp;#x3a;&amp;#101;&amp;#100;&amp;#117;&amp;#x61;&amp;#x6e;&amp;#108;&amp;#97;&amp;#x76;&amp;#x61;&amp;#113;&amp;#x75;&amp;#101;&amp;#64;&amp;#103;&amp;#x6d;&amp;#x61;&amp;#105;&amp;#x6c;&amp;#x2e;&amp;#99;&amp;#111;&amp;#109;&quot;&gt;&amp;#101;&amp;#100;&amp;#117;&amp;#x61;&amp;#x6e;&amp;#108;&amp;#97;&amp;#x76;&amp;#x61;&amp;#113;&amp;#x75;&amp;#101;&amp;#64;&amp;#103;&amp;#x6d;&amp;#x61;&amp;#105;&amp;#x6c;&amp;#x2e;&amp;#99;&amp;#111;&amp;#109;&lt;/a&gt;. :)&lt;/p&gt;
 </content>
 		</entry>
 	
