@@ -1,7 +1,5 @@
 /*! main.css.scss */
-/* VARIABLES */
 /* COLOR VARIABLES */
-/* UNDOING THE CSS RESET */
 /* BLOCK QUOTES */
 blockquote {
   border-left: 4px #ebebeb solid;
@@ -14,13 +12,11 @@ em, i {
 
 strong, b {
   font-weight: bold;
-  color: #423f37; }
+  color: #0a0a0a; }
 
 /* HEADING TAGS */
 h1, h2, h3, h4, h5, h6 {
-  font-family: "PT Sans", sans-serif;
   text-rendering: optimizelegibility;
-  color: #423f37;
   margin-top: 1em;
   margin-bottom: 0.5em; }
 
@@ -116,14 +112,14 @@ pre {
 
 /* GLOBAL STYLES */
 html {
-  font-size: 17px; }
+  font-size: 15px; }
 
 /* CONTENT STYLES AND LAYOUT */
 #wrapper {
   background: white;
-  color: #57534a;
-  line-height: 1.5;
-  font-family: "PT Sans", sans-serif; }
+  color: #423f37;
+  line-height: 1.7;
+  font-family: Helvetica, arial, freesans, clean, sans-serif; }
 
 #header, #content, #footer {
   margin: 0 auto; }
@@ -140,6 +136,7 @@ html {
   #header li {
     display: inline-block; }
   #header a:link, #header a:visited {
+    letter-spacing: 1px;
     color: #423f37;
     display: block;
     text-decoration: none;
@@ -182,17 +179,9 @@ article header h1 {
   padding-bottom: 30px; }
   #footer p {
     margin: 0; }
-  #footer .social-icons {
-    margin: 10px 0;
-    font-size: 30px; }
-    #footer .social-icons a:link, #footer .social-icons a:visited {
-      color: #57534a; }
-    #footer .social-icons a:hover {
-      -webkit-transition: 0.2s;
-      -moz-transition: 0.2s;
-      transition: 0.2s;
-      text-decoration: none;
-      color: dodgerblue; }
+
+.social span {
+  margin: 0 5px; }
 
 /* MEDIA QUERIES */
 @media (min-width: 320px) {
