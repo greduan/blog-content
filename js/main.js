@@ -2,6 +2,7 @@
 // Activate CSS emoticonization
 $('#wrapper').emoticonize();
 
+/*
 // http://andrewhenderson.me/tutorial/jquery-sticky-sidebar/
 $(function(){ // document ready
 	var stickyTop = $('#header nav').offset().top; // returns number
@@ -17,3 +18,4 @@ $(function(){ // document ready
 		}
 	});
 });
+*/

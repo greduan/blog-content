@@ -12,11 +12,10 @@ em, i {
 
 strong, b {
   font-weight: bold;
-  color: #0a0a0a; }
+  color: #222222; }
 
 /* HEADING TAGS */
 h1, h2, h3, h4, h5, h6 {
-  text-rendering: optimizelegibility;
   margin-top: 1em;
   margin-bottom: 0.5em; }
 
@@ -101,8 +100,7 @@ pre, p > code, a > code {
   border: 1px solid #b8b8b8; }
 
 p > code, a > code {
-  padding: 1px 5px;
-  color: black; }
+  padding: 1px 5px; }
 
 pre {
   overflow: auto;
@@ -118,7 +116,7 @@ html {
 /* CONTENT STYLES AND LAYOUT */
 #wrapper {
   background: white;
-  color: #423f37;
+  color: #444444;
   line-height: 1.7;
   font-family: Helvetica, arial, freesans, clean, sans-serif; }
 
@@ -127,9 +125,17 @@ html {
 
 #header {
   text-align: center;
-  padding-top: 30px; }
-  #header nav {
-    border-bottom: 1px #eeeeee solid; }
+  padding-top: 30px;
+  /*
+	a~.arrow {
+		width:0px;
+		height:0px;
+		margin:0 auto;
+		border:transparent 5px solid;
+	}
+	a:hover~.arrow { border-bottom:#bbb 5px solid; }
+	a.menu-current~.arrow { border-bottom:$c 5px solid; }
+	*/ }
   #header ul {
     list-style-type: none;
     margin: 0;
@@ -138,22 +144,19 @@ html {
     display: inline-block; }
   #header a:link, #header a:visited {
     letter-spacing: 1px;
-    color: #423f37;
+    color: #444444;
     display: block;
     text-decoration: none;
-    padding: 10px 23px;
-    padding-bottom: 0px; }
-  #header a ~ .arrow {
-    width: 0px;
-    height: 0px;
-    margin: 0 auto;
-    border: transparent 5px solid; }
-  #header a:hover ~ .arrow {
-    border-bottom: #bbbbbb 5px solid; }
-  #header a.menu-current ~ .arrow {
-    border-bottom: #423f37 5px solid; }
+    padding: 8px 23px; }
+  #header a.menu-current {
+    background: #f6f6f6; }
+
+#content {
+  background: #f6f6f6;
+  padding: 24px 0; }
 
 article header h1 {
+  margin-top: 0px;
   margin-bottom: 0.1em; }
 
 .meta {
@@ -172,23 +175,21 @@ article header h1 {
   margin: 0; }
 
 /* FOOTER */
+.social span {
+  margin: 0 5px; }
+
 #footer {
   text-align: center;
-  margin-top: 24px;
-  border-top: 1px #eeeeee solid;
   padding-top: 10px;
   padding-bottom: 30px; }
   #footer p {
     margin: 0; }
 
-.social span {
-  margin: 0 5px; }
-
 /* MEDIA QUERIES */
 @media (min-width: 320px) {
   #content {
     max-width: 90%;
-    padding: 0 5%; } }
+    padding: 24px 5%; } }
 
 @media (min-width: 480px) { }
 
