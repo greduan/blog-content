@@ -4,13 +4,31 @@
 	<subtitle>A web developer and software engineer that loves free software (as in freedom).</subtitle>
 	<link href="http://greduan.github.io/atom.xml" rel="self" />
 	<link href="http://greduan.github.io" />
-	<updated>2013-12-14T01:08:14.664Z</updated>
+	<updated>2013-12-14T01:37:05.614Z</updated>
 	<id>http://greduan.github.io</id>
 	<author>
 		<name>Eduán Lávaque</name>
 		<email>eduanlavaque@gmail.com</email>
 	</author>
 
+	
+		<entry>
+			<title>A Love Letter to Arch Linux</title>
+			<link href="http://greduan.github.io/posts/a-love-letter-to-arch-linux.html"/>
+			<updated>2013-12-13T00:00:00.000Z</updated>
+			<id>http://greduan.github.io/posts/a-love-letter-to-arch-linux.html</id>
+			<content type="html">&lt;p&gt;This is a love letter to Arch Linux. It&amp;#39;s the first time I write something like this, it was very fun. If you see anything in between square brackets (&lt;code&gt;[]&lt;/code&gt;) it&amp;#39;s an author&amp;#39;s note. Note that some stuff is exaggerated for the drama but my feelings are still true.&lt;/p&gt;
+&lt;hr&gt;
+
+&lt;p&gt;Arch, I remember it clear as day how I abandoned you in July for a Mac Mini. I remember typing the last &lt;code&gt;sudo systemctl poweroff&lt;/code&gt; you would see for over 3 months. I remember the slowness with which you turned off that last time.&lt;/p&gt;
+&lt;p&gt;I remember the speed and enthusiasm with which you booted up after months of hanging around the modem in storage, only to see your sadness when I turned you off quickly as I was going to install Windows 7 over you. [Was going to lend computer.]&lt;/p&gt;
+&lt;p&gt;I remember downloading your torrent again a week ago, I remember the speed with which you downloaded and with which you &lt;code&gt;dd&lt;/code&gt;&amp;#39;d to an 8GB USB.&lt;/p&gt;
+&lt;p&gt;It is completely understandeable that you had a tantrum when I came back to you, it is completely understandeable that you gave me a hard time with the internet.&lt;/p&gt;
+&lt;p&gt;And of course, the modem, it is completely understandeable that you have trouble with him, it is completely understandeable that the modem rejects a second connection without being reset after you left him as soon as I tried to install you again. [This is a reference to the fact my damn modem has to be restarted every time this computer wants to connect to it.]&lt;/p&gt;
+&lt;p&gt;YET! After convincing your sister to help me (ArchBang) you were willing to work again for me. And now every time I boot up you&amp;#39;re there to welcome me home.&lt;/p&gt;
+&lt;p&gt;I will always love you, Arch. I promise I won&amp;#39;t be promiscuous again. I promise I won&amp;#39;t leave you again for another OS. I promise I will look after you, even when I get new computers. You&amp;#39;re the only one for me.&lt;/p&gt;
+<hr/><p>The post <a href="http://greduan.github.io/posts/a-love-letter-to-arch-linux.html">A Love Letter to Arch Linux</a> appeard first on <a href="http://greduan.github.io">EduanTech</a>.</p></content>
+		</entry>
 	
 		<entry>
 			<title>Switching From zsh to fish</title>
@@ -30,7 +48,7 @@ endif&lt;/code&gt;&lt;/pre&gt;
 &lt;pre class=&quot;highlight&quot;&gt;&lt;code class=&quot;no-highlight&quot;&gt;set PATH /usr/local/bin /usr/local/sbin /usr/local/share/npm/bin /usr/local/opt/ruby/bin $HOME/bin $HOME/.tmuxifier/tmuxifier/bin $PATH&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Umm... Those were the only real note-worthy parts. The rest were just a matter of translating zsh to fish. You can find the latest version of my config files here: &lt;a href=&quot;https://github.com/Greduan/dotfiles/tree/master/config/fish&quot;&gt;https://github.com/Greduan/dotfiles/tree/master/config/fish&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;If there&amp;#39;s something you think could be said better or is plain wrong in this post feel free to &lt;a href=&quot;https://github.com/Greduan/eduantech.docpad/blob/master/src/render/posts/switching-from-zsh-to-fish.html.md&quot;&gt;modify it&lt;/a&gt; and make a pull request for it!&lt;/p&gt;
-&lt;p&gt;Thank you for reading! You can share your thoughts with me through email at &lt;a href=&quot;&amp;#109;&amp;#x61;&amp;#x69;&amp;#x6c;&amp;#116;&amp;#x6f;&amp;#x3a;&amp;#101;&amp;#100;&amp;#117;&amp;#x61;&amp;#x6e;&amp;#108;&amp;#97;&amp;#x76;&amp;#x61;&amp;#113;&amp;#117;&amp;#101;&amp;#64;&amp;#103;&amp;#109;&amp;#97;&amp;#105;&amp;#108;&amp;#x2e;&amp;#x63;&amp;#111;&amp;#x6d;&quot;&gt;&amp;#101;&amp;#100;&amp;#117;&amp;#x61;&amp;#x6e;&amp;#108;&amp;#97;&amp;#x76;&amp;#x61;&amp;#113;&amp;#117;&amp;#101;&amp;#64;&amp;#103;&amp;#109;&amp;#97;&amp;#105;&amp;#108;&amp;#x2e;&amp;#x63;&amp;#111;&amp;#x6d;&lt;/a&gt;. :)&lt;/p&gt;
+&lt;p&gt;Thank you for reading! You can share your thoughts with me through email at &lt;a href=&quot;&amp;#109;&amp;#97;&amp;#x69;&amp;#108;&amp;#116;&amp;#x6f;&amp;#58;&amp;#101;&amp;#x64;&amp;#117;&amp;#97;&amp;#x6e;&amp;#108;&amp;#97;&amp;#118;&amp;#x61;&amp;#x71;&amp;#x75;&amp;#x65;&amp;#64;&amp;#x67;&amp;#x6d;&amp;#x61;&amp;#105;&amp;#x6c;&amp;#x2e;&amp;#x63;&amp;#111;&amp;#x6d;&quot;&gt;&amp;#101;&amp;#x64;&amp;#117;&amp;#97;&amp;#x6e;&amp;#108;&amp;#97;&amp;#118;&amp;#x61;&amp;#x71;&amp;#x75;&amp;#x65;&amp;#64;&amp;#x67;&amp;#x6d;&amp;#x61;&amp;#105;&amp;#x6c;&amp;#x2e;&amp;#x63;&amp;#111;&amp;#x6d;&lt;/a&gt;. :)&lt;/p&gt;
 <hr/><p>The post <a href="http://greduan.github.io/posts/switching-from-zsh-to-fish.html">Switching From zsh to fish</a> appeard first on <a href="http://greduan.github.io">EduanTech</a>.</p></content>
 		</entry>
 	
@@ -56,7 +74,7 @@ endif&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Oh and one more thing. Emacs is millions of lines of Elisp plus the C code it uses. Light Table is only around twelve thousand lines of ClojureScript, at the time of writing (v0.5.18).&lt;/p&gt;
 &lt;p&gt;So yeah. My point is, it&amp;#39;ll possibly be &lt;em&gt;the&lt;/em&gt; text editor once a couple of years pass after it&amp;#39;s full release and it is more mature.&lt;/p&gt;
 &lt;p&gt;If there&amp;#39;s something you think could be said better in this post feel free to &lt;a href=&quot;https://github.com/Greduan/eduantech.docpad/blob/master/src/render/posts/light-table-the-new-emacs.html.md&quot;&gt;modify it&lt;/a&gt; and make a pull request for it!&lt;/p&gt;
-&lt;p&gt;Thank you for reading! You can share your thoughts with me through email at &lt;a href=&quot;&amp;#x6d;&amp;#97;&amp;#x69;&amp;#x6c;&amp;#116;&amp;#x6f;&amp;#58;&amp;#x65;&amp;#100;&amp;#117;&amp;#x61;&amp;#110;&amp;#108;&amp;#x61;&amp;#x76;&amp;#x61;&amp;#113;&amp;#117;&amp;#101;&amp;#64;&amp;#103;&amp;#109;&amp;#97;&amp;#105;&amp;#108;&amp;#46;&amp;#99;&amp;#111;&amp;#x6d;&quot;&gt;&amp;#x65;&amp;#100;&amp;#117;&amp;#x61;&amp;#110;&amp;#108;&amp;#x61;&amp;#x76;&amp;#x61;&amp;#113;&amp;#117;&amp;#101;&amp;#64;&amp;#103;&amp;#109;&amp;#97;&amp;#105;&amp;#108;&amp;#46;&amp;#99;&amp;#111;&amp;#x6d;&lt;/a&gt;. :)&lt;/p&gt;
+&lt;p&gt;Thank you for reading! You can share your thoughts with me through email at &lt;a href=&quot;&amp;#109;&amp;#x61;&amp;#105;&amp;#108;&amp;#x74;&amp;#111;&amp;#x3a;&amp;#101;&amp;#100;&amp;#117;&amp;#x61;&amp;#x6e;&amp;#x6c;&amp;#97;&amp;#x76;&amp;#97;&amp;#x71;&amp;#117;&amp;#101;&amp;#64;&amp;#103;&amp;#x6d;&amp;#x61;&amp;#x69;&amp;#108;&amp;#x2e;&amp;#x63;&amp;#111;&amp;#109;&quot;&gt;&amp;#101;&amp;#100;&amp;#117;&amp;#x61;&amp;#x6e;&amp;#x6c;&amp;#97;&amp;#x76;&amp;#97;&amp;#x71;&amp;#117;&amp;#101;&amp;#64;&amp;#103;&amp;#x6d;&amp;#x61;&amp;#x69;&amp;#108;&amp;#x2e;&amp;#x63;&amp;#111;&amp;#109;&lt;/a&gt;. :)&lt;/p&gt;
 <hr/><p>The post <a href="http://greduan.github.io/posts/light-table-the-new-emacs.html">Light Table, The New Emacs</a> appeard first on <a href="http://greduan.github.io">EduanTech</a>.</p></content>
 		</entry>
 	
