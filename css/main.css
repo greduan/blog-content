@@ -12,19 +12,15 @@ header, footer {
 p {
   margin: 18px 0; }
 
-strong, b {
-  font-weight: bold; }
-  strong:before, b:before {
-    content: "*"; }
-  strong:after, b:after {
-    content: "*"; }
+strong:before, b:before {
+  content: "*"; }
+strong:after, b:after {
+  content: "*"; }
 
-em, i {
-  font-style: italic; }
-  em:before, i:before {
-    content: "_"; }
-  em:after, i:after {
-    content: "_"; }
+em:before, i:before {
+  content: "_"; }
+em:after, i:after {
+  content: "_"; }
 
 ul {
   padding-left: 30px; }

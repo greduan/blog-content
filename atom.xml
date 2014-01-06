@@ -4,7 +4,7 @@
 	<subtitle>A web developer and software engineer that loves free software (as in freedom).</subtitle>
 	<link href="http://greduan.github.io/atom.xml" rel="self" />
 	<link href="http://greduan.github.io" />
-	<updated>2014-01-05T03:22:08.691Z</updated>
+	<updated>2014-01-06T03:06:22.294Z</updated>
 	<id>http://greduan.github.io</id>
 	<author>
 		<name>Eduán Lávaque</name>
@@ -47,7 +47,7 @@ endif&#60;/code&#62;&#60;/pre&#62;
 &#60;pre class=&#34;highlight&#34;&#62;&#60;code class=&#34;no-highlight&#34;&#62;set PATH /usr/local/bin /usr/local/sbin /usr/local/share/npm/bin /usr/local/opt/ruby/bin $HOME/bin $HOME/.tmuxifier/tmuxifier/bin $PATH&#60;/code&#62;&#60;/pre&#62;
 &#60;p&#62;Umm... Those were the only real note-worthy parts. The rest were just a matter of translating zsh to fish. You can find the latest version of my config files here: &#60;a href=&#34;https://github.com/Greduan/dotfiles/tree/master/config/fish&#34;&#62;https://github.com/Greduan/dotfiles/tree/master/config/fish&#60;/a&#62;&#60;/p&#62;
 &#60;p&#62;If there&#38;#39;s something you think could be said better or is plain wrong in this post feel free to &#60;a href=&#34;https://github.com/Greduan/eduantech.docpad/blob/master/src/render/posts/switching-from-zsh-to-fish.html.md&#34;&#62;modify it&#60;/a&#62; and make a pull request for it!&#60;/p&#62;
-&#60;p&#62;Thank you for reading! You can share your thoughts with me through email at &#60;a href=&#34;&#38;#109;&#38;#x61;&#38;#x69;&#38;#108;&#38;#116;&#38;#x6f;&#38;#x3a;&#38;#x65;&#38;#100;&#38;#117;&#38;#97;&#38;#x6e;&#38;#x6c;&#38;#97;&#38;#x76;&#38;#97;&#38;#113;&#38;#117;&#38;#101;&#38;#x40;&#38;#x67;&#38;#109;&#38;#97;&#38;#105;&#38;#x6c;&#38;#x2e;&#38;#99;&#38;#x6f;&#38;#109;&#34;&#62;&#38;#x65;&#38;#100;&#38;#117;&#38;#97;&#38;#x6e;&#38;#x6c;&#38;#97;&#38;#x76;&#38;#97;&#38;#113;&#38;#117;&#38;#101;&#38;#x40;&#38;#x67;&#38;#109;&#38;#97;&#38;#105;&#38;#x6c;&#38;#x2e;&#38;#99;&#38;#x6f;&#38;#109;&#60;/a&#62;. :)&#60;/p&#62;
+&#60;p&#62;Thank you for reading! You can share your thoughts with me through email at &#60;a href=&#34;&#38;#109;&#38;#x61;&#38;#x69;&#38;#108;&#38;#x74;&#38;#111;&#38;#58;&#38;#x65;&#38;#100;&#38;#117;&#38;#x61;&#38;#110;&#38;#x6c;&#38;#x61;&#38;#x76;&#38;#x61;&#38;#x71;&#38;#117;&#38;#x65;&#38;#64;&#38;#103;&#38;#x6d;&#38;#97;&#38;#105;&#38;#x6c;&#38;#46;&#38;#x63;&#38;#x6f;&#38;#109;&#34;&#62;&#38;#x65;&#38;#100;&#38;#117;&#38;#x61;&#38;#110;&#38;#x6c;&#38;#x61;&#38;#x76;&#38;#x61;&#38;#x71;&#38;#117;&#38;#x65;&#38;#64;&#38;#103;&#38;#x6d;&#38;#97;&#38;#105;&#38;#x6c;&#38;#46;&#38;#x63;&#38;#x6f;&#38;#109;&#60;/a&#62;. :)&#60;/p&#62;
 <hr/><p>The post <a href="http://greduan.github.io/posts/switching-from-zsh-to-fish.html">Switching From zsh to fish</a> appeard first on <a href="http://greduan.github.io">EduanTech</a>.</p></content>
 		</entry>
 			<entry>
@@ -72,7 +72,7 @@ endif&#60;/code&#62;&#60;/pre&#62;
 &#60;p&#62;Oh and one more thing. Emacs is millions of lines of Elisp plus the C code it uses. Light Table is only around twelve thousand lines of ClojureScript, at the time of writing (v0.5.18).&#60;/p&#62;
 &#60;p&#62;So yeah. My point is, it&#38;#39;ll possibly be &#60;em&#62;the&#60;/em&#62; text editor once a couple of years pass after it&#38;#39;s full release and it is more mature.&#60;/p&#62;
 &#60;p&#62;If there&#38;#39;s something you think could be said better in this post feel free to &#60;a href=&#34;https://github.com/Greduan/eduantech.docpad/blob/master/src/render/posts/light-table-the-new-emacs.html.md&#34;&#62;modify it&#60;/a&#62; and make a pull request for it!&#60;/p&#62;
-&#60;p&#62;Thank you for reading! You can share your thoughts with me through email at &#60;a href=&#34;&#38;#109;&#38;#x61;&#38;#x69;&#38;#108;&#38;#116;&#38;#x6f;&#38;#58;&#38;#x65;&#38;#100;&#38;#x75;&#38;#x61;&#38;#x6e;&#38;#x6c;&#38;#x61;&#38;#118;&#38;#97;&#38;#x71;&#38;#117;&#38;#x65;&#38;#64;&#38;#103;&#38;#109;&#38;#97;&#38;#x69;&#38;#x6c;&#38;#46;&#38;#99;&#38;#x6f;&#38;#x6d;&#34;&#62;&#38;#x65;&#38;#100;&#38;#x75;&#38;#x61;&#38;#x6e;&#38;#x6c;&#38;#x61;&#38;#118;&#38;#97;&#38;#x71;&#38;#117;&#38;#x65;&#38;#64;&#38;#103;&#38;#109;&#38;#97;&#38;#x69;&#38;#x6c;&#38;#46;&#38;#99;&#38;#x6f;&#38;#x6d;&#60;/a&#62;. :)&#60;/p&#62;
+&#60;p&#62;Thank you for reading! You can share your thoughts with me through email at &#60;a href=&#34;&#38;#x6d;&#38;#97;&#38;#x69;&#38;#x6c;&#38;#116;&#38;#x6f;&#38;#x3a;&#38;#x65;&#38;#x64;&#38;#x75;&#38;#97;&#38;#110;&#38;#108;&#38;#97;&#38;#118;&#38;#x61;&#38;#x71;&#38;#117;&#38;#101;&#38;#x40;&#38;#103;&#38;#x6d;&#38;#x61;&#38;#x69;&#38;#x6c;&#38;#x2e;&#38;#x63;&#38;#111;&#38;#x6d;&#34;&#62;&#38;#x65;&#38;#x64;&#38;#x75;&#38;#97;&#38;#110;&#38;#108;&#38;#97;&#38;#118;&#38;#x61;&#38;#x71;&#38;#117;&#38;#101;&#38;#x40;&#38;#103;&#38;#x6d;&#38;#x61;&#38;#x69;&#38;#x6c;&#38;#x2e;&#38;#x63;&#38;#111;&#38;#x6d;&#60;/a&#62;. :)&#60;/p&#62;
 <hr/><p>The post <a href="http://greduan.github.io/posts/light-table-the-new-emacs.html">Light Table, The New Emacs</a> appeard first on <a href="http://greduan.github.io">EduanTech</a>.</p></content>
 		</entry>
 			<entry>
