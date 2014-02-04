@@ -4,7 +4,7 @@
 	<subtitle>A web developer and software engineer that loves free software (as in freedom).</subtitle>
 	<link href="http://greduan.github.io/atom.xml" rel="self" />
 	<link href="http://greduan.github.io" />
-	<updated>2014-02-02T15:07:38.397Z</updated>
+	<updated>2014-02-04T22:25:28.913Z</updated>
 	<id>http://greduan.github.io</id>
 	<author>
 		<name>Eduán Lávaque</name>
@@ -12,9 +12,60 @@
 	</author>
 
 			<entry>
+			<title>The World of Window Managers</title>
+			<link href="http://greduan.github.io/posts/the-world-of-window-managers.html"/>
+			<updated>2014-02-04T00:00:00.000Z</updated>
+			<id>http://greduan.github.io/posts/the-world-of-window-managers.html</id>
+			<content type="html">&#60;p&#62;Let me start off by saying that I&#38;#39;m writing this at 23:00 in Switzerland&#38;#39;s time,
+so please forgive any stupidities. Usually I go to sleep at 22:00 or something
+like that.  Really need to go to sleep for tomorrow...&#60;/p&#62;
+&#60;p&#62;Anyway.  I&#38;#39;m going to be talking about WMs (Window Managers) in GNU/Linux, those
+that can be found in Arch Linux.&#60;/p&#62;
+&#60;p&#62;&#60;strong&#62;TL;DR: I went with &#60;a href=&#34;http://xmonad.org/&#34;&#62;XMonad&#60;/a&#62;, here&#38;#39;s my config files:&#60;/strong&#62; &#60;a href=&#34;https://github.com/Greduan/dotfiles/tree/master/xmonad&#34;&#62;https://github.com/Greduan/dotfiles/tree/master/xmonad&#60;/a&#62;&#60;/p&#62;
+&#60;p&#62;So the TL;SR (Too Long; Still Read) version will start by me saying that I tried
+almost, if not all of the WMs.  I can confidently say I&#38;#39;m dissapoined there
+isn&#38;#39;t a single stacking WM that is keyboard controlled, besides the mouse.
+That would be my ideal setup.  But there isn&#38;#39;t, so I tried a lot of dynamic WMs.&#60;/p&#62;
+&#60;p&#62;A short list of those I tried is the following:&#60;/p&#62;
+&#60;ul&#62;
+&#60;li&#62;&#60;a href=&#34;https://github.com/baskerville/bspwm&#34;&#62;BSPWM&#60;/a&#62;&#60;/li&#62;
+&#60;li&#62;&#60;a href=&#34;http://xmonad.org/&#34;&#62;XMonad&#60;/a&#62;, I went with this one&#60;/li&#62;
+&#60;li&#62;&#60;a href=&#34;https://bbs.archlinux.org/viewtopic.php?id=146889&#34;&#62;Alopex&#60;/a&#62;&#60;/li&#62;
+&#60;li&#62;&#60;a href=&#34;http://awesome.naquadah.org/&#34;&#62;awesome&#60;/a&#62;&#60;/li&#62;
+&#60;/ul&#62;
+&#60;p&#62;Those are the most notable ones.  The ones that I honestly tried for a while and
+can give a fair review or opinion for.&#60;/p&#62;
+&#60;h2 id=&#34;alopex&#34;&#62;Alopex&#60;/h2&#62;
+&#60;p&#62;Let&#38;#39;s start with Alopex.  Alopex is the one I like the most after XMonad.  I&#38;#39;ve
+used it for at least... 2 or 3 months or something.&#60;/p&#62;
+&#60;p&#62;It is very nice, almost ideal, but it lacks the configurability I like.&#60;/p&#62;
+&#60;h2 id=&#34;awesome&#34;&#62;awesome&#60;/h2&#62;
+&#60;p&#62;Another one I really liked.  I used this one for... 1 or 2 weeks, give or take a
+few.&#60;/p&#62;
+&#60;p&#62;I liked it but it&#38;#39;s too heavy for me. Also I don&#38;#39;t like Lua and the config seems
+to change every single update, which isn&#38;#39;t good IMO.&#60;/p&#62;
+&#60;h2 id=&#34;bspwm&#34;&#62;BSPWM&#60;/h2&#62;
+&#60;p&#62;This is the one I was most excited for TBH, but I couldn&#38;#39;t get Dzen2 to work
+correctly with it so I had to give up. Super powerful window management though,
+I suggest you try this one before XMonad.&#60;/p&#62;
+&#60;h2 id=&#34;xmonad&#34;&#62;XMonad&#60;/h2&#62;
+&#60;p&#62;Finally XMonad.  The king of tiling WMs it seems.  Atleast for me.  What makes
+XMonad unique for me is that it&#38;#39;s written in &#60;a href=&#34;http://www.haskell.org/haskellwiki/Haskell&#34;&#62;Haskell&#60;/a&#62;,
+the language I have my eye on, and that I&#38;#39;m currently trying to learn, to a
+degree, to see if I like it.&#60;/p&#62;
+&#60;p&#62;A config tutorial, tour whatever will come later in another blog post, in the
+meanwhile just know I went with XMonad, and you can find my config files here: &#60;a href=&#34;https://github.com/Greduan/dotfiles/tree/master/xmonad&#34;&#62;https://github.com/Greduan/dotfiles/tree/master/xmonad&#60;/a&#62;&#60;/p&#62;
+&#60;p&#62;If there&#38;#39;s something you think could be said better in this post or you find a
+typo feel free to &#60;a href=&#34;https://github.com/Greduan/eduantech.docpad/blob/master/src/render/posts/the-world-of-window-managers.html.md&#34;&#62;modify it&#60;/a&#62;
+and make a pull request for it!&#60;/p&#62;
+&#60;p&#62;Thank you for reading! You can share your thoughts with me through email at
+&#60;a href=&#34;&#38;#x6d;&#38;#97;&#38;#x69;&#38;#108;&#38;#x74;&#38;#111;&#38;#58;&#38;#101;&#38;#100;&#38;#x75;&#38;#97;&#38;#110;&#38;#x6c;&#38;#97;&#38;#x76;&#38;#x61;&#38;#x71;&#38;#117;&#38;#x65;&#38;#64;&#38;#103;&#38;#x6d;&#38;#x61;&#38;#x69;&#38;#108;&#38;#46;&#38;#x63;&#38;#111;&#38;#x6d;&#34;&#62;&#38;#101;&#38;#100;&#38;#x75;&#38;#97;&#38;#110;&#38;#x6c;&#38;#97;&#38;#x76;&#38;#x61;&#38;#x71;&#38;#117;&#38;#x65;&#38;#64;&#38;#103;&#38;#x6d;&#38;#x61;&#38;#x69;&#38;#108;&#38;#46;&#38;#x63;&#38;#111;&#38;#x6d;&#60;/a&#62;. :)&#60;/p&#62;
+<hr/><p>The post <a href="http://greduan.github.io/posts/the-world-of-window-managers.html">The World of Window Managers</a> appeard first on <a href="http://greduan.github.io">EduanTech</a>.</p></content>
+		</entry>
+			<entry>
 			<title>My Trip to Switzerland, Part 1, Getting There</title>
 			<link href="http://greduan.github.io/posts/my-trip-to-switzerland-part-1.html"/>
-			<updated>2014-02-02T15:06:39.000Z</updated>
+			<updated>2014-01-15T00:00:00.000Z</updated>
 			<id>http://greduan.github.io/posts/my-trip-to-switzerland-part-1.html</id>
 			<content type="html">&#60;p&#62;I&#38;#39;d like to make it clear that this will probably be writen over several
 sessions over several days.  I&#38;#39;ve mentioned several times that I won&#38;#39;t have good
@@ -22,7 +73,10 @@ internet during the time I&#38;#39;m over here, so I&#38;#39;m sticking to that.
 info is inconsistent, I&#38;#39;ll do my best to keep it consistent.&#60;/p&#62;
 &#60;p&#62;Also the time and date formats will be kept as near to the Switzerland method
 for written time as possible, since I like it.  I.E. time is in 24 hour format
-and dates use &#38;quot;.&#38;quot; in between.&#60;/p&#62;
+and dates use &#38;quot;.&#38;quot; in between and it&#38;#39;s a &#60;code&#62;DD.MM.YYYY&#60;/code&#62; format, not the crazy
+&#60;code&#62;MM/DD/YYYY&#60;/code&#62; format USA uses.  Swear to god all they need to do is make a USD
+worth 99 cents and they will have officially messed up their entire numerical
+system.&#60;/p&#62;
 &#60;p&#62;Also I&#38;#39;ll be skipping all the drama and just get to the point.  I won&#38;#39;t add
 unnecessary info that doesn&#38;#39;t really matter, though people would usually tell
 you all about it.  lol&#60;/p&#62;
@@ -43,7 +97,7 @@ the plane.  We were able to skip that thanks to my magic of my seat being moved
 and letting me and my family just skip the whole line.  Yay for magic!&#60;/p&#62;
 &#60;p&#62;We flew with Lufthansa airlines. It was a really nice service, the staff was
 very nice and knew very good English.  Also everybody was good looking (but
-that&#38;#39;s to be expected).&#60;/p&#62;
+that&#38;#39;s to be expected from an airline, AFAIK).&#60;/p&#62;
 &#60;p&#62;We arrived ahead of schedule, I&#38;#39;m told, but we left behind schedule, I&#38;#39;m told.
 So I guess I&#38;#39;m just really good at planes.  lol&#60;/p&#62;
 &#60;p&#62;Then we took another air plane but this one was just a 45 minute flight or so.&#60;/p&#62;
@@ -52,9 +106,9 @@ Grenchen Nord station.  So we missed our stop, not really but we didn&#38;#39;t 
 that the doors had to be opened manually (by pressing a button) so we missed the
 stop.&#60;/p&#62;
 &#60;p&#62;We contacted our friends over here and they told us to just take the train to
-the Grenchen Sud station, which was actually nearer to our destination (but
+the Grenchen Süd station, which was actually nearer to our destination (but
 required a train switch).&#60;/p&#62;
-&#60;p&#62;So we rode the train to Grenchen Sud, this time we knew how to open the door,
+&#60;p&#62;So we rode the train to Grenchen Süd, this time we knew how to open the door,
 got off and familiar faces were there so all is well.&#60;/p&#62;
 &#60;p&#62;Got a car ride to the place we&#38;#39;re staying at, unpacked a bit, took a shower and
 went to sleep.&#60;/p&#62;
@@ -80,7 +134,7 @@ fairly consistent.&#60;/p&#62;
 request&#60;/a&#62;
 fixing it and I will happily merge. :)&#60;/p&#62;
 &#60;p&#62;Thank you for reading! You can share your thoughts with me through email at
-&#60;a href=&#34;&#38;#x6d;&#38;#x61;&#38;#105;&#38;#x6c;&#38;#116;&#38;#111;&#38;#58;&#38;#101;&#38;#x64;&#38;#117;&#38;#97;&#38;#x6e;&#38;#x6c;&#38;#97;&#38;#x76;&#38;#97;&#38;#113;&#38;#117;&#38;#101;&#38;#x40;&#38;#x67;&#38;#x6d;&#38;#97;&#38;#105;&#38;#x6c;&#38;#x2e;&#38;#x63;&#38;#111;&#38;#x6d;&#34;&#62;&#38;#101;&#38;#x64;&#38;#117;&#38;#97;&#38;#x6e;&#38;#x6c;&#38;#97;&#38;#x76;&#38;#97;&#38;#113;&#38;#117;&#38;#101;&#38;#x40;&#38;#x67;&#38;#x6d;&#38;#97;&#38;#105;&#38;#x6c;&#38;#x2e;&#38;#x63;&#38;#111;&#38;#x6d;&#60;/a&#62;. :)&#60;/p&#62;
+&#60;a href=&#34;&#38;#x6d;&#38;#97;&#38;#x69;&#38;#108;&#38;#x74;&#38;#111;&#38;#58;&#38;#x65;&#38;#x64;&#38;#x75;&#38;#x61;&#38;#x6e;&#38;#108;&#38;#x61;&#38;#x76;&#38;#x61;&#38;#113;&#38;#x75;&#38;#x65;&#38;#64;&#38;#103;&#38;#x6d;&#38;#97;&#38;#x69;&#38;#108;&#38;#46;&#38;#99;&#38;#x6f;&#38;#109;&#34;&#62;&#38;#x65;&#38;#x64;&#38;#x75;&#38;#x61;&#38;#x6e;&#38;#108;&#38;#x61;&#38;#x76;&#38;#x61;&#38;#113;&#38;#x75;&#38;#x65;&#38;#64;&#38;#103;&#38;#x6d;&#38;#97;&#38;#x69;&#38;#108;&#38;#46;&#38;#99;&#38;#x6f;&#38;#109;&#60;/a&#62;. :)&#60;/p&#62;
 <hr/><p>The post <a href="http://greduan.github.io/posts/my-trip-to-switzerland-part-1.html">My Trip to Switzerland, Part 1, Getting There</a> appeard first on <a href="http://greduan.github.io">EduanTech</a>.</p></content>
 		</entry>
 			<entry>
@@ -121,7 +175,7 @@ endif
 &#60;/code&#62;&#60;/pre&#62;
 &#60;p&#62;Umm... Those were the only real note-worthy parts. The rest were just a matter of translating zsh to fish. You can find the latest version of my config files here: &#60;a href=&#34;https://github.com/Greduan/dotfiles/tree/master/config/fish&#34;&#62;https://github.com/Greduan/dotfiles/tree/master/config/fish&#60;/a&#62;&#60;/p&#62;
 &#60;p&#62;If there&#38;#39;s something you think could be said better or is plain wrong in this post feel free to &#60;a href=&#34;https://github.com/Greduan/eduantech.docpad/blob/master/src/render/posts/switching-from-zsh-to-fish.html.md&#34;&#62;modify it&#60;/a&#62; and make a pull request for it!&#60;/p&#62;
-&#60;p&#62;Thank you for reading! You can share your thoughts with me through email at &#60;a href=&#34;&#38;#x6d;&#38;#x61;&#38;#x69;&#38;#x6c;&#38;#x74;&#38;#x6f;&#38;#58;&#38;#101;&#38;#x64;&#38;#117;&#38;#x61;&#38;#x6e;&#38;#108;&#38;#97;&#38;#118;&#38;#97;&#38;#x71;&#38;#117;&#38;#x65;&#38;#64;&#38;#x67;&#38;#x6d;&#38;#x61;&#38;#105;&#38;#108;&#38;#x2e;&#38;#99;&#38;#x6f;&#38;#x6d;&#34;&#62;&#38;#101;&#38;#x64;&#38;#117;&#38;#x61;&#38;#x6e;&#38;#108;&#38;#97;&#38;#118;&#38;#97;&#38;#x71;&#38;#117;&#38;#x65;&#38;#64;&#38;#x67;&#38;#x6d;&#38;#x61;&#38;#105;&#38;#108;&#38;#x2e;&#38;#99;&#38;#x6f;&#38;#x6d;&#60;/a&#62;. :)&#60;/p&#62;
+&#60;p&#62;Thank you for reading! You can share your thoughts with me through email at &#60;a href=&#34;&#38;#x6d;&#38;#97;&#38;#105;&#38;#x6c;&#38;#116;&#38;#111;&#38;#58;&#38;#101;&#38;#100;&#38;#x75;&#38;#x61;&#38;#x6e;&#38;#108;&#38;#97;&#38;#x76;&#38;#x61;&#38;#x71;&#38;#x75;&#38;#101;&#38;#64;&#38;#103;&#38;#x6d;&#38;#x61;&#38;#x69;&#38;#x6c;&#38;#x2e;&#38;#99;&#38;#x6f;&#38;#x6d;&#34;&#62;&#38;#101;&#38;#100;&#38;#x75;&#38;#x61;&#38;#x6e;&#38;#108;&#38;#97;&#38;#x76;&#38;#x61;&#38;#x71;&#38;#x75;&#38;#101;&#38;#64;&#38;#103;&#38;#x6d;&#38;#x61;&#38;#x69;&#38;#x6c;&#38;#x2e;&#38;#99;&#38;#x6f;&#38;#x6d;&#60;/a&#62;. :)&#60;/p&#62;
 <hr/><p>The post <a href="http://greduan.github.io/posts/switching-from-zsh-to-fish.html">Switching From zsh to fish</a> appeard first on <a href="http://greduan.github.io">EduanTech</a>.</p></content>
 		</entry>
 			<entry>
@@ -146,7 +200,7 @@ endif
 &#60;p&#62;Oh and one more thing. Emacs is millions of lines of Elisp plus the C code it uses. Light Table is only around twelve thousand lines of ClojureScript, at the time of writing (v0.5.18).&#60;/p&#62;
 &#60;p&#62;So yeah. My point is, it&#38;#39;ll possibly be &#60;em&#62;the&#60;/em&#62; text editor once a couple of years pass after it&#38;#39;s full release and it is more mature.&#60;/p&#62;
 &#60;p&#62;If there&#38;#39;s something you think could be said better in this post feel free to &#60;a href=&#34;https://github.com/Greduan/eduantech.docpad/blob/master/src/render/posts/light-table-the-new-emacs.html.md&#34;&#62;modify it&#60;/a&#62; and make a pull request for it!&#60;/p&#62;
-&#60;p&#62;Thank you for reading! You can share your thoughts with me through email at &#60;a href=&#34;&#38;#x6d;&#38;#97;&#38;#105;&#38;#108;&#38;#116;&#38;#111;&#38;#x3a;&#38;#101;&#38;#100;&#38;#x75;&#38;#97;&#38;#x6e;&#38;#x6c;&#38;#97;&#38;#118;&#38;#x61;&#38;#113;&#38;#117;&#38;#101;&#38;#x40;&#38;#103;&#38;#109;&#38;#97;&#38;#105;&#38;#108;&#38;#x2e;&#38;#99;&#38;#111;&#38;#109;&#34;&#62;&#38;#101;&#38;#100;&#38;#x75;&#38;#97;&#38;#x6e;&#38;#x6c;&#38;#97;&#38;#118;&#38;#x61;&#38;#113;&#38;#117;&#38;#101;&#38;#x40;&#38;#103;&#38;#109;&#38;#97;&#38;#105;&#38;#108;&#38;#x2e;&#38;#99;&#38;#111;&#38;#109;&#60;/a&#62;. :)&#60;/p&#62;
+&#60;p&#62;Thank you for reading! You can share your thoughts with me through email at &#60;a href=&#34;&#38;#x6d;&#38;#x61;&#38;#x69;&#38;#108;&#38;#116;&#38;#111;&#38;#x3a;&#38;#101;&#38;#100;&#38;#x75;&#38;#x61;&#38;#x6e;&#38;#x6c;&#38;#x61;&#38;#118;&#38;#x61;&#38;#113;&#38;#x75;&#38;#x65;&#38;#64;&#38;#x67;&#38;#109;&#38;#97;&#38;#105;&#38;#x6c;&#38;#x2e;&#38;#99;&#38;#x6f;&#38;#x6d;&#34;&#62;&#38;#101;&#38;#100;&#38;#x75;&#38;#x61;&#38;#x6e;&#38;#x6c;&#38;#x61;&#38;#118;&#38;#x61;&#38;#113;&#38;#x75;&#38;#x65;&#38;#64;&#38;#x67;&#38;#109;&#38;#97;&#38;#105;&#38;#x6c;&#38;#x2e;&#38;#99;&#38;#x6f;&#38;#x6d;&#60;/a&#62;. :)&#60;/p&#62;
 <hr/><p>The post <a href="http://greduan.github.io/posts/light-table-the-new-emacs.html">Light Table, The New Emacs</a> appeard first on <a href="http://greduan.github.io">EduanTech</a>.</p></content>
 		</entry>
 			<entry>
