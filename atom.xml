@@ -4,13 +4,107 @@
 	<subtitle>A web developer and software engineer that loves free software (as in freedom).</subtitle>
 	<link href="http://greduan.github.io/atom.xml" rel="self" />
 	<link href="http://greduan.github.io" />
-	<updated>2014-02-04T22:25:28.913Z</updated>
+	<updated>2014-02-19T21:29:45.580Z</updated>
 	<id>http://greduan.github.io</id>
 	<author>
 		<name>Eduán Lávaque</name>
 		<email>eduanlavaque@gmail.com</email>
 	</author>
 
+			<entry>
+			<title>My Explanation of The Zone</title>
+			<link href="http://greduan.github.io/posts/my-explanation-of-the-zone.html"/>
+			<updated>2014-02-19T00:00:00.000Z</updated>
+			<id>http://greduan.github.io/posts/my-explanation-of-the-zone.html</id>
+			<content type="html">&#60;p&#62;So.  A lot of programmers talk about &#38;quot;the zone&#38;quot;, this high performance mode that
+programmers get into is one that the most pro of the athletes also seem to
+experience.  It is described as a &#38;quot;zone&#38;quot; where the people that experience it are
+just so concentrated that nothing distracts them and they can get great work
+done very quickly.&#60;/p&#62;
+&#60;p&#62;Most scientists can&#38;#39;t explain this and the best explanation I have seen of this
+(IIRC) is that it&#38;#39;s a result of &#38;quot;time slowing down&#38;quot;, where your senses just get
+so sharp you can feel time slowing down, or so it is described.&#60;/p&#62;
+&#60;p&#62;You may notice I am mixing two kinds of &#38;quot;zones&#38;quot; here, the programmer&#38;#39;s zone and
+the athlete&#38;#39;s zone, this is on purpose, you&#38;#39;ll see later on why. &#60;/p&#62;
+&#60;h2 id=&#34;hammock-driven-development&#34;&#62;Hammock Driven Development&#60;/h2&#62;
+&#60;p&#62;So, I got thinking about this originally because of &#60;a href=&#34;http://youtu.be/f84n5oFoZBc&#34;&#62;Rich Hickey&#38;#39;s Hammock
+Driven Development&#60;/a&#62;.  I got thinking about his
+idea.  There is an excellent summary by the website &#60;a href=&#34;http://data-sorcery.org/&#34;&#62;Data Sorcery With
+Clojure&#60;/a&#62; which can be found here:
+&#60;a href=&#34;http://data-sorcery.org/2010/12/29/hammock-driven-dev/&#34;&#62;http://data-sorcery.org/2010/12/29/hammock-driven-dev/&#60;/a&#62;&#60;/p&#62;
+&#60;p&#62;Here&#38;#39;s the image:&#60;/p&#62;
+&#60;p&#62;&#60;img src=&#34;http://incanter.org/images/misc/hammock-driven-dev.png&#34; alt=&#34;Hammock Driven Development cheatsheet&#34;&#62;&#60;/p&#62;
+&#60;p&#62;Now.  I disagree with him partially.  I do not think it works that way, but
+that&#38;#39;s certainly seems to be the result.  So it works, but not for the right
+reasons, you could say.&#60;/p&#62;
+&#60;p&#62;So Rich is right, partially.  Results, OK, reasons, nein (German no).&#60;/p&#62;
+&#60;h2 id=&#34;my-theory-of-hammock-driven-development&#34;&#62;My theory of Hammock Driven Development&#60;/h2&#62;
+&#60;p&#62;So how Rich explains it is that there&#38;#39;s basically two minds.  Evaluation and
+Preparation.  Probably don&#38;#39;t go by these names in Rich&#38;#39;s world, but you get the
+idea.&#60;/p&#62;
+&#60;p&#62;Now here&#38;#39;s where I disagree.  There&#38;#39;s only one mind in my book, it just has
+different priorities, now let me explain that cause it&#38;#39;s not that simple.&#60;/p&#62;
+&#60;h2 id=&#34;attention-units&#34;&#62;Attention units&#60;/h2&#62;
+&#60;p&#62;For now assume attention units are just some kind of unit of concentration or
+something, I&#38;#39;ll explain it soon enough.&#60;/p&#62;
+&#60;p&#62;OK, so, here&#38;#39;s my idea of how the mind actually works, in terms of the zone.
+One mind, different priorities.&#60;/p&#62;
+&#60;p&#62;So let&#38;#39;s say I&#38;#39;m just standing still.  My mind at this point is doing all kinds
+of shit.  Keeping track of bodily functions, breathing, blood pumping, all of
+the organs that process food and stuff, recording perceptions and evaluating
+them, keeping balance of the body.  All of this shit is happening real time,
+often so quickly and so easily we don&#38;#39;t pay much attention to it, but it&#38;#39;s still
+happening.  It is still doing all of that stuff.&#60;/p&#62;
+&#60;p&#62;Now, consider when you are sleeping or just relaxing.  A &#60;em&#62;lot&#60;/em&#62; of these senses
+are dulled or just completely shut down. When I&#38;#39;m sleeping all that&#38;#39;s happening
+is breathing, blood pumping, and some bodily functions, but in general my body
+is quiet. My senses are practically hibernating (in computer terms), just
+awaiting the call that is &#38;quot;I&#38;#39;ve slept enough&#38;quot; or some kind of waking up call, of
+any kind.&#60;/p&#62;
+&#60;p&#62;Now, consider the mind&#38;#39;s availability in both of these situations. In the first
+it&#38;#39;s busy, in the second it&#38;#39;s got free time.  People often consider dreams as
+just your mind processing and organizing the stuff that happened during the day,
+that might very well be it entertaining itself, but that&#38;#39;s another topic.&#60;/p&#62;
+&#60;p&#62;OK so now, what are attention units? Let&#38;#39;s say you are... thinking about cats
+with your eyes closed while sitting down or laying down.  Most of your attention
+units are on the cats, that&#38;#39;s what you&#38;#39;re thinking about, some are on perceptics
+etc. There are also some on what you&#38;#39;re going to eat next, mental memos, that
+call you need to do right after thinking of cats etc.  Everything you have &#60;em&#62;any&#60;/em&#62;
+attention of &#60;em&#62;any&#60;/em&#62; kind has some of your attention units.&#60;/p&#62;
+&#60;p&#62;Some people have more of these attention units at their disposal, because of
+their environment, their natural &#38;quot;talent&#38;quot; (not my favorite word to be honest)
+etc.&#60;/p&#62;
+&#60;p&#62;Now, according to Rich, all the problems we&#38;#39;ve solved have been solved by the
+Evaluation mind at some point, and while we consider ourselves smart because we
+think of solutions fast it&#38;#39;s just because at some point this problem had already
+been solved by the Evaluation mind and you just need to call it back to your
+Preparation mind. Rich is actually quite vague IIRC on this, but that&#38;#39;s the
+general idea AFAIK.&#60;/p&#62;
+&#60;p&#62;So here is my opinion, that&#38;#39;s wrong.  It&#38;#39;s one mind, just different priorities
+at different times with different problems and different amounts of attention
+units.  Turns out while sleeping it has more time to spend attention units on
+your problem, thus solve it.&#60;/p&#62;
+&#60;p&#62;People that are good at maths (without being some sort of parrot) just have
+attention units at their disposal... and practice.  They have these attention
+units in order to have &#38;quot;variables&#38;quot; in their mind of number values that they need
+to keep floating around.  Plus good mind processor.&#60;/p&#62;
+&#60;h2 id=&#34;summary&#34;&#62;Summary&#60;/h2&#62;
+&#60;ul&#62;
+&#60;li&#62;Not two minds, only one.&#60;/li&#62;
+&#60;li&#62;Mind has different priorities.&#60;/li&#62;
+&#60;li&#62;While sleeping the priorities are few, thus more time for your problems.&#60;/li&#62;
+&#60;li&#62;While awake, you can still solve problems from scratch, speed depends from
+person to person...&#60;/li&#62;
+&#60;/ul&#62;
+&#60;p&#62;Of course, this depends &#60;em&#62;greatly&#60;/em&#62; on the person. His emotional and mental status
+and aptitude.&#60;/p&#62;
+&#60;p&#62;That&#38;#39;s just my two cents, what&#38;#39;s your opinion? Send me an email at
+&#60;a href=&#34;&#38;#109;&#38;#x61;&#38;#105;&#38;#x6c;&#38;#116;&#38;#111;&#38;#x3a;&#38;#x65;&#38;#x64;&#38;#117;&#38;#x61;&#38;#x6e;&#38;#108;&#38;#97;&#38;#118;&#38;#x61;&#38;#x71;&#38;#117;&#38;#x65;&#38;#x40;&#38;#103;&#38;#x6d;&#38;#x61;&#38;#x69;&#38;#x6c;&#38;#x2e;&#38;#99;&#38;#x6f;&#38;#109;&#34;&#62;&#38;#x65;&#38;#x64;&#38;#117;&#38;#x61;&#38;#x6e;&#38;#108;&#38;#97;&#38;#118;&#38;#x61;&#38;#x71;&#38;#117;&#38;#x65;&#38;#x40;&#38;#103;&#38;#x6d;&#38;#x61;&#38;#x69;&#38;#x6c;&#38;#x2e;&#38;#99;&#38;#x6f;&#38;#109;&#60;/a&#62; and tell me all about it. :)&#60;/p&#62;
+&#60;p&#62;&#60;strong&#62;P.S.:&#60;/strong&#62; Forgot to talk about the zone.  Oops.  Basically, just &#60;em&#62;all&#60;/em&#62; of your
+attention units are on what matters to you, thus you have more time to think and
+nothing distracts you since your attention units aren&#38;#39;t on that.&#60;/p&#62;
+<hr/><p>The post <a href="http://greduan.github.io/posts/my-explanation-of-the-zone.html">My Explanation of The Zone</a> appeard first on <a href="http://greduan.github.io">EduanTech</a>.</p></content>
+		</entry>
 			<entry>
 			<title>The World of Window Managers</title>
 			<link href="http://greduan.github.io/posts/the-world-of-window-managers.html"/>
@@ -59,7 +153,7 @@ meanwhile just know I went with XMonad, and you can find my config files here: &
 typo feel free to &#60;a href=&#34;https://github.com/Greduan/eduantech.docpad/blob/master/src/render/posts/the-world-of-window-managers.html.md&#34;&#62;modify it&#60;/a&#62;
 and make a pull request for it!&#60;/p&#62;
 &#60;p&#62;Thank you for reading! You can share your thoughts with me through email at
-&#60;a href=&#34;&#38;#x6d;&#38;#97;&#38;#x69;&#38;#108;&#38;#x74;&#38;#111;&#38;#58;&#38;#101;&#38;#100;&#38;#x75;&#38;#97;&#38;#110;&#38;#x6c;&#38;#97;&#38;#x76;&#38;#x61;&#38;#x71;&#38;#117;&#38;#x65;&#38;#64;&#38;#103;&#38;#x6d;&#38;#x61;&#38;#x69;&#38;#108;&#38;#46;&#38;#x63;&#38;#111;&#38;#x6d;&#34;&#62;&#38;#101;&#38;#100;&#38;#x75;&#38;#97;&#38;#110;&#38;#x6c;&#38;#97;&#38;#x76;&#38;#x61;&#38;#x71;&#38;#117;&#38;#x65;&#38;#64;&#38;#103;&#38;#x6d;&#38;#x61;&#38;#x69;&#38;#108;&#38;#46;&#38;#x63;&#38;#111;&#38;#x6d;&#60;/a&#62;. :)&#60;/p&#62;
+&#60;a href=&#34;&#38;#x6d;&#38;#x61;&#38;#105;&#38;#108;&#38;#116;&#38;#111;&#38;#58;&#38;#x65;&#38;#x64;&#38;#117;&#38;#97;&#38;#x6e;&#38;#108;&#38;#x61;&#38;#x76;&#38;#x61;&#38;#113;&#38;#117;&#38;#x65;&#38;#64;&#38;#103;&#38;#109;&#38;#97;&#38;#x69;&#38;#x6c;&#38;#x2e;&#38;#x63;&#38;#x6f;&#38;#109;&#34;&#62;&#38;#x65;&#38;#x64;&#38;#117;&#38;#97;&#38;#x6e;&#38;#108;&#38;#x61;&#38;#x76;&#38;#x61;&#38;#113;&#38;#117;&#38;#x65;&#38;#64;&#38;#103;&#38;#109;&#38;#97;&#38;#x69;&#38;#x6c;&#38;#x2e;&#38;#x63;&#38;#x6f;&#38;#109;&#60;/a&#62;. :)&#60;/p&#62;
 <hr/><p>The post <a href="http://greduan.github.io/posts/the-world-of-window-managers.html">The World of Window Managers</a> appeard first on <a href="http://greduan.github.io">EduanTech</a>.</p></content>
 		</entry>
 			<entry>
@@ -134,7 +228,7 @@ fairly consistent.&#60;/p&#62;
 request&#60;/a&#62;
 fixing it and I will happily merge. :)&#60;/p&#62;
 &#60;p&#62;Thank you for reading! You can share your thoughts with me through email at
-&#60;a href=&#34;&#38;#x6d;&#38;#97;&#38;#x69;&#38;#108;&#38;#x74;&#38;#111;&#38;#58;&#38;#x65;&#38;#x64;&#38;#x75;&#38;#x61;&#38;#x6e;&#38;#108;&#38;#x61;&#38;#x76;&#38;#x61;&#38;#113;&#38;#x75;&#38;#x65;&#38;#64;&#38;#103;&#38;#x6d;&#38;#97;&#38;#x69;&#38;#108;&#38;#46;&#38;#99;&#38;#x6f;&#38;#109;&#34;&#62;&#38;#x65;&#38;#x64;&#38;#x75;&#38;#x61;&#38;#x6e;&#38;#108;&#38;#x61;&#38;#x76;&#38;#x61;&#38;#113;&#38;#x75;&#38;#x65;&#38;#64;&#38;#103;&#38;#x6d;&#38;#97;&#38;#x69;&#38;#108;&#38;#46;&#38;#99;&#38;#x6f;&#38;#109;&#60;/a&#62;. :)&#60;/p&#62;
+&#60;a href=&#34;&#38;#109;&#38;#x61;&#38;#x69;&#38;#108;&#38;#116;&#38;#111;&#38;#58;&#38;#x65;&#38;#100;&#38;#117;&#38;#x61;&#38;#x6e;&#38;#x6c;&#38;#x61;&#38;#118;&#38;#97;&#38;#x71;&#38;#x75;&#38;#x65;&#38;#64;&#38;#103;&#38;#109;&#38;#97;&#38;#x69;&#38;#108;&#38;#46;&#38;#x63;&#38;#x6f;&#38;#109;&#34;&#62;&#38;#x65;&#38;#100;&#38;#117;&#38;#x61;&#38;#x6e;&#38;#x6c;&#38;#x61;&#38;#118;&#38;#97;&#38;#x71;&#38;#x75;&#38;#x65;&#38;#64;&#38;#103;&#38;#109;&#38;#97;&#38;#x69;&#38;#108;&#38;#46;&#38;#x63;&#38;#x6f;&#38;#109;&#60;/a&#62;. :)&#60;/p&#62;
 <hr/><p>The post <a href="http://greduan.github.io/posts/my-trip-to-switzerland-part-1.html">My Trip to Switzerland, Part 1, Getting There</a> appeard first on <a href="http://greduan.github.io">EduanTech</a>.</p></content>
 		</entry>
 			<entry>
@@ -165,17 +259,17 @@ fixing it and I will happily merge. :)&#60;/p&#62;
 &#60;p&#62;I decided to try the switch again taking advantage of the fact that a new version had been released recently (&#60;a href=&#34;http://fishshell.com/release_notes.html&#34;&#62;v2.1.0&#60;/a&#62;). Seemed like a good idea to try again, also the fact that I like the features it has, of course.&#60;/p&#62;
 &#60;p&#62;The switch wasn&#38;#39;t as problem-free as I wished but it was quite a smooth process.&#60;/p&#62;
 &#60;p&#62;First, I was running across problems with Vim which I imagine I wasn&#38;#39;t able to solve last time, but I solved this time. The problem was a startup error that Vim was complaining about not finding a certain file or something. I just had to add the following to the top of my &#60;code&#62;.vimrc&#60;/code&#62; file to fix it:&#60;/p&#62;
-&#60;pre class=&#34;highlight&#34;&#62;&#60;code class=&#34;no-highlight&#34;&#62;if $SHELL =~ &#38;#39;fish&#38;#39;
+&#60;pre class=&#34;highlight&#34;&#62;&#60;code class=&#34;hljs no-highlight&#34;&#62;if $SHELL =~ &#38;#39;fish&#38;#39;
     set shell=/bin/sh
 endif
 &#60;/code&#62;&#60;/pre&#62;
 &#60;p&#62;Basically, if Vim can detect the &#60;code&#62;$SHELL&#60;/code&#62; variable is &#60;code&#62;fish&#60;/code&#62; it&#38;#39;ll tell Vim to interact with the current shell as if it was &#60;code&#62;sh&#60;/code&#62;. As I understand it, don&#38;#39;t take my word for it, please. That fixed that.&#60;/p&#62;
 &#60;p&#62;Another problem I was running into was that Emacs was complaining about not being able to find the &#60;code&#62;package.el&#60;/code&#62; file. The reason for the error was that I was opening an old version of Emacs (v22.x). This was just a matter of updating the &#60;code&#62;$PATH&#60;/code&#62; variable, that was done with the following line of code in my &#60;code&#62;config.fish&#60;/code&#62; file:&#60;/p&#62;
-&#60;pre class=&#34;highlight&#34;&#62;&#60;code class=&#34;no-highlight&#34;&#62;set PATH /usr/local/bin /usr/local/sbin /usr/local/share/npm/bin /usr/local/opt/ruby/bin $HOME/bin $HOME/.tmuxifier/tmuxifier/bin $PATH
+&#60;pre class=&#34;highlight&#34;&#62;&#60;code class=&#34;hljs no-highlight&#34;&#62;set PATH /usr/local/bin /usr/local/sbin /usr/local/share/npm/bin /usr/local/opt/ruby/bin $HOME/bin $HOME/.tmuxifier/tmuxifier/bin $PATH
 &#60;/code&#62;&#60;/pre&#62;
 &#60;p&#62;Umm... Those were the only real note-worthy parts. The rest were just a matter of translating zsh to fish. You can find the latest version of my config files here: &#60;a href=&#34;https://github.com/Greduan/dotfiles/tree/master/config/fish&#34;&#62;https://github.com/Greduan/dotfiles/tree/master/config/fish&#60;/a&#62;&#60;/p&#62;
 &#60;p&#62;If there&#38;#39;s something you think could be said better or is plain wrong in this post feel free to &#60;a href=&#34;https://github.com/Greduan/eduantech.docpad/blob/master/src/render/posts/switching-from-zsh-to-fish.html.md&#34;&#62;modify it&#60;/a&#62; and make a pull request for it!&#60;/p&#62;
-&#60;p&#62;Thank you for reading! You can share your thoughts with me through email at &#60;a href=&#34;&#38;#x6d;&#38;#97;&#38;#105;&#38;#x6c;&#38;#116;&#38;#111;&#38;#58;&#38;#101;&#38;#100;&#38;#x75;&#38;#x61;&#38;#x6e;&#38;#108;&#38;#97;&#38;#x76;&#38;#x61;&#38;#x71;&#38;#x75;&#38;#101;&#38;#64;&#38;#103;&#38;#x6d;&#38;#x61;&#38;#x69;&#38;#x6c;&#38;#x2e;&#38;#99;&#38;#x6f;&#38;#x6d;&#34;&#62;&#38;#101;&#38;#100;&#38;#x75;&#38;#x61;&#38;#x6e;&#38;#108;&#38;#97;&#38;#x76;&#38;#x61;&#38;#x71;&#38;#x75;&#38;#101;&#38;#64;&#38;#103;&#38;#x6d;&#38;#x61;&#38;#x69;&#38;#x6c;&#38;#x2e;&#38;#99;&#38;#x6f;&#38;#x6d;&#60;/a&#62;. :)&#60;/p&#62;
+&#60;p&#62;Thank you for reading! You can share your thoughts with me through email at &#60;a href=&#34;&#38;#x6d;&#38;#x61;&#38;#105;&#38;#x6c;&#38;#x74;&#38;#111;&#38;#58;&#38;#101;&#38;#100;&#38;#x75;&#38;#x61;&#38;#110;&#38;#108;&#38;#97;&#38;#x76;&#38;#x61;&#38;#113;&#38;#117;&#38;#x65;&#38;#x40;&#38;#x67;&#38;#x6d;&#38;#97;&#38;#x69;&#38;#108;&#38;#46;&#38;#99;&#38;#x6f;&#38;#109;&#34;&#62;&#38;#101;&#38;#100;&#38;#x75;&#38;#x61;&#38;#110;&#38;#108;&#38;#97;&#38;#x76;&#38;#x61;&#38;#113;&#38;#117;&#38;#x65;&#38;#x40;&#38;#x67;&#38;#x6d;&#38;#97;&#38;#x69;&#38;#108;&#38;#46;&#38;#99;&#38;#x6f;&#38;#109;&#60;/a&#62;. :)&#60;/p&#62;
 <hr/><p>The post <a href="http://greduan.github.io/posts/switching-from-zsh-to-fish.html">Switching From zsh to fish</a> appeard first on <a href="http://greduan.github.io">EduanTech</a>.</p></content>
 		</entry>
 			<entry>
@@ -200,7 +294,7 @@ endif
 &#60;p&#62;Oh and one more thing. Emacs is millions of lines of Elisp plus the C code it uses. Light Table is only around twelve thousand lines of ClojureScript, at the time of writing (v0.5.18).&#60;/p&#62;
 &#60;p&#62;So yeah. My point is, it&#38;#39;ll possibly be &#60;em&#62;the&#60;/em&#62; text editor once a couple of years pass after it&#38;#39;s full release and it is more mature.&#60;/p&#62;
 &#60;p&#62;If there&#38;#39;s something you think could be said better in this post feel free to &#60;a href=&#34;https://github.com/Greduan/eduantech.docpad/blob/master/src/render/posts/light-table-the-new-emacs.html.md&#34;&#62;modify it&#60;/a&#62; and make a pull request for it!&#60;/p&#62;
-&#60;p&#62;Thank you for reading! You can share your thoughts with me through email at &#60;a href=&#34;&#38;#x6d;&#38;#x61;&#38;#x69;&#38;#108;&#38;#116;&#38;#111;&#38;#x3a;&#38;#101;&#38;#100;&#38;#x75;&#38;#x61;&#38;#x6e;&#38;#x6c;&#38;#x61;&#38;#118;&#38;#x61;&#38;#113;&#38;#x75;&#38;#x65;&#38;#64;&#38;#x67;&#38;#109;&#38;#97;&#38;#105;&#38;#x6c;&#38;#x2e;&#38;#99;&#38;#x6f;&#38;#x6d;&#34;&#62;&#38;#101;&#38;#100;&#38;#x75;&#38;#x61;&#38;#x6e;&#38;#x6c;&#38;#x61;&#38;#118;&#38;#x61;&#38;#113;&#38;#x75;&#38;#x65;&#38;#64;&#38;#x67;&#38;#109;&#38;#97;&#38;#105;&#38;#x6c;&#38;#x2e;&#38;#99;&#38;#x6f;&#38;#x6d;&#60;/a&#62;. :)&#60;/p&#62;
+&#60;p&#62;Thank you for reading! You can share your thoughts with me through email at &#60;a href=&#34;&#38;#109;&#38;#x61;&#38;#x69;&#38;#x6c;&#38;#x74;&#38;#x6f;&#38;#58;&#38;#101;&#38;#100;&#38;#117;&#38;#x61;&#38;#x6e;&#38;#108;&#38;#x61;&#38;#118;&#38;#97;&#38;#113;&#38;#x75;&#38;#x65;&#38;#64;&#38;#103;&#38;#x6d;&#38;#x61;&#38;#105;&#38;#x6c;&#38;#46;&#38;#x63;&#38;#x6f;&#38;#x6d;&#34;&#62;&#38;#101;&#38;#100;&#38;#117;&#38;#x61;&#38;#x6e;&#38;#108;&#38;#x61;&#38;#118;&#38;#97;&#38;#113;&#38;#x75;&#38;#x65;&#38;#64;&#38;#103;&#38;#x6d;&#38;#x61;&#38;#105;&#38;#x6c;&#38;#46;&#38;#x63;&#38;#x6f;&#38;#x6d;&#60;/a&#62;. :)&#60;/p&#62;
 <hr/><p>The post <a href="http://greduan.github.io/posts/light-table-the-new-emacs.html">Light Table, The New Emacs</a> appeard first on <a href="http://greduan.github.io">EduanTech</a>.</p></content>
 		</entry>
 			<entry>
