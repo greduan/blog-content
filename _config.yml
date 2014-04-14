@@ -1,3 +1,10 @@
-name: Your New Jekyll Site
+title: Eduán Lávaque
+
+author:
+    name: Eduán Lávaque
+    email: eduanlavaque@gmail.com
+
+permalink: /:year/:month/:title.html
+
 markdown: redcarpet
 pygments: true

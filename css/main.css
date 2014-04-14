@@ -1,0 +1,72 @@
+/* Document level adjustments */
+html {
+	font-size: 17px;
+	font-family: Open Sans;
+}
+
+@media (max-width: 900px) {
+	html { font-size: 15px; }
+}
+
+@media (max-width: 400px) {
+	html { font-size: 13px; }
+}
+
+/* Modules will scale with document */
+header[role="banner"] {
+	font-size: 1.5rem;
+}
+
+footer {
+	font-size: 0.75rem;
+}
+
+/* Type will scale with modules */
+h1 {
+	font-size: 1.5em;
+}
+h2 {
+	font-size: 1.2em;
+}
+h3 {
+	font-size: 0.8em;
+}
+
+#container {
+	width: 500px;
+	margin: 0 auto;
+}
+
+header[role="banner"] {
+	text-align: center;
+}
+
+header[role="banner"] a {
+	text-decoration: none;
+	color: inherit;
+}
+
+header[role="banner"] nav {
+	border-top: 1px solid #bbb;
+	border-bottom: 1px solid #bbb;
+}
+
+nav ul {
+	list-style-type: none;
+	padding: 5px 0;
+    margin: 0px;
+    font-size: 0.8em;
+}
+
+nav li {
+	display: inline-block;
+    padding: 0 10px;
+}
+
+nav a {
+	
+}
+
+.meta {
+	color: #bbb;
+}
