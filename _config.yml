@@ -8,3 +8,5 @@ permalink: /:year/:month/:title.html
 
 markdown: redcarpet
 pygments: true
+gems:
+    - jekyll-sitemap
