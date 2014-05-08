@@ -7,6 +7,6 @@ author:
 permalink: /:year/:month/:title.html
 
 markdown: redcarpet
-pygments: true
+highlighter: pygments
 gems:
     - jekyll-sitemap
