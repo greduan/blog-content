@@ -1,18 +1,38 @@
 /* Document level adjustments */
 html {
 	font-size: 17px;
-	font-family: Open Sans;
+	font-family: Georgia, serif, sans-serif;
+}
+
+/* normal size */
+#container {
+	max-width: 700px;
+	padding: 0 10px;
+	margin: 0 auto;
 }
 
 @media (max-width: 900px) {
-	html { font-size: 15px; }
+	html {
+		font-size: 15px;
+	}
+	#container {
+		max-width: 600px;
+		padding: 0 10px;
+		margin: 0 auto;
+	}
 }
 
 @media (max-width: 400px) {
-	html { font-size: 13px; }
+	html {
+		font-size: 13px;
+	}
+	#container {
+		max-width: 300px;
+		padding: 0 10px;
+		margin: 0 auto;
+	}
 }
 
-/* Modules will scale with document */
 header[role="banner"] {
 	font-size: 1.5rem;
 }
@@ -21,7 +41,6 @@ footer {
 	font-size: 0.75rem;
 }
 
-/* Type will scale with modules */
 h1 {
 	font-size: 1.5em;
 }
@@ -30,11 +49,6 @@ h2 {
 }
 h3 {
 	font-size: 0.8em;
-}
-
-#container {
-	width: 500px;
-	margin: 0 auto;
 }
 
 header[role="banner"] {
@@ -54,8 +68,8 @@ header[role="banner"] nav {
 nav ul {
 	list-style-type: none;
 	padding: 5px 0;
-    margin: 0px;
-    font-size: 0.8em;
+	margin: 0px;
+	font-size: 0.8em;
 }
 
 nav li {
@@ -65,6 +79,12 @@ nav li {
 
 nav a {
 	
+}
+
+article.post header {
+	text-align: center;
+	font-size: 0.8em;
+	font-weight: normal;
 }
 
 .meta {
