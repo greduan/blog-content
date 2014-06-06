@@ -1,7 +1,14 @@
 ---
-layout: page
-title: Home
+title: Blog
+layout: default
 ---
-<p>Hi! Welcome to my website! I’m Eduán Lávaque.</p>
 
-<p>In this website you can find an <a href="/about.html">About Me</a> page to learn more about me, you can find a <a href="/contact.html">Contact</a> page to learn how you can contact me, you will find an archive with <a href="/blog.html">all my blog posts</a> I’ve done in the past.</p>
+<p>This here is my blog. Enjoy yourself but I do want to point out this blog is more like a brain dump. Don't take anything I say here seriously. Seriously, don't.</p>
+
+<p>FYI, this blog is being used to practice my writing skills and as I said above, to brain dump, so you <em>may</em> notice an improvement as my writing goes on.</p>
+
+<ul class="posts">
+	{% for post in site.posts %}
+	<li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+	{% endfor %}
+</ul>
