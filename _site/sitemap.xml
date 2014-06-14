@@ -3,6 +3,12 @@
   
   
   <url>
+    <loc>/2014/06/aic.html</loc>
+    <lastmod>2014-06-14T00:00:00-05:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
     <loc>/2014/06/alft.html</loc>
     <lastmod>2014-06-09T00:00:00-05:00</lastmod>
     <priority>0.8</priority>
@@ -167,7 +173,7 @@
   
   <url>
     <loc>/</loc>
-    <lastmod>2014-06-09T11:39:43-05:00</lastmod>
+    <lastmod>2014-06-14T10:27:06-05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
