@@ -1,5 +1,5 @@
 ---
-title: A big project is not the same as a big project
+title: A small project is not the same as a big project
 layout: post
 date: 2014-07-20
 ---
