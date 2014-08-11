@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>A week with Emacs - Blog - Greduan</title>
+		<meta name="viewport" content="width=device-width">
+
+		<!-- syntax highlighting CSS -->
+		<link rel="stylesheet" href="/css/syntax.css">
+
+		<!-- normalize.css -->
+		<link rel="stylesheet" href="/css/normalize.css">
+
+		<!-- custom CSS -->
+		<link rel="stylesheet" href="/css/main.css">
+	</head>
+	<body>
+		<div id="container">
+			<header role="banner">
+				<h1 class="title"><a href="/">Greduan's blog</a></h1>
+			</header>
+
+			<main role="main">
+				<article class="post">
+	<header>
+		<h1>A week with Emacs</h1>
+		<p class="meta">08 Aug 2014</p>
+	</header>
+
+	<p>I have begun writing this in the 5th day of my one week with Emacs.  Since a
+friend of mine was making the switch to Emacs, or at least seriously attempting
+I decided to take a challenge with him where we would only use Emacs.</p>
+
+<p>The agreement was I would only use Emacs, for everything, with or without Evil
+mode.  While he would use Emacs for anything that wasn&#39;t coding, as using Emacs
+would be a serious dent to his prductivity and he basically wouldn&#39;t be
+productive for a whole week.</p>
+
+<p>We agreed to keep a journal of our experience with Emacs.  I haven&#39;t read his so
+I&#39;m not sure how detailed he is with his, or how dedicated, but I don&#39;t think
+mine will be as detailed as his, in any case.</p>
+
+<p>So I decided to share my experience in my blog and sharing my journal in it,
+along with a more detailed version of the journal I suppose.</p>
+
+<p>I put the whole journal in a file named <code>emacs-journal.txt</code> in my home
+directory.  I won&#39;t pose the whole thing here, since it would just be a screen
+hog, so I&#39;ll put it in a Gist, here it can be
+found: <a href="https://gist.github.com/Greduan/2f555993c1a537d8e7a5">https://gist.github.com/Greduan/2f555993c1a537d8e7a5</a></p>
+
+<p>After you read that, come back here for a more detailed version, or just skip
+the journal altogether if that&#39;s what you prefer.</p>
+
+<p>Be warned, if you came here for a review or a workflow blog post you may not
+find what you are looking for here.  I say &quot;may&quot; because I am just now writing
+this post and I don&#39;t know what&#39;ll come out of it.</p>
+
+<p>In this post I think I will mainly share differences I have noted between
+Emacs and Vim, its users, the workflows found in both, how the experience was
+for me, a 1-2 year only-Vim user, etc.</p>
+
+<p>Let us begin!</p>
+
+<h2>Why Emacs?</h2>
+
+<p>So a Vim user that can fluently think in motions and text objects, why the hell
+would he want to be a traitor and switch to Emacs?</p>
+
+<p>Well one, as I said earlier, it was a challenge in order to help my friend
+switch to Emacs so that he wouldn&#39;t be alone and all of that, because being
+the only one that uses a certain tool is kinda sad, I should know, I&#39;m the only
+one in my team that uses Vim, everyone else uses some IDE like PhpStorm (yuck!).
+Also one of the two that uses Linux as the OS instead of OS X.</p>
+
+<p>Two, I am naturally interested in Emacs, seeing how I am the user of the
+archrival editor.</p>
+
+<p>I also recently found <a href="http://input.fontbureau.com/">this font package</a>, but
+I can&#39;t really use it very effectively in Vim so I thought I&#39;d check out Emacs.
+For the record I haven&#39;t done anything with this yet.</p>
+
+<p>OK let&#39;s get to the meat of this blog post.</p>
+
+<h2>My observations</h2>
+
+<p>About what?  Everything.</p>
+
+<h3>The users</h3>
+
+<p>The most glaring observation for me is the different kinds of users that use
+Emacs and Vim.  Let me explain.</p>
+
+<p>I feel like in Vim the user makes the changes fast, while in Emacs the user
+takes a bit of time in order to code some kind of solution for Emacs to do it
+for him.  In Emacs that piece of code forever remains in your <code>init.el</code> file
+if you want and you can use it whenever, while in Vim if you want to make the
+change again you just do the motion of keystrokes again, or record a macro and
+save that somewhere.</p>
+
+<p>Note:  Do remember that I&#39;ve only seriously used Emacs for 5 days at this point,
+so I definitely don&#39;t know the workflow of a 10 year Emacs user.</p>
+
+<p>In Emacs you can customize I think pretty much literally anything.  I don&#39;t mean
+the figurative literally BTW, I mean the literal literally.</p>
+
+<p>In Vim you can customize to a great extent your text editing experience, but you
+can only customize your environment experience to the limits imposed by Vim&#39;s
+options and settings.  Of course you can probably get very clever and do some
+very interesting stuff to customize Vim.</p>
+
+<p>[Note: Now the next day, the 6th day.]</p>
+
+<p>So the users have very dfferent mindsets.  While in Emacs it is &quot;how can I
+automate this?&quot; in Vim it&#39;s &quot;how many keystrokes can I find a way to skip?&quot;.
+This is brought about by the differences between Emacs and Vim, IMO.</p>
+
+<h3>The ergonomics</h3>
+
+<p>I&#39;m just going to go ahead and say it.  In my opinion, Emacs&#39; default keybindings
+<strong>suck</strong>.  Being a Vim user I found it super uncomfortable to have to go and find
+the Ctrl and Alt keys constantly.  Maybe it has to do with how I press the keys,
+maybe not, I press Ctrl using my left pinky and Alt using my left thumb.  I don&#39;t
+feel like those keys are very strange but maybe they are.</p>
+
+<p>And no, I did not switch Caps lock and Ctrl, neither will I do it.  I think I
+tried doing it at some point for Tmux, as I head suggestions to do that, and
+remap the prefix to <code>Ctrl-a</code>.  I did not like it, felt unnatural.</p>
+
+<p>Instead I decided to use something like God-mode, which feels like less of a
+hack, however I haven&#39;t gotten used to using it every time I can so I haven&#39;t
+gotten much benefit from it yet.</p>
+
+<p>So yes.  Ergonomics.  Freakin&#39; work on them please, at least make the keys more
+natural.  <code>M-b</code> is exceptionally unnatural to press when you use your thumb to
+press Alt, again that may be my own fault though.</p>
+
+<h3>The damn tabs</h3>
+
+<p>Why is it SO HARD to configure how tabs work?</p>
+
+<p>I had tabs sorta figured out, just make everything be a hard tab and you&#39;ll be
+fine, but that doesn&#39;t work when you&#39;re working with Lisp, because Lisp and
+hard tabs are the bane of good code formatting.  But IMO tabs work everywhere
+else better than spaces.</p>
+
+<p>I&#39;m not going to go through what I&#39;ve tried, you can probably see that in my
+<a href="https://github.com/Greduan/dotfiles/tree/master/emacs.d">dotfiles</a> (that&#39;s how
+you do shameless plugs), but it wasn&#39;t a pleasant experience.  In Vim it&#39;s not
+pleasant either but at least it&#39;s straightforward.</p>
+
+<h3>Elisp</h3>
+
+<p>Elisp is cool.  Configuring an entire editor with it is a concept I enjoy
+thinking about.</p>
+
+<p>While Emacs is a HUGE piece of software, compared to Vim that is, it has a TON
+of code, Elisp and C code, all to give you a great piece of software that you
+can configure as much as you want without a second thought.</p>
+
+<h3>Light Table is not the next Emacs</h3>
+
+<p>This is a reference to <a href="http://blog.greduan.com/2013/11/lttne.html">a post I did
+previously</a>, I was very excited
+about Light Table and clojureScript and all that jazz back then and I didn&#39;t
+really know all that much about Emacs except what I had heard about it.</p>
+
+<p>Yeah, Light Table is not the next Emacs, not even remotely close, it doesn&#39;t
+even work inside the CLI so that already makes it very different. lol</p>
+
+<h3>The package management</h3>
+
+<p>I won&#39;t write a lot about it, I just want to say it&#39;s not an ideal situation.</p>
+
+<p>There is already a <a href="http://batsov.com/articles/2012/02/19/package-management-in-emacs-the-good-the-bad-and-the-ugly/">really great post about this
+subject</a>.</p>
+
+<p>I have spent time with both <code>package.el</code> and El-get, I personally prefer
+El-get so far, but <code>package.el</code> is still really great.</p>
+
+<h2>Afterthought</h2>
+
+<p>This blog post probably doesn&#39;t have a lot of flow, maybe.  It was written over
+several days and it was basically just a rant, A.K.A. &quot;say whatever you have on
+your mind&quot;.</p>
+
+<p>I think it&#39;s quite noticeably I quickly ran out of stuff to say.  lol</p>
+
+<p>Oh yeah, there was no Evil-mode mentioned huh?</p>
+
+<p>Also, since the 6th day I started using Vim for coding again, becaues Emacs was
+too slow.</p>
+
+</article>
+
+			</main>
+			<footer>
+				<p><a href="https://github.com/Greduan/greduan.blog">Website's source</a></p>
+			</footer>
+		</div>
+	</body>
+</html>

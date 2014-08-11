@@ -3,6 +3,18 @@
   
   
   <url>
+    <loc>/2014/08/ksbnri.html</loc>
+    <lastmod>2014-08-09T00:00:00-05:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>/2014/08/awwe.html</loc>
+    <lastmod>2014-08-08T00:00:00-05:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
     <loc>/2014/07/aspintsaabp.html</loc>
     <lastmod>2014-07-20T00:00:00-05:00</lastmod>
     <priority>0.8</priority>
@@ -197,7 +209,7 @@
   
   <url>
     <loc>/</loc>
-    <lastmod>2014-07-21T12:54:50-05:00</lastmod>
+    <lastmod>2014-08-10T20:21:02-05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
