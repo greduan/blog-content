@@ -1,4 +1,11 @@
 title: Greduan's blog
+nav:
+    - greduan.com:
+      title: "Greduan.com"
+      url: "http://greduan.com"
+    - source:
+      title: "Website's source"
+      url: "https://github.com/Greduan/greduan.blog"
 
 permalink: /:year/:month/:title.html
 

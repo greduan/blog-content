@@ -1,12 +1,12 @@
 /* Document level adjustments */
 html {
 	font-size: 16px;
-	font-family: Helvetica, Georgia, serif, sans-serif;
+	font-family: Helvetica, Arial, serif, sans-serif;
 	line-height: 1.5em;
 }
 
 /* normal size */
-#container {
+body {
 	max-width: 700px;
 	padding: 0 10px;
 	margin: 0 auto;
@@ -34,46 +34,38 @@ html {
 	}
 }
 
-header[role="banner"] {
-	font-size: 1.5rem;
-}
-
-footer {
-	font-size: 1rem;
-	border-top: 1px solid #bbb;
-}
-
-h1 {
-	font-size: 1.5em;
-}
-h2 {
-	font-size: 1.2em;
-}
-h3 {
-	font-size: 0.8em;
-}
-
-header[role="banner"] {
-	text-align: center;
-}
-
 header[role="banner"] a {
 	text-decoration: none;
 	color: inherit;
 }
 
 article.post header {
-	text-align: center;
-	font-size: 0.9em;
-	font-weight: normal;
+	font-size: 0.8em;
 }
 
-.meta {
+article.post header h1 {
+}
+
+article.post header p {
 	color: #bbb;
+	font-family: Georgia, serif, sans-serif;
+	font-style: italic;
 }
 
 blockquote {
 	border-left: 1px solid #bbb;
+	margin-left: 2em;
+	margin-right: 0px;
 	padding-left: 1em;
 	color: #666;
+}
+
+footer {
+	padding: 1em;
+	margin: 0px;
+	border-top: 1px solid #bbb;
+}
+
+header {
+	text-align: center;
 }
