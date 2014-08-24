@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>Barebones file navigation in Vim - Blog - Greduan.com</title>
+		<meta name="viewport" content="width=device-width">
+
+		<!-- normalize.css -->
+		<link rel="stylesheet" href="/css/normalize.css">
+
+		<!-- custom CSS -->
+		<link rel="stylesheet" href="/css/main.css">
+
+		<!-- syntax highlighting CSS -->
+		<link rel="stylesheet" href="/css/syntax.css">
+	</head>
+	<body>
+		<header role="banner">
+			<h1><a href="/">Greduan's Blog</a></h1>
+		</header>
+
+		<main role="main">
+			<article class="post">
+	<header>
+		<h1><a href="/2014/08/bfniv.html">Barebones file navigation in Vim</a></h1>
+		<p>24 Aug 2014</p>
+	</header>
+
+	<p>This post is mainly a rip-off of this talk that happened on a Vim London meetup
+titled &quot;Bare Bones Navigation, by Kris Jenkins&quot;: <a href="http://vimeo.com/65250028">http://vimeo.com/65250028</a></p>
+
+<p>You can find the slides here: <a href="https://github.com/krisajenkins/bare-bones-vim">https://github.com/krisajenkins/bare-bones-vim</a></p>
+
+<p>He ends the talk with a slide that has the following:</p>
+<div class="highlight"><pre><code class="language-vim" data-lang="vim"><span class="c">&quot; :find</span>
+<span class="k">set</span> <span class="nb">path</span><span class="p">=</span>**
+<span class="k">set</span> <span class="nb">suffixesadd</span><span class="p">=</span>.java<span class="p">,</span>.<span class="k">py</span>
+
+<span class="c">&quot; :find gets better more</span>
+<span class="k">set</span> <span class="nb">nocompatible</span>
+<span class="k">set</span> <span class="nb">wildmode</span><span class="p">=</span>full
+<span class="k">set</span> <span class="nb">wildmenu</span>
+<span class="k">set</span> <span class="nb">wildignore</span><span class="p">=</span>*.class<span class="p">,</span>*.pyc
+
+<span class="c">&quot; :ls &amp; :&lt;number&gt;b</span>
+
+<span class="c">&quot; :Explore</span>
+<span class="c">&quot; :e scp://host/some/where/file.txt</span>
+</code></pre></div>
+<p>So I&#39;ll just quickly explain those.  This post is mainly for reference for
+myself but I still hope it helps you.  :)</p>
+
+<p>Also I&#39;ve challenged myself to use only these built-in commands for a while
+instead of some fancy FZF or Unite.vim or anything of the sort.</p>
+
+<p>Let&#39;s start with <code>:find</code>.  This command just finds whatever filename you give
+it, no auto-completion just give it a filename and it&#39;ll find it.  It needs for
+<code>path</code> to be set to <code>**</code> for it to just find any file in the current directory.</p>
+
+<p>The definition of <code>path</code> can get very detailed and complex, so go ahead and go
+nuts on your definition.  It can also be comma separted, in case you have
+specific paths you like.</p>
+
+<p><code>suffixesadd</code> is for <code>:find</code>, it allows you to skip the file extension and allow
+<code>:find</code> to still find the right files.  Set it up so you can save on some
+typing.  Comma separated.</p>
+
+<p><code>nocompatible</code> don&#39;t need to explain this one, if you&#39;re using Vim just use it.</p>
+
+<p><code>wildmode</code> that sets up the kind of auto-completion that Vim has for the <code>:</code>.
+While he sets it to <code>full</code> I always set it to <code>list:longest</code>, this is
+preference though.</p>
+
+<p><code>wildmenu</code> from what I understand makes it so that the auto-completion isn&#39;t all
+on one line, so that it uses several lines to show the auto-completion.</p>
+
+<p><code>wildignore</code> is to define files to ignore.  Set it to the files you mostly never
+want to edit because only the language uses them, not the programmer.</p>
+
+<p>Then he talks about switching buffers with <code>:ls</code> and <code>:b[uffer]</code>.  Use <code>:ls</code> to
+list your buffers and use <code>:b[uffer]</code> to switch to a buffer by buffer number.
+While he uses the buffer number before the <code>b</code>, you can also use it afterwards.</p>
+
+<p>Then it&#39;s <code>:Ex[plore]</code> (which includes <code>:Sex[plore]</code> and <code>:Vex[plore]</code>) and
+<code>:e[dit]</code>.  The <code>:{E,Ve,Se}x[plore]</code> commands open up the built-in netrw file
+explorer which is a built-in plugin, which means it is not included if you use
+<code>vim -u NONE</code> in order to not load any config or plugins.</p>
+
+<p>VimCasts has a blog post about this that I suggest reading so you get familiar
+with this plugin and how to use it:
+<a href="http://vimcasts.org/blog/2013/01/oil-and-vinegar-split-windows-and-project-drawer/">http://vimcasts.org/blog/2013/01/oil-and-vinegar-split-windows-and-project-drawer/</a></p>
+
+<p>And finally <code>:e[dit]</code> is a built-in Vim command and all that there is to it is
+to give it the full path of the file you want to edit.  The path you give it is
+relative to the current directory.</p>
+
+<p>That is all on that subject.  While I&#39;m on it though, I would suggest that if
+you are in a setup where you can have a couple of plugins, I <em>really</em> suggest
+you install the following plugins by Tim Pope:</p>
+
+<ul>
+<li><a href="https://github.com/tpope/vim-sensible">https://github.com/tpope/vim-sensible</a></li>
+<li><a href="https://github.com/tpope/vim-vinegar">https://github.com/tpope/vim-vinegar</a></li>
+</ul>
+
+<p>That is all, hope this helps.  :)</p>
+
+</article>
+
+		</main>
+
+		<footer role="contentinfo">
+			
+				<a href="http://greduan.com">Greduan.com</a> - 
+			
+				<a href="https://github.com/Greduan/greduan.blog">Website's source</a> 
+			
+		</footer>
+	</body>
+</html>
