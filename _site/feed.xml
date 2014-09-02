@@ -1,0 +1,537 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Greduan&#39;s blog</title>
+		<description>Blog of the man named Greduan</description>		
+		<link>http://blog.greduan.com/</link>
+		<atom:link href="http://blog.greduan.com//feed.xml" rel="self" type="application/rss+xml" />
+		
+			<item>
+				<title>Barebones file navigation in Vim</title>
+				<description>&lt;p&gt;This post is mainly a rip-off of this talk that happened on a Vim London meetup
+titled &amp;quot;Bare Bones Navigation, by Kris Jenkins&amp;quot;: &lt;a href=&quot;http://vimeo.com/65250028&quot;&gt;http://vimeo.com/65250028&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;You can find the slides here: &lt;a href=&quot;https://github.com/krisajenkins/bare-bones-vim&quot;&gt;https://github.com/krisajenkins/bare-bones-vim&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;He ends the talk with a slide that has the following:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-vim&quot; data-lang=&quot;vim&quot;&gt;&lt;span class=&quot;c&quot;&gt;&amp;quot; :find&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;path&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;**
+&lt;span class=&quot;k&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;suffixesadd&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;.java&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;.&lt;span class=&quot;k&quot;&gt;py&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;&amp;quot; :find gets better more&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;nocompatible&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;wildmode&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;full
+&lt;span class=&quot;k&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;wildmenu&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;wildignore&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;*.class&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;*.pyc
+
+&lt;span class=&quot;c&quot;&gt;&amp;quot; :ls &amp;amp; :&amp;lt;number&amp;gt;b&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;&amp;quot; :Explore&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;&amp;quot; :e scp://host/some/where/file.txt&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;So I&amp;#39;ll just quickly explain those.  This post is mainly for reference for
+myself but I still hope it helps you.  :)&lt;/p&gt;
+
+&lt;p&gt;Also I&amp;#39;ve challenged myself to use only these built-in commands for a while
+instead of some fancy FZF or Unite.vim or anything of the sort.&lt;/p&gt;
+
+&lt;p&gt;Let&amp;#39;s start with &lt;code&gt;:find&lt;/code&gt;.  This command just finds whatever filename you give
+it, no auto-completion just give it a filename and it&amp;#39;ll find it.  It needs for
+&lt;code&gt;path&lt;/code&gt; to be set to &lt;code&gt;**&lt;/code&gt; for it to just find any file in the current directory.&lt;/p&gt;
+
+&lt;p&gt;The definition of &lt;code&gt;path&lt;/code&gt; can get very detailed and complex, so go ahead and go
+nuts on your definition.  It can also be comma separted, in case you have
+specific paths you like.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;suffixesadd&lt;/code&gt; is for &lt;code&gt;:find&lt;/code&gt;, it allows you to skip the file extension and allow
+&lt;code&gt;:find&lt;/code&gt; to still find the right files.  Set it up so you can save on some
+typing.  Comma separated.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;nocompatible&lt;/code&gt; don&amp;#39;t need to explain this one, if you&amp;#39;re using Vim just use it.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;wildmode&lt;/code&gt; that sets up the kind of auto-completion that Vim has for the &lt;code&gt;:&lt;/code&gt;.
+While he sets it to &lt;code&gt;full&lt;/code&gt; I always set it to &lt;code&gt;list:longest&lt;/code&gt;, this is
+preference though.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;wildmenu&lt;/code&gt; from what I understand makes it so that the auto-completion isn&amp;#39;t all
+on one line, so that it uses several lines to show the auto-completion.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;wildignore&lt;/code&gt; is to define files to ignore.  Set it to the files you mostly never
+want to edit because only the language uses them, not the programmer.&lt;/p&gt;
+
+&lt;p&gt;Then he talks about switching buffers with &lt;code&gt;:ls&lt;/code&gt; and &lt;code&gt;:b[uffer]&lt;/code&gt;.  Use &lt;code&gt;:ls&lt;/code&gt; to
+list your buffers and use &lt;code&gt;:b[uffer]&lt;/code&gt; to switch to a buffer by buffer number.
+While he uses the buffer number before the &lt;code&gt;b&lt;/code&gt;, you can also use it afterwards.&lt;/p&gt;
+
+&lt;p&gt;Then it&amp;#39;s &lt;code&gt;:Ex[plore]&lt;/code&gt; (which includes &lt;code&gt;:Sex[plore]&lt;/code&gt; and &lt;code&gt;:Vex[plore]&lt;/code&gt;) and
+&lt;code&gt;:e[dit]&lt;/code&gt;.  The &lt;code&gt;:{E,Ve,Se}x[plore]&lt;/code&gt; commands open up the built-in netrw file
+explorer which is a built-in plugin, which means it is not included if you use
+&lt;code&gt;vim -u NONE&lt;/code&gt; in order to not load any config or plugins.&lt;/p&gt;
+
+&lt;p&gt;VimCasts has a blog post about this that I suggest reading so you get familiar
+with this plugin and how to use it:
+&lt;a href=&quot;http://vimcasts.org/blog/2013/01/oil-and-vinegar-split-windows-and-project-drawer/&quot;&gt;http://vimcasts.org/blog/2013/01/oil-and-vinegar-split-windows-and-project-drawer/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;And finally &lt;code&gt;:e[dit]&lt;/code&gt; is a built-in Vim command and all that there is to it is
+to give it the full path of the file you want to edit.  The path you give it is
+relative to the current directory.&lt;/p&gt;
+
+&lt;p&gt;That is all on that subject.  While I&amp;#39;m on it though, I would suggest that if
+you are in a setup where you can have a couple of plugins, I &lt;em&gt;really&lt;/em&gt; suggest
+you install the following plugins by Tim Pope:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/tpope/vim-sensible&quot;&gt;https://github.com/tpope/vim-sensible&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/tpope/vim-vinegar&quot;&gt;https://github.com/tpope/vim-vinegar&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;That is all, hope this helps.  :)&lt;/p&gt;
+</description>
+				<pubDate>Sun, 24 Aug 2014 00:00:00 -0500</pubDate>
+				<link>http://blog.greduan.com//2014/08/bfniv.html</link>
+				<guid isPermaLink="true">http://blog.greduan.com//2014/08/bfniv.html</guid>
+			</item>
+		
+			<item>
+				<title>Navigating in the dark</title>
+				<description>&lt;p&gt;Just thought I&amp;#39;d quickly write a couple of tips to see in the dark, besides
+having good eyes but those are not required.&lt;/p&gt;
+
+&lt;p&gt;Right, so I mentioned this to my friend &lt;a href=&quot;http://raamdev.com/&quot;&gt;Raam Dev&lt;/a&gt; and he answered
+with the best explanation I could hope for:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Yeah, I can navigate in the dark really well too, but I think vision and time-to-night-vision plays less of a role than simply using all of your senses and being good at making accurate judgment calls about where things are, where they might be, and then using the way the limited light bounces off objects to get a better feel for the world around you and then using all of that information to build a mental image of the world you&amp;#39;re navigating. When I wake up in the middle of the night to use the restroom, which requires walking down a short hallway outside the bedroom, I &lt;em&gt;always&lt;/em&gt; walk with my eyes &lt;em&gt;closed&lt;/em&gt;. I find that walking in the dark with my eyes closed is easier than walking with my eyes open, because then my brain does all the visualization and my eyes, which may see reflections or other objects, don&amp;#39;t fool my mind into second-guessing itself.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;And:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Of course, while walking with my eyes closed, I do use my hands as &amp;quot;sensors&amp;quot;, to feel walls, the moldings on the walls, the doors, the door handles, the corners of walls, etc. All of that builds a mental image in my mind that I use to navigate.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;(Yes I asked for his permission, in case you were wondering.)&lt;/p&gt;
+
+&lt;p&gt;So basically, seeing in the night is not all about if you can &amp;quot;see&amp;quot; in the
+darkness, although if you can that&amp;#39;s cool.  It&amp;#39;s mostly about making the most of
+the minimal input that you have, mostly visual, because with the rest of the
+senses the input is certainly not minimal.&lt;/p&gt;
+
+&lt;p&gt;But yeah, for example if I have the chance, before navigating a dark room I try
+to turn on a light for a couple of seconds in order to get a very clear mental
+image of where all the stuff in the room is.  After that it&amp;#39;s just about moving
+through that physical space while continually updating your mental image,
+essentially.&lt;/p&gt;
+
+&lt;p&gt;Ever tried closing your eyes and guessing how many steps it would take to be
+from one end of the room to the next or ever tried navigating the house with
+your eyes closed?  It&amp;#39;s sorta like that.&lt;/p&gt;
+
+&lt;p&gt;Remember that you are trying to &amp;quot;see&amp;quot; in an environment where you don&amp;#39;t have
+enough light to see, so with the small inputs you have, just draw a mental image
+of your environment.&lt;/p&gt;
+
+&lt;p&gt;Of course it&amp;#39;s recommendable to go slowly, so that if you miscalculate something
+it doesn&amp;#39;t hurt, although with experience this&amp;#39;ll start happening less and less.&lt;/p&gt;
+
+&lt;p&gt;Just thought I&amp;#39;d share that, hope this helps.  :)&lt;/p&gt;
+</description>
+				<pubDate>Thu, 21 Aug 2014 00:00:00 -0500</pubDate>
+				<link>http://blog.greduan.com//2014/08/nitd.html</link>
+				<guid isPermaLink="true">http://blog.greduan.com//2014/08/nitd.html</guid>
+			</item>
+		
+			<item>
+				<title>Knowing something but not registering it</title>
+				<description>&lt;p&gt;Ever have that moment when you realize something that you already knew?&lt;/p&gt;
+
+&lt;p&gt;I know it sounds kinda dumb, but it is not that rare for me to realize something
+that I had realized before, just never really thought about.&lt;/p&gt;
+
+&lt;p&gt;Like I remember one day I watched some Hatsune Miku concert, just one song, and
+I realized there was a hologram, and I was like &amp;quot;cool, they&amp;#39;ve got a hologram&amp;quot;.&lt;/p&gt;
+
+&lt;p&gt;Some months later I watched it again and I was like &amp;quot;holy shit holograms!
+Technology has gotten to that point!&amp;quot;.&lt;/p&gt;
+
+&lt;p&gt;Just an example.&lt;/p&gt;
+
+&lt;p&gt;Another one would be how I made an entire CLI app just to download a Gist&amp;#39;s
+files and put them in the current directory.  Just yesterday I realized I can
+just clone a Git repo of the Gist and that&amp;#39;s that.  I was thinking that the .zip
+file download was the only way to go, but it isn&amp;#39;t.  I knew about the Git repo
+stuff, I just never even registered it as an option.&lt;/p&gt;
+
+&lt;p&gt;Kinda short post, but just wanted to share that.&lt;/p&gt;
+</description>
+				<pubDate>Sat, 09 Aug 2014 00:00:00 -0500</pubDate>
+				<link>http://blog.greduan.com//2014/08/ksbnri.html</link>
+				<guid isPermaLink="true">http://blog.greduan.com//2014/08/ksbnri.html</guid>
+			</item>
+		
+			<item>
+				<title>A week with Emacs</title>
+				<description>&lt;p&gt;I have begun writing this in the 5th day of my one week with Emacs.  Since a
+friend of mine was making the switch to Emacs, or at least seriously attempting
+I decided to take a challenge with him where we would only use Emacs.&lt;/p&gt;
+
+&lt;p&gt;The agreement was I would only use Emacs, for everything, with or without Evil
+mode.  While he would use Emacs for anything that wasn&amp;#39;t coding, as using Emacs
+would be a serious dent to his prductivity and he basically wouldn&amp;#39;t be
+productive for a whole week.&lt;/p&gt;
+
+&lt;p&gt;We agreed to keep a journal of our experience with Emacs.  I haven&amp;#39;t read his so
+I&amp;#39;m not sure how detailed he is with his, or how dedicated, but I don&amp;#39;t think
+mine will be as detailed as his, in any case.&lt;/p&gt;
+
+&lt;p&gt;So I decided to share my experience in my blog and sharing my journal in it,
+along with a more detailed version of the journal I suppose.&lt;/p&gt;
+
+&lt;p&gt;I put the whole journal in a file named &lt;code&gt;emacs-journal.txt&lt;/code&gt; in my home
+directory.  I won&amp;#39;t pose the whole thing here, since it would just be a screen
+hog, so I&amp;#39;ll put it in a Gist, here it can be
+found: &lt;a href=&quot;https://gist.github.com/Greduan/2f555993c1a537d8e7a5&quot;&gt;https://gist.github.com/Greduan/2f555993c1a537d8e7a5&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;After you read that, come back here for a more detailed version, or just skip
+the journal altogether if that&amp;#39;s what you prefer.&lt;/p&gt;
+
+&lt;p&gt;Be warned, if you came here for a review or a workflow blog post you may not
+find what you are looking for here.  I say &amp;quot;may&amp;quot; because I am just now writing
+this post and I don&amp;#39;t know what&amp;#39;ll come out of it.&lt;/p&gt;
+
+&lt;p&gt;In this post I think I will mainly share differences I have noted between
+Emacs and Vim, its users, the workflows found in both, how the experience was
+for me, a 1-2 year only-Vim user, etc.&lt;/p&gt;
+
+&lt;p&gt;Let us begin!&lt;/p&gt;
+
+&lt;h2&gt;Why Emacs?&lt;/h2&gt;
+
+&lt;p&gt;So a Vim user that can fluently think in motions and text objects, why the hell
+would he want to be a traitor and switch to Emacs?&lt;/p&gt;
+
+&lt;p&gt;Well one, as I said earlier, it was a challenge in order to help my friend
+switch to Emacs so that he wouldn&amp;#39;t be alone and all of that, because being
+the only one that uses a certain tool is kinda sad, I should know, I&amp;#39;m the only
+one in my team that uses Vim, everyone else uses some IDE like PhpStorm (yuck!).
+Also one of the two that uses Linux as the OS instead of OS X.&lt;/p&gt;
+
+&lt;p&gt;Two, I am naturally interested in Emacs, seeing how I am the user of the
+archrival editor.&lt;/p&gt;
+
+&lt;p&gt;I also recently found &lt;a href=&quot;http://input.fontbureau.com/&quot;&gt;this font package&lt;/a&gt;, but
+I can&amp;#39;t really use it very effectively in Vim so I thought I&amp;#39;d check out Emacs.
+For the record I haven&amp;#39;t done anything with this yet.&lt;/p&gt;
+
+&lt;p&gt;OK let&amp;#39;s get to the meat of this blog post.&lt;/p&gt;
+
+&lt;h2&gt;My observations&lt;/h2&gt;
+
+&lt;p&gt;About what?  Everything.&lt;/p&gt;
+
+&lt;h3&gt;The users&lt;/h3&gt;
+
+&lt;p&gt;The most glaring observation for me is the different kinds of users that use
+Emacs and Vim.  Let me explain.&lt;/p&gt;
+
+&lt;p&gt;I feel like in Vim the user makes the changes fast, while in Emacs the user
+takes a bit of time in order to code some kind of solution for Emacs to do it
+for him.  In Emacs that piece of code forever remains in your &lt;code&gt;init.el&lt;/code&gt; file
+if you want and you can use it whenever, while in Vim if you want to make the
+change again you just do the motion of keystrokes again, or record a macro and
+save that somewhere.&lt;/p&gt;
+
+&lt;p&gt;Note:  Do remember that I&amp;#39;ve only seriously used Emacs for 5 days at this point,
+so I definitely don&amp;#39;t know the workflow of a 10 year Emacs user.&lt;/p&gt;
+
+&lt;p&gt;In Emacs you can customize I think pretty much literally anything.  I don&amp;#39;t mean
+the figurative literally BTW, I mean the literal literally.&lt;/p&gt;
+
+&lt;p&gt;In Vim you can customize to a great extent your text editing experience, but you
+can only customize your environment experience to the limits imposed by Vim&amp;#39;s
+options and settings.  Of course you can probably get very clever and do some
+very interesting stuff to customize Vim.&lt;/p&gt;
+
+&lt;p&gt;[Note: Now the next day, the 6th day.]&lt;/p&gt;
+
+&lt;p&gt;So the users have very dfferent mindsets.  While in Emacs it is &amp;quot;how can I
+automate this?&amp;quot; in Vim it&amp;#39;s &amp;quot;how many keystrokes can I find a way to skip?&amp;quot;.
+This is brought about by the differences between Emacs and Vim, IMO.&lt;/p&gt;
+
+&lt;h3&gt;The ergonomics&lt;/h3&gt;
+
+&lt;p&gt;I&amp;#39;m just going to go ahead and say it.  In my opinion, Emacs&amp;#39; default keybindings
+&lt;strong&gt;suck&lt;/strong&gt;.  Being a Vim user I found it super uncomfortable to have to go and find
+the Ctrl and Alt keys constantly.  Maybe it has to do with how I press the keys,
+maybe not, I press Ctrl using my left pinky and Alt using my left thumb.  I don&amp;#39;t
+feel like those keys are very strange but maybe they are.&lt;/p&gt;
+
+&lt;p&gt;And no, I did not switch Caps lock and Ctrl, neither will I do it.  I think I
+tried doing it at some point for Tmux, as I head suggestions to do that, and
+remap the prefix to &lt;code&gt;Ctrl-a&lt;/code&gt;.  I did not like it, felt unnatural.&lt;/p&gt;
+
+&lt;p&gt;Instead I decided to use something like God-mode, which feels like less of a
+hack, however I haven&amp;#39;t gotten used to using it every time I can so I haven&amp;#39;t
+gotten much benefit from it yet.&lt;/p&gt;
+
+&lt;p&gt;So yes.  Ergonomics.  Freakin&amp;#39; work on them please, at least make the keys more
+natural.  &lt;code&gt;M-b&lt;/code&gt; is exceptionally unnatural to press when you use your thumb to
+press Alt, again that may be my own fault though.&lt;/p&gt;
+
+&lt;h3&gt;The damn tabs&lt;/h3&gt;
+
+&lt;p&gt;Why is it SO HARD to configure how tabs work?&lt;/p&gt;
+
+&lt;p&gt;I had tabs sorta figured out, just make everything be a hard tab and you&amp;#39;ll be
+fine, but that doesn&amp;#39;t work when you&amp;#39;re working with Lisp, because Lisp and
+hard tabs are the bane of good code formatting.  But IMO tabs work everywhere
+else better than spaces.&lt;/p&gt;
+
+&lt;p&gt;I&amp;#39;m not going to go through what I&amp;#39;ve tried, you can probably see that in my
+&lt;a href=&quot;https://github.com/Greduan/dotfiles/tree/master/emacs.d&quot;&gt;dotfiles&lt;/a&gt; (that&amp;#39;s how
+you do shameless plugs), but it wasn&amp;#39;t a pleasant experience.  In Vim it&amp;#39;s not
+pleasant either but at least it&amp;#39;s straightforward.&lt;/p&gt;
+
+&lt;h3&gt;Elisp&lt;/h3&gt;
+
+&lt;p&gt;Elisp is cool.  Configuring an entire editor with it is a concept I enjoy
+thinking about.&lt;/p&gt;
+
+&lt;p&gt;While Emacs is a HUGE piece of software, compared to Vim that is, it has a TON
+of code, Elisp and C code, all to give you a great piece of software that you
+can configure as much as you want without a second thought.&lt;/p&gt;
+
+&lt;h3&gt;Light Table is not the next Emacs&lt;/h3&gt;
+
+&lt;p&gt;This is a reference to &lt;a href=&quot;http://blog.greduan.com/2013/11/lttne.html&quot;&gt;a post I did
+previously&lt;/a&gt;, I was very excited
+about Light Table and clojureScript and all that jazz back then and I didn&amp;#39;t
+really know all that much about Emacs except what I had heard about it.&lt;/p&gt;
+
+&lt;p&gt;Yeah, Light Table is not the next Emacs, not even remotely close, it doesn&amp;#39;t
+even work inside the CLI so that already makes it very different. lol&lt;/p&gt;
+
+&lt;h3&gt;The package management&lt;/h3&gt;
+
+&lt;p&gt;I won&amp;#39;t write a lot about it, I just want to say it&amp;#39;s not an ideal situation.&lt;/p&gt;
+
+&lt;p&gt;There is already a &lt;a href=&quot;http://batsov.com/articles/2012/02/19/package-management-in-emacs-the-good-the-bad-and-the-ugly/&quot;&gt;really great post about this
+subject&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;I have spent time with both &lt;code&gt;package.el&lt;/code&gt; and El-get, I personally prefer
+El-get so far, but &lt;code&gt;package.el&lt;/code&gt; is still really great.&lt;/p&gt;
+
+&lt;h2&gt;Afterthought&lt;/h2&gt;
+
+&lt;p&gt;This blog post probably doesn&amp;#39;t have a lot of flow, maybe.  It was written over
+several days and it was basically just a rant, A.K.A. &amp;quot;say whatever you have on
+your mind&amp;quot;.&lt;/p&gt;
+
+&lt;p&gt;I think it&amp;#39;s quite noticeably I quickly ran out of stuff to say.  lol&lt;/p&gt;
+
+&lt;p&gt;Oh yeah, there was no Evil-mode mentioned huh?&lt;/p&gt;
+
+&lt;p&gt;Also, since the 6th day I started using Vim for coding again, becaues Emacs was
+too slow.&lt;/p&gt;
+</description>
+				<pubDate>Fri, 08 Aug 2014 00:00:00 -0500</pubDate>
+				<link>http://blog.greduan.com//2014/08/awwe.html</link>
+				<guid isPermaLink="true">http://blog.greduan.com//2014/08/awwe.html</guid>
+			</item>
+		
+			<item>
+				<title>A small project is not the same as a big project</title>
+				<description>&lt;p&gt;That&amp;#39;s quite an obvious statement isn&amp;#39;t it?  The one in the title.  Well
+I didn&amp;#39;t learn this until recently.&lt;/p&gt;
+
+&lt;p&gt;Let me explain myself, and how I&amp;#39;m not dumb.&lt;/p&gt;
+
+&lt;p&gt;A small project you can get a skeleton for in like an hour, you spend a bit of
+time brainstorming features and how you can simplify it and in an hour you have
+a skeleton, in 15 mins you have a project ready to start working on, you&amp;#39;ve
+figured out the README the license etc., you just have to start making it now,
+and that takes like 3 hours or less if you&amp;#39;re good, depends on the project of
+course.&lt;/p&gt;
+
+&lt;p&gt;In comparison, a big project you don&amp;#39;t plan out quite as much, since that&amp;#39;s
+a bad idea to do at the start, instead you setup some tests (if you work Agile),
+you make some decisions on what to start with etc.&lt;/p&gt;
+
+&lt;p&gt;After 5 hours, you&amp;#39;re not nearly done with the big project, while the small
+project you&amp;#39;re at least halfway there if not done already.&lt;/p&gt;
+
+&lt;p&gt;If you&amp;#39;re used to small projects, like I am, a bigger or slightly bigger project
+may make you feel slow, at least it made me feel slow.&lt;/p&gt;
+
+&lt;p&gt;I just kinda want to say that&amp;#39;s probably normal and not something to worry
+about, if you haven&amp;#39;t finished your idea in 6 months, maybe start worrying.  lol&lt;/p&gt;
+</description>
+				<pubDate>Sun, 20 Jul 2014 00:00:00 -0500</pubDate>
+				<link>http://blog.greduan.com//2014/07/aspintsaabp.html</link>
+				<guid isPermaLink="true">http://blog.greduan.com//2014/07/aspintsaabp.html</guid>
+			</item>
+		
+			<item>
+				<title>A projects page!</title>
+				<description>&lt;p&gt;Yay I made another part of my website! :D&lt;/p&gt;
+
+&lt;p&gt;Just thought at some point something like this might come in handy so I made
+this website.&lt;/p&gt;
+
+&lt;p&gt;Can be found here: &lt;a href=&quot;http://projects.greduan.com&quot;&gt;http://projects.greduan.com&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;It is also found in the list of links in my home page.&lt;/p&gt;
+
+&lt;p&gt;It doesn&amp;#39;t have all of my projects, as you may notice, but it is a list of those
+that I personally think would benefit others and that are standalone from
+another application, like DocPad or MetalSmith.&lt;/p&gt;
+
+&lt;p&gt;Of course this list may change and also the requirements that I have for me to
+put them on there, but we&amp;#39;ll see...&lt;/p&gt;
+</description>
+				<pubDate>Mon, 14 Jul 2014 00:00:00 -0500</pubDate>
+				<link>http://blog.greduan.com//2014/07/app.html</link>
+				<guid isPermaLink="true">http://blog.greduan.com//2014/07/app.html</guid>
+			</item>
+		
+			<item>
+				<title>Several VLC interfaces</title>
+				<description>&lt;p&gt;A couple of days ago I found out that VLC has several interfaces besides the
+usual nice GUI interface.&lt;/p&gt;
+
+&lt;p&gt;In Arch Linux installing VLC also installs a couple of CLI interfaces for you.&lt;/p&gt;
+
+&lt;p&gt;For example it installs &lt;code&gt;nvlc&lt;/code&gt;, which is an ncurses interface, which means you
+don&amp;#39;t need X11 to listen to that music or podcast or whatever.&lt;/p&gt;
+
+&lt;p&gt;It offers &lt;code&gt;cvlc&lt;/code&gt;, which I don&amp;#39;t know what it stands for but it allows you to
+watch a video without the fancy GUI. So you do need X11 running but it doesn&amp;#39;t
+load the GUI and all that, just the video player and with some hotkeys
+I imagine, when I pressed the spacebar it paused so maybe the rest work.&lt;/p&gt;
+
+&lt;p&gt;And of course it offers &lt;code&gt;vlc&lt;/code&gt; which loads the normal VLC but you can give it
+a path to the file or folder from the CLI.&lt;/p&gt;
+</description>
+				<pubDate>Thu, 19 Jun 2014 00:00:00 -0500</pubDate>
+				<link>http://blog.greduan.com//2014/06/svi.html</link>
+				<guid isPermaLink="true">http://blog.greduan.com//2014/06/svi.html</guid>
+			</item>
+		
+			<item>
+				<title>Enable `pass` auto-completion in Zsh</title>
+				<description>&lt;p&gt;Just thought I would share this tip with you since it would have saved me some
+of my time if I had this.&lt;/p&gt;
+
+&lt;p&gt;Add the following to your &lt;code&gt;.zshrc&lt;/code&gt; file or whatever file it is that you want,
+just make sure it&amp;#39;s loaded by Zsh:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;autoload -U compinit
+compinit
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;That enables auto-completion and loads it up. I&amp;#39;m not sure why I never had it
+enabled, but now it is.&lt;/p&gt;
+
+&lt;p&gt;You don&amp;#39;t really need to do anything special anywhere else I don&amp;#39;t think, that&amp;#39;s
+the only thing I had to fix for it to work on my computer.&lt;/p&gt;
+
+&lt;p&gt;Hope that helps. :)&lt;/p&gt;
+</description>
+				<pubDate>Wed, 18 Jun 2014 00:00:00 -0500</pubDate>
+				<link>http://blog.greduan.com//2014/06/epaciz.html</link>
+				<guid isPermaLink="true">http://blog.greduan.com//2014/06/epaciz.html</guid>
+			</item>
+		
+			<item>
+				<title>Acknowledgements in communication</title>
+				<description>&lt;p&gt;I am going to talk about acknowledgements, what they are, how they work and why
+they are important.  May be a short or long post.  I&amp;#39;ll say &amp;quot;ack&amp;quot; whenever
+I mean &amp;quot;acknowledgement&amp;quot; because that&amp;#39;s a long word to type over and over.&lt;/p&gt;
+
+&lt;p&gt;OK let&amp;#39;s get started.  First, what is an ack? An ack is something said or done
+to inform someone that his statement or action has been noted, understood and
+received.&lt;/p&gt;
+
+&lt;p&gt;These can be &amp;quot;OK&amp;quot;, &amp;quot;Got it&amp;quot;, &amp;quot;Ah, I see&amp;quot;, &amp;quot;I understand&amp;quot; etc. This lets the
+person know you got his or her communication.&lt;/p&gt;
+
+&lt;p&gt;Actions can also be an ack, for example applause, you are acking a person&amp;#39;s
+performance and also communicating that you liked it.  A thumbs up.  A nod.  All
+of these are acks.  They convey different meanings along with the ack as well.&lt;/p&gt;
+
+&lt;p&gt;Now a person that gives good acks makes you feel good.  You like speaking with
+a person that gives good acks.  You do not like speaking with a person that does
+not give good acks.&lt;/p&gt;
+
+&lt;p&gt;Acks can be messed up in several ways, too.  Like for example, your ack is not
+good enough, your ack is not heard or you don&amp;#39;t even give an ack.  This leaves
+the other person hanging, the person is left feeling insecure over the fact that
+you heard him, most often these people will repeat themselves to make sure they
+were understood.&lt;/p&gt;
+
+&lt;p&gt;You can also give too much ack.  Cannot think of an example for that one, but it
+can happen.  Leaves the person overwhelmed.&lt;/p&gt;
+
+&lt;p&gt;You can also give the wrong kind of ack.  Ever been bothered by someone
+repeating something over and over?  Did you say &amp;quot;OK I got it!&amp;quot; in an irritated
+or angry manner?  That is the wrong kind of ack.  Yes, you are letting the
+person know you heard him, but since you said it in a bad manner the person
+cannot really be sure you heard him, since you may have just said it to shut the
+person up.  Plus it leaves a bad feeling in the person.&lt;/p&gt;
+
+&lt;p&gt;You can also give an ack for when something is finished.  You were ordered or
+asked to do something, you ack that letting the person you understood and will
+do it and then when you finish doing it you let the person know you did it.
+This is a more complete ack, in a sense, because you are letting the person know
+that his order was carried on, that means his communication was heard and also
+the person no longer has to continue worrying if you did it or not.&lt;/p&gt;
+
+&lt;p&gt;There are all kinds of tricks and workarounds and facts about acks.  You will
+learn them all with experience, I am just sharing what I currently know.&lt;/p&gt;
+
+&lt;p&gt;Find out if you give good acks.  It is an important piece of communication,
+without which communication is a huge pain in the bum.&lt;/p&gt;
+</description>
+				<pubDate>Sat, 14 Jun 2014 00:00:00 -0500</pubDate>
+				<link>http://blog.greduan.com//2014/06/aic.html</link>
+				<guid isPermaLink="true">http://blog.greduan.com//2014/06/aic.html</guid>
+			</item>
+		
+			<item>
+				<title>Arch Linux font tip(s)</title>
+				<description>&lt;p&gt;Just thought I would share something that has been very useful to me recently,
+and that is some Arch Linux font stuff.&lt;/p&gt;
+
+&lt;p&gt;First let&amp;#39;s talk about the &lt;a href=&quot;https://wiki.archlinux.org/index.php/Infinality-bundle%2Bfonts&quot;&gt;Infinality-bundle+fonts&lt;/a&gt;.  This is SO useful!
+It&amp;#39;s basically some pre-configured font settings and fonts that make your Arch
+Linux font rendering so nice.  If you want a real quick plug-and-play font
+config you can use this.&lt;/p&gt;
+
+&lt;p&gt;It was nice and all but I didn&amp;#39;t like how many downloads I had to make in each
+&lt;code&gt;pacman -Syu&lt;/code&gt;, granted I don&amp;#39;t think they were too many but my internet is not
+so fast that I don&amp;#39;t care about the size of my downloads.&lt;/p&gt;
+
+&lt;p&gt;To uninstall it I had to, IIRC remove the &amp;#39;infinality-bundle&amp;#39; repository from my
+&lt;code&gt;pacman.conf&lt;/code&gt; file, then I had to manually uninstall all the fonts and stuff
+from this bundle.  There&amp;#39;s probably an easy way to do this but I am not aware of
+it.&lt;/p&gt;
+
+&lt;p&gt;OK so that&amp;#39;s one solution.  There is another one which I really like since it
+works quite well which can be found in this blog post: &lt;a href=&quot;http://jaysonrowe.blogspot.mx/2013/04/font-configuration-in-arch-linux.html&quot;&gt;From the mind of a nerd:
+Font Configuration in Arch Linux&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;I followed his steps and it works quite well.  Some websites for some reason
+don&amp;#39;t have font smoothing but they are not many.  I did not follow the settings
+he has on XFCE, because I don&amp;#39;t have XFCE installed but if I did that it would
+probably work flawlessly.&lt;/p&gt;
+
+&lt;p&gt;This solution allows me to not install anything extra and still have nice fonts
+so I like it.&lt;/p&gt;
+
+&lt;p&gt;Hope these tips help you out someday. :)&lt;/p&gt;
+</description>
+				<pubDate>Mon, 09 Jun 2014 00:00:00 -0500</pubDate>
+				<link>http://blog.greduan.com//2014/06/alft.html</link>
+				<guid isPermaLink="true">http://blog.greduan.com//2014/06/alft.html</guid>
+			</item>
+		
+	</channel>
+</rss>
