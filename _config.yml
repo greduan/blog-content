@@ -10,6 +10,9 @@ nav:
     - source:
       title: "Website's source"
       url: "https://github.com/Greduan/greduan.blog"
+    - feed:
+      title: "Posts feed"
+      url: "http://blog.greduan.com/feed.xml"
 
 permalink: /:year/:month/:title.html
 
