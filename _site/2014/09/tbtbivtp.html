@@ -38,6 +38,16 @@ any person out there in the internet that uses Vim and Tmux.</p>
 
 <p>Hopefully this helps you as well, random internet person.</p>
 
+<p>Edit:</p>
+
+<p>Thought I should probably post the solution as well:</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">if &amp;term =~ &#39;256color&#39;
+    &quot; disable Background Color Erase (BCE) so that color schemes
+    &quot; render properly when inside 256-color tmux and GNU screen.
+    &quot; see also http://sunaku.github.io/vim-256color-bce.html
+    set t_ut=
+endif&quot;
+</code></pre></div>
 </article>
 
 		</main>
