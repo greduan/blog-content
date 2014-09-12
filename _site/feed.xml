@@ -7,7 +7,7 @@
 		<atom:link href="http://blog.greduan.com//feed.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
-				<title>The bleeding terminal background Vim + Tmux problem</title>
+				<title>The bleeding terminal background inside Vim + Tmux problem</title>
 				<description>&lt;p&gt;I need to document this as a reminder for myself and as a saviour blog post to
 any person out there in the internet that uses Vim and Tmux.&lt;/p&gt;
 
