@@ -1,7 +1,7 @@
 /* Document level adjustments */
 html {
-	font-size: 16px;
-	font-family: Helvetica, Arial, serif, sans-serif;
+	font-size: 18px;
+	font-family: Liberation Sans, sans-serif;
 	line-height: 1.5em;
 }
 
@@ -40,16 +40,17 @@ header[role="banner"] a {
 }
 
 article.post header {
-	font-size: 0.8em;
 }
 
 article.post header h1 {
+	font-size: 1em;
 }
 
 article.post header p {
 	color: #bbb;
-	font-family: Georgia, serif, sans-serif;
+	font-family: Liberation Serif, serif, sans-serif;
 	font-style: italic;
+	font-size: 0.8em;
 }
 
 blockquote {
@@ -58,6 +59,14 @@ blockquote {
 	margin-right: 0px;
 	padding-left: 1em;
 	color: #666;
+}
+
+code {
+	font-family: Liberation Mono, monospace;
+}
+
+img {
+	width: 100%;
 }
 
 footer {
