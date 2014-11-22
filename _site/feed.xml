@@ -7,6 +7,32 @@
 		<atom:link href="http://blog.greduan.com//feed.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
+				<title>Minimal amount of fonts in Arch Linux</title>
+				<description>&lt;p&gt;Thought I&amp;#39;d document this here.&lt;/p&gt;
+
+&lt;p&gt;Some weeks ago I decided I&amp;#39;d find the smallest font packages I could find but
+that would still cover the biggest amount of Unicode.&lt;/p&gt;
+
+&lt;p&gt;After &lt;a href=&quot;https://www.reddit.com/r/archlinux/comments/2l2cr7/what_fonts_do_you_install_for_most_coverage_with/&quot;&gt;consulting with Reddit&lt;/a&gt; I came up with the following list:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;ttf-dejavu&lt;/code&gt; because some programs just need it and it&amp;#39;s a pretty global
+&amp;quot;default&amp;quot; font in open source.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ttf-liberation&lt;/code&gt; an extremely good looking alternative to some MS fonts.
+Excellent for default &lt;code&gt;serif&lt;/code&gt;, &lt;code&gt;sans-serif&lt;/code&gt; and &lt;code&gt;monospace&lt;/code&gt; fonts.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;adobe-source-han-sans-otc-fonts&lt;/code&gt; for full CJK support.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ttf-noto-nockj&lt;/code&gt; for big coverage of Unicode that isn&amp;#39;t CJK.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Just thought I should share that, considering some other people may be looking
+for the same thing some time in the future. :)&lt;/p&gt;
+</description>
+				<pubDate>Fri, 21 Nov 2014 00:00:00 -0600</pubDate>
+				<link>http://blog.greduan.com//2014/11/maofial.html</link>
+				<guid isPermaLink="true">http://blog.greduan.com//2014/11/maofial.html</guid>
+			</item>
+		
+			<item>
 				<title>Get it together Linux users/devs!</title>
 				<description>&lt;p&gt;This is a rant for Linux users.  Take it as an (angry) man letting people know
 his opinions.&lt;/p&gt;
