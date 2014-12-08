@@ -7,6 +7,26 @@
 		<atom:link href="http://blog.greduan.com//feed.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
+				<title>Figuring out when you installed Arch Linux</title>
+				<description>&lt;p&gt;I just figured out a cool trick to check when you installed your current Arch
+Linux install.&lt;/p&gt;
+
+&lt;p&gt;All you have to do is check the logs for pacman which can be found at
+&lt;code&gt;/var/log/pacman.log&lt;/code&gt;.  Go to the top of the file and look at the date.&lt;/p&gt;
+
+&lt;p&gt;Looks like my current install was installed at &lt;code&gt;2014-04-16 15:48&lt;/code&gt;.  Longest
+running install yet.&lt;/p&gt;
+
+&lt;p&gt;Of course this trick depends on the fact that the logs still exist.  If you
+cleared those logs then you can&amp;#39;t really use this trick.  Although IMO this is
+one log you shouldn&amp;#39;t delete, considering how valuable its data could be.&lt;/p&gt;
+</description>
+				<pubDate>Sun, 07 Dec 2014 00:00:00 -0600</pubDate>
+				<link>http://blog.greduan.com//2014/12/fowyial.html</link>
+				<guid isPermaLink="true">http://blog.greduan.com//2014/12/fowyial.html</guid>
+			</item>
+		
+			<item>
 				<title>Minimal amount of fonts in Arch Linux</title>
 				<description>&lt;p&gt;Thought I&amp;#39;d document this here.&lt;/p&gt;
 
