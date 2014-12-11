@@ -1,3 +1,5 @@
 About hexadecimal colors (#ffffff): https://en.wikipedia.org/wiki/Web_colors
 
 About making extensions for Chrome/Chromium
+
+About `public_html` and getting 403 errors on Nginx.
