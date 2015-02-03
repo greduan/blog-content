@@ -7,3 +7,5 @@ About `public_html` and getting 403 errors on Nginx
 Two kinds of memorization (rote vs understanding)
 
 Speaking in a simple manner
+
+Fashion recycling
