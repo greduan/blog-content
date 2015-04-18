@@ -2,7 +2,7 @@ About hexadecimal colors (#ffffff): https://en.wikipedia.org/wiki/Web_colors
 
 About making extensions for Chrome/Chromium
 
-About `public_html` and getting 403 errors on Nginx.
+About `public_html` and getting 403 errors on Nginx
 
 Two kinds of memorization (rote vs understanding)
 
@@ -50,3 +50,7 @@ GPU suspend-resume built-in->module
 GitHub for pro, GitLab for personal
 
 True names.  The kind given in the Native North American cultures
+
+Speaking in a simple manner
+
+Fashion recycling
