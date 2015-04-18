@@ -5,3 +5,48 @@ About making extensions for Chrome/Chromium
 About `public_html` and getting 403 errors on Nginx.
 
 Two kinds of memorization (rote vs understanding)
+
+Every noun could potentially be an adjective (in English)
+
+CRUX
+Hardcore alternative to Arch Linux
+
+~/scripts
+
+Learning a new city by talking the dog for a walk
+
+Dynamic TDD (where you make a test for what needs it and when you need it)
+
+(simple) Password management
+
+Contributing to repos that aren't on GitHub/BitBucket/GitLab
+
+Firefox builtin flashblock
+
+It's the little things I love and hate
+
+Blog post about LaTeX and making a CV with LaTeX, good exposition
+
+And/or, only or is valid
+
+Emacs and it's fucking tabs
+http://www.pement.org/emacs_tabs.htm
+http://www.emacswiki.org/emacs/AutoIndentation
+
+My new email <me@greduan.com>
+
+How awesome wmutils is
+
+About folders in a Node.js project (lib/, test/, etc.)
+
+Communication through smell and taste
+
+Stable datums
+
+Evaluating data for yourself
+
+GPU suspend-resume built-in->module
+
+GitHub for pro, GitLab for personal
+
+True names.  The kind given in the Native North American cultures
