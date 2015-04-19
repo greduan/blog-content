@@ -6,14 +6,8 @@
 		<title>{{ title }} - Blog - Greduan.com</title>
 		<meta name="viewport" content="width=device-width">
 
-		<!-- normalize.css -->
 		<link rel="stylesheet" href="/css/normalize.css">
-
-		<!-- custom CSS -->
 		<link rel="stylesheet" href="/css/main.css">
-
-		<!-- syntax highlighting CSS -->
-		<link rel="stylesheet" href="/css/syntax.css">
 	</head>
 	<body>
 		<header role="banner">
@@ -22,21 +16,20 @@
 
 		<main role="main">
 
-<article class="post">
-	<header>
-		<h1>{{ title }}</h1>
-		<p>{{ date | date('Y-m-d') }}</p>
-	</header>
+			<article class="post">
+				<header>
+					<h1>{{ title }}</h1>
+					<p>{{ date | date('Y-m-d') }}</p>
+				</header>
 
-	{{ contents | safe }}
-</article>
+				{{ contents | safe }}
+			</article>
 
 		</main>
 
 		<footer role="contentinfo">
 			<a href="http://greduan.com">Greduan.com</a> - 
-			<a href="https://github.com/greduan/greduan.blog">Website's source</a> - 
-			<a href="feed.xml">Posts feed</a>
+			<a href="https://github.com/greduan/greduan.blog">Website's source</a>
 		</footer>
 	</body>
 </html>
