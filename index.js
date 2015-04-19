@@ -5,12 +5,12 @@ var Metalsmith = require('metalsmith'),
 	temp = require('metalsmith-templates')
 
 var ms = Metalsmith(__dirname)
-.source('./_posts')
+.source('./src')
 .destination('./_site')
 .use(md())
 .use(temp({
 	engine: 'swig',
-	directory: './_layouts'
+	directory: 'templates'
 }))
 .build(function (err) {
 	if (err) {
