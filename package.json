@@ -1,0 +1,10 @@
+{
+  "name": "greduan.blog",
+  "version": "0.1.0",
+  "private": true,
+  "main": "./index.js",
+  "dependencies": {
+    "metalsmith": "^1.6.0",
+    "metalsmith-markdown": "^0.2.1"
+  }
+}

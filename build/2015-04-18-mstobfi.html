@@ -1,0 +1,100 @@
+<p>So I switched to OpenBSD, and this blog post is here to talk about my first
+impressions.  This probably won&#39;t be my last blog post on the subject.</p>
+<p>So that you can understand how I use my distros, &quot;ricer&quot; is usually a term used
+to refer to people that change the look of their setup to make it look very
+attractive, outside of the defaults of whatever environment they have.  Take a
+look at <a href="http://www.reddit.com/r/unixporn">/r/unixporn</a> for many good examples of ricing.</p>
+<p>An under-the-bonnet ricer means the ricer only looks to improve the workflow or
+the commands and stuff they have available to them, not the looks.  I am an
+under-the-bonnet ricer to the core.</p>
+<p>Because of my nature I&#39;ve had to reinstall Arch 3 times because I broke it and
+have been using CRUX for a while, cause that&#39;s a fun distro to play with.</p>
+<p>OK, on with BSD.</p>
+<h2 id="why-">Why?</h2>
+<p>Why OpenBSD?  Why not FreeBSD or NetBSD or DragonflyBSD or any other BSD?  Why
+BSD in the first place?</p>
+<p>I&#39;ve been a Linux user for several years, and more recently I&#39;ve been getting
+into being all POSIX-compliant and stuff and GNU&#39;s coreutils have been grinding
+on my nerves with that stuff.</p>
+<p>So even though Linux is awesome, and compiling it is fun, the OS on top of it I
+don&#39;t like, so I wanted to switch to something better, that something was *BSD.</p>
+<p><em>Sidenote: Why does the GNU <code>sort</code> command have an <code>-R</code> flag which <em>randomises</em>
+the result?  You can&#39;t sort something into being random.  That&#39;s an oxymoron
+(with a particular choice of definitions).</em></p>
+<p>Now, why OpenBSD instead of another <em>BSD?  First of all because my friends at
+<a href="http://nixers.net/">Nixers.net</a> prefer OpenBSD (those that use a </em>BSD).  It&#39;s good to switch to
+a system where you know several people that know it.  Makes the switch much more
+fun.</p>
+<p>Secondly, in December I did try to switch to FreeBSD.  It was a chance I had to
+switch, but I had trouble getting X to work and at that point I really needed a
+working OS.  This time I didn&#39;t want to deal with the X stuff so I just went
+ahead and installed OpenBSD which I had heard had excellent X support out of the
+box, and holy crap it does.</p>
+<p>And thirdly because of the security orientation that the whole project has.
+That is a really attractive feature for me.</p>
+<h2 id="first-impressions">First impressions</h2>
+<p>Short version: I&#39;m lovin it.</p>
+<p>Keep reading for the long version.</p>
+<h3 id="the-install">The install</h3>
+<p>Getting the USB stick ready was unique.  I downloaded the <code>install56.iso</code> but
+that didn&#39;t work when I <code>dd</code>&#39;d it into the USB stick.  So then I read the
+<code>INSTALL.amd64</code> file and it uses the <code>.fs</code> file for the USB stick, not the
+<code>.iso</code> file, so I downloaded that and <code>dd</code>&#39;d it and it worked.  So that was new.</p>
+<p>The install was certainly &quot;weird&quot; for me, coming from more manual Linux distros
+where I format the harddrives, mount the partitions, write the <code>fstab</code>, etc. all
+manually.  It was pleasant though, somehow I don&#39;t feel dirty with a clean
+install of OpenBSD as I do with a clean install of any Linux.  Probably the lack
+of GNU.  lol</p>
+<p>But yeah, I was expecting a slightly more graphical install, since I already
+experienced the FreeBSD install, but I&#39;m fine with text prompts.  It&#39;s still
+simple enough.</p>
+<h3 id="x-and-hardware-support">X and hardware support</h3>
+<p>The X support was incredible, simply incredible.  I enabled xdm to start with
+but quickly disabled it cause I&#39;ve my own <code>.xinitrc</code> file.  Simply put, if I
+don&#39;t mention it it&#39;s because it worked perfectly.</p>
+<p>The only thing that isn&#39;t supported is my wifi card.  A dreaded BCM4315.  That
+would have been a deal breaker some months ago but now I have an extra long
+ethernet cable so it&#39;s fine.  This is a laptop though so I need to buy that wifi
+dongle...</p>
+<p>I am having a bit of trouble with the lid though.  Closing it suspends, which is
+fine but then when I open it it&#39;s all black.  I pressed butons and stuff and it
+didn&#39;t turn on again so I&#39;m guessing for some reason my monitor doesn&#39;t wake up.
+Dunno what&#39;s up with that.</p>
+<p><em>Sidenote: I&#39;ve a Dell Vostro 1500.  From 2007, an Intel Core 2 Duo 2.0GHz.</em></p>
+<h3 id="ports-packages-system">Ports/packages system</h3>
+<p>The ports/packages system is something I really like in OpenBSD.  Kinda sad CVS
+is still used over Git for the ports, but that ain&#39;t gonna stop me from liking
+it.  Seriously though y u no Git?</p>
+<p>I like how it&#39;s decentralised.  A ton of mirrors counts as decentralised for me.
+lol</p>
+<p>I like how the <code>$PKG_PATH</code> variable works.  I&#39;d be fine with this setup if it
+was in some Linux distro.</p>
+<p>The <code>pkg_add</code> command works very well as well.  It lets me know of the all the
+stuff it&#39;s installing, and when it installs dependencies it lets me know what
+package requires that dependency.  Makes it easy to tell what piece of software
+is installing a ton of dependencies you don&#39;t want.  :P</p>
+<h3 id="being-productive-again">Being productive again</h3>
+<p>First of all, thank you to <a href="http://www.bsdnow.tv/">BSD Now</a> and their tutorials, especially this
+one: <a href="http://www.bsdnow.tv/tutorials/the-desktop-obsd">http://www.bsdnow.tv/tutorials/the-desktop-obsd</a></p>
+<p>As a Node.js dev it can be a little hard to get started if you&#39;re used to using
+<a href="https://github.com/creationix/nvm"><code>nvm</code></a> because of a little bug which I <a href="https://github.com/creationix/nvm/issues/733">already reported</a>.  By the time
+you read this it&#39;ll already be fixed most probably.</p>
+<p>Though Node v0.10 is included in the packages so I can still work, just not with
+the latest and greatest.  I expect that to get updated to v0.11 or v0.12 in
+OpenBSD v5.7 though.</p>
+<p>Other than that, everything has been very smooth so far.  Some software I like
+isn&#39;t in the packages but I can compile that myself so there&#39;s no issue, and it
+may even be in the next release so I&#39;m not too worried.</p>
+<p>The first day I installed OpenBSD in the evening.  The next day I spent some
+time figuring out how stuff worked, basics here and there etc. Getting up to a
+working productive state again.  The next day I was completely productive again.
+So the downtime was really just the evening while I was installing it and
+figuring out basics.</p>
+<p>I&#39;d say that from the moment you plug in the USB to when you get back to work
+again is like less than half an hour, honestly.</p>
+<h2 id="final-verdict">Final verdict</h2>
+<p>If you&#39;re considering switching to OpenBSD, totally go for it.  There is nothing
+stopping you but yourself, like seriously.</p>
+<p>However, definitely to make sure your hardware is supported.  I spent an hour
+trying to figure out why the wifi didn&#39;t work because I assumed it worked like
+in Linux.</p>

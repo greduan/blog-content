@@ -1,3 +1,0 @@
-About hexadecimal colors (#ffffff): https://en.wikipedia.org/wiki/Web_colors
-
-About making extensions for Chrome/Chromium
