@@ -11,12 +11,14 @@ var ms = Metalsmith(__dirname)
 .destination('./_site')
 .use(md())
 .use(path())
+/*
 .use(coll({
 	posts: {
 		patterh: '*.html',
 		sortBy: 'date',
 	}
 }))
+*/
 .use(temp({
 	engine: 'swig',
 	directory: 'templates',
