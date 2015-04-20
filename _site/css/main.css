@@ -1,8 +1,68 @@
 /* Document level adjustments */
 html {
 	font-size: 18px;
-	font-family: Liberation Sans, sans-serif;
-	line-height: 1.5em;
+	font-family: Liberation Sans, Helvetica, sans-serif;
+	line-height: 1.4;
+}
+
+header[role="banner"] a {
+	text-decoration: none;
+	color: inherit;
+}
+header {
+	text-align: center;
+}
+
+article.post header h1 {
+	font-size: 1.2em;
+}
+
+article.post header p {
+	color: #bbb;
+	font-family: Liberation Serif, Times New Roman, serif;
+	font-size: 0.8em;
+}
+
+blockquote {
+	border-left: 1px solid #bbb;
+	margin-left: 2em;
+	margin-right: 0px;
+	padding-left: 1em;
+	color: #666;
+}
+
+code {
+	font-family: Liberation Mono, monospace;
+}
+
+img {
+	width: 100%;
+}
+
+footer {
+	padding: 1em;
+	margin: 0px;
+	border-top: 1px solid #bbb;
+}
+
+a {
+	color: blue;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+
+p {
+	margin: 1.1em 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+	margin: 1.3em 0 0.7em;
 }
 
 /* normal size */
@@ -32,57 +92,4 @@ body {
 		padding: 0 10px;
 		margin: 0 auto;
 	}
-}
-
-header[role="banner"] a {
-	text-decoration: none;
-	color: inherit;
-}
-
-article.post header {
-}
-
-article.post header h1 {
-	font-size: 1em;
-}
-
-article.post header p {
-	color: #bbb;
-	font-family: Liberation Serif, serif, sans-serif;
-	font-style: italic;
-	font-size: 0.8em;
-}
-
-blockquote {
-	border-left: 1px solid #bbb;
-	margin-left: 2em;
-	margin-right: 0px;
-	padding-left: 1em;
-	color: #666;
-}
-
-code {
-	font-family: Liberation Mono, monospace;
-}
-
-img {
-	width: 100%;
-}
-
-footer {
-	padding: 1em;
-	margin: 0px;
-	border-top: 1px solid #bbb;
-}
-
-header {
-	text-align: center;
-}
-
-a {
-	color: blue;
-	text-decoration: none;
-}
-a:hover {
-	text-decoration: underline;
 }
