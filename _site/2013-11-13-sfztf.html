@@ -22,45 +22,40 @@
 					<p>2013-11-13</p>
 				</header>
 
-				<p><em>Note that I already switched back to zsh. lol</em></p>
+				<p><strong>Notice from 2015: Nowadays I don&#39;t use bash, fish or zsh, nowadays I use good
+old (m)ksh because it&#39;s POSIX compliant and really fast.</strong></p>
 <p>In this post I&#39;ll be talking about my experience with switching from zsh (<strong>Z</strong>
-<strong>sh</strong>ell) to fish (<strong>F</strong>riendly <strong>I</strong>nteractive <strong>sh</strong>ell). I&#39;m not gonna talk
+<strong>sh</strong>ell) to fish (<strong>F</strong>riendly <strong>I</strong>nteractive <strong>sh</strong>ell).  I&#39;m not gonna talk
 about how or why it&#39;s better than the other shells, I&#39;m only gonna talk about
-the process of switching.</p>
+the process of switching for me.</p>
 <p>Where to start... well, how about starting with the fact that I tried to do the
-switch before? I did try to do the switch before, I don&#39;t remember exactly what
+switch before?  I did try to do the switch before, I don&#39;t remember exactly what
 problems I had last time but I&#39;m pretty sure it was something with Vim or
 something.</p>
 <p>I decided to try the switch again taking advantage of the fact that a new
-version had been released recently
-(<a href="http://fishshell.com/release_notes.html">v2.1.0</a>). Seemed like a good idea to
+version had been released recently (<a href="http://fishshell.com/release_notes.html">v2.1.0</a>).  Seemed like a good idea to
 try again, also the fact that I like the features it has, of course.</p>
 <p>The switch wasn&#39;t as problem-free as I wished but it was quite a smooth process.</p>
 <p>First, I was running across problems with Vim which I imagine I wasn&#39;t able to
-solve last time, but I solved this time. The problem was a startup error that
-Vim was complaining about not finding a certain file or something. I just had to
-add the following to the top of my <code>.vimrc</code> file to fix it:</p>
-<pre><code class="lang-text">if $SHELL =~ &#39;fish&#39;
+solve last time, but I solved this time.  The problem was a startup error that
+Vim was complaining about not finding a certain file or something.  I just had
+to add the following to the top of my <code>.vimrc</code> file to fix it:</p>
+<pre><code class="lang-vim">if $SHELL =~ &#39;fish&#39;
     set shell=/bin/sh
 endif
 </code></pre>
 <p>Basically, if Vim can detect the <code>$SHELL</code> variable is <code>fish</code> it&#39;ll tell Vim to
-interact with the current shell as if it was <code>sh</code>. As I understand it, don&#39;t
-take my word for it, please. That fixed that.</p>
+interact with the current shell as if it was <code>sh</code>.  As I understand it, don&#39;t
+take my word for it.  That fixed that.</p>
 <p>Another problem I was running into was that Emacs was complaining about not
-being able to find the <code>package.el</code> file. The reason for the error was that
-I was opening an old version of Emacs (v22.x). This was just a matter of
+being able to find the <code>package.el</code> file.  The reason for the error was that
+I was opening an old version of Emacs (v22.x).  This was just a matter of
 updating the <code>$PATH</code> variable, that was done with the following line of code in
 my <code>config.fish</code> file:</p>
 <pre><code class="lang-text">set PATH /usr/local/bin /usr/local/sbin /usr/local/share/npm/bin /usr/local/opt/ruby/bin $HOME/bin $HOME/.tmuxifier/tmuxifier/bin $PATH
 </code></pre>
-<p>Umm... Those were the only real note-worthy parts. The rest were just a matter
-of translating zsh to fish. You can find the latest version of my config files
-here: <a href="https://github.com/Greduan/dotfiles/tree/master/config/fish">https://github.com/Greduan/dotfiles/tree/master/config/fish</a></p>
-<p>If there&#39;s something you think could be said better or is plain wrong in this
-post feel free to <a href="https://github.com/Greduan/eduantech.docpad/blob/master/src/render/posts/switching-from-zsh-to-fish.html.md">modify
-it</a>
-and make a pull request for it!</p>
+<p>Umm... Those were the only real note-worthy parts.  The rest were just a matter
+of translating zsh to fish.</p>
 
 			</article>
 

@@ -29,10 +29,6 @@ Blog post about LaTeX and making a CV with LaTeX, good exposition
 
 And/or, only or is valid
 
-Emacs and it's fucking tabs
-http://www.pement.org/emacs_tabs.htm
-http://www.emacswiki.org/emacs/AutoIndentation
-
 My new email <me@greduan.com>
 
 How awesome wmutils is
@@ -57,3 +53,5 @@ bifurcate instead of split fuck you
 Fashion recycling
 
 ASAP As Simple As Possible
+
+JavaScript styleguides

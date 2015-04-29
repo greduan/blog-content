@@ -4,8 +4,8 @@ template: post.html
 date: 2014-07-20
 ---
 
-That's quite an obvious statement isn't it?  The one in the title.  Well
-I didn't learn this until recently.
+That's quite an obvious statement isn't it?  The one in the title.  Well I
+didn't learn this until recently.
 
 Let me explain myself, and how I'm not dumb.
 
@@ -27,4 +27,4 @@ If you're used to small projects, like I am, a bigger or slightly bigger project
 may make you feel slow, at least it made me feel slow.
 
 I just kinda want to say that's probably normal and not something to worry
-about, if you haven't finished your idea in 6 months, maybe start worrying.  lol
+about, if you haven't finished your idea in 6 months, maybe start worrying. lol

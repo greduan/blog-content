@@ -22,10 +22,11 @@
 					<p>2014-05-14</p>
 				</header>
 
-				<p>In this post I&#39;m going to, as you might have guessed, talk about the
-<a href="https://github.com/baskerville/bspwm/">BPSPM</a> window manager along with its
-partner tool that&#39;s almost impossible to live without,
-<a href="https://github.com/baskerville/sxhkd">Sxhkd</a> a simple X hotkey daemon.</p>
+				<p><strong>Notice from 2015: While I don&#39;t use bspwm as my main WM, I do sometimes use
+it.  But I use sxhkd daily as I tend to use minimal WMs that need it.</strong></p>
+<p>In this post I&#39;m going to, as you might have guessed, talk about the <a href="https://github.com/baskerville/bspwm">bspwm</a>
+window manager along with its partner tool that&#39;s almost impossible to live
+without, <a href="https://github.com/baskerville/sxhkd">sxhkd</a> a simple X hotkey daemon.</p>
 <p>Some people may have trouble understanding the concept of a tree structure for
 the windows in a window manager, but basically, every window is inside
 a container, that container can act as a window or as a container of two other
@@ -33,27 +34,22 @@ containers, each of which can act like a window or as a container of two other
 containers, each of which... etc.</p>
 <p>This allows for very complex, advanced and simple to do organization of your
 windows.</p>
-<p>Right now, TBH I can only work with these kinds of editors because they&#39;re the
-only ones that make sense for my workflow, in which almost no virtual desktop is
-used for the same thing every time. The idea of a master window doesn&#39;t really
-work for me TBH.</p>
+<p>Right now, TBH I can only work with these kinds of WMs because they&#39;re the only
+ones that make sense for my workflow, in which almost no virtual desktop is used
+for the same thing every time.  The idea of a master window doesn&#39;t really work
+for me TBH.</p>
 <p>However because of this tree like structure for organizing the windows it only
 has two templates, monospaced, which basically only has one window on the screen
 no mater how many there are on the desktop or tiled, which allows you to take
 advantage of all of this crazyness that is a tree structure.</p>
-<p>i3 has a similiar structure, i3 describes it&#39;s structure as a tree, BSPWM
-describes it&#39;s own as a binary space, actually it&#39;s description is &quot;A tiling
+<p>i3 has a similiar structure, i3 describes its structure as a tree, BSPWM
+describes its own as a binary space, actually its description is &quot;A tiling
 window manager based on binary space partitioning&quot;.</p>
 <p>Anyway, my experience with it, super nice for everything except setting up
-Dzen2, my preferred program to use as a bar with my window managers. Had to
+Dzen2, my preferred program to use as a bar with my window managers.  Had to
 spend quite a bit of time with this.</p>
 <p>If you have experience with the shell you&#39;ll probably notice right away why
-Sxhkd is more powerful than something like xmodmap:
-<a href="https://github.com/Greduan/dotfiles/blob/84adea6901215c9e41a5ce2dae77e0406bce734a/config/sxhkd/sxhkdrc">https://github.com/Greduan/dotfiles/blob/84adea6901215c9e41a5ce2dae77e0406bce734a/config/sxhkd/sxhkdrc</a></p>
-<p>You can find all of my BSPWM config here:
-<a href="https://github.com/Greduan/dotfiles/tree/84adea6901215c9e41a5ce2dae77e0406bce734a/config/bspwm">https://github.com/Greduan/dotfiles/tree/84adea6901215c9e41a5ce2dae77e0406bce734a/config/bspwm</a></p>
-<p>And a little bit in the <code>.zprofile</code> file:
-<a href="https://github.com/Greduan/dotfiles/blob/84adea6901215c9e41a5ce2dae77e0406bce734a/zprofile">https://github.com/Greduan/dotfiles/blob/84adea6901215c9e41a5ce2dae77e0406bce734a/zprofile</a></p>
+sxhkd is more powerful than something like xmodmap.</p>
 <p>Here&#39;s a nice GIF by windelicato about why BSPWM:
 <a href="https://raw.githubusercontent.com/windelicato/dotfiles/master/why_bspwm.gif">https://raw.githubusercontent.com/windelicato/dotfiles/master/why_bspwm.gif</a></p>
 <p>Final verdict, it&#39;s nice but still in the trial stage, may go back to i3...</p>
