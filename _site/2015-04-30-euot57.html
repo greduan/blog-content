@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>Experience upgrading OpenBSD to 5.7 - Blog - Greduan.com</title>
+		<meta name="viewport" content="width=device-width">
+
+		<link rel="stylesheet" href="/css/normalize.css">
+		<link rel="stylesheet" href="/css/main.css">
+	</head>
+	<body>
+		<header role="banner">
+			<h1><a href="/">Greduan's Blog</a></h1>
+		</header>
+
+		<main role="main">
+
+			<article class="post">
+				<header>
+					<h1>Experience upgrading OpenBSD to 5.7</h1>
+					<p>2015-04-30</p>
+				</header>
+
+				<p>In short, it was way way way way simpler than I expected it to be.  It took less
+than 10 mins to update OpenBSD from 5.6 to 5.7.  And then another half an hour
+to update all my packages with <code># pkg_add -u</code>.</p>
+<p>The reason I was scared is because I am unfamiliar with this sort of upgrade
+procedure, I am used to rolling distros where to update you just run one command
+every once in a while and you&#39;re up-to-date.  No freeze periods and stuff like
+that since I never used Debian or Ubuntu extensively so I didn&#39;t get to
+experience that.</p>
+<p>I mean there&#39;s not much more to say about that.  Just so that it&#39;s not a really
+short post I&#39;ll lay out the steps I took:</p>
+<ul>
+<li>Downloaded the <code>install57.fs</code></li>
+<li><code>dd if=install57.fs of=/dev/sd0c bs=4M</code> (<code>of=</code> may vary for you)</li>
+<li>Booted into USB</li>
+<li>Chose <code>(U)pgrade</code> instead of <code>(I)nstall</code> or <code>(A)uto Install</code></li>
+<li>Went through procedure</li>
+<li>Rebooted</li>
+<li>Read mail (just reports)</li>
+<li><code># sysmerge</code></li>
+<li><code># pkg_add -u</code></li>
+</ul>
+<p>And that was it.  It was way simpler than I expected.</p>
+<p>I will be upgrading to -current soon enough so I can write about the experience,
+also I need the latest <code>sort</code> to have the <code>nvm</code> bug fixed.</p>
+
+			</article>
+
+		</main>
+
+		<footer role="contentinfo">
+			<a href="http://greduan.com">Greduan.com</a> - 
+			<a href="https://github.com/greduan/greduan.blog">Website's source</a> -
+			<a href="http://greduan.com/contact.html">Contact</a>
+		</footer>
+	</body>
+</html>
