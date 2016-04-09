@@ -16,7 +16,7 @@ var ms = Metalsmith(__dirname)
 /*
 .use(coll({
   posts: {
-    patterh: '*.html',
+    pattern: '*.html',
     sortBy: 'date',
   }
 }))
