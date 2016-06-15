@@ -1,6 +1,6 @@
 ---
 title: A small project is not the same as a big project
-template: post.html
+layout: post.html
 date: 2014-07-20
 ---
 

@@ -6,15 +6,15 @@
     "build": "node index.js",
     "server": "live-server --port=8080 --no-browser _site"
   },
-  "main": "./index.js",
+  "main": "index.js",
   "dependencies": {
-    "metalsmith": "1.6.0",
+    "metalsmith": "2.1.0",
     "metalsmith-collections": "0.7.0",
     "metalsmith-drafts": "0.0.1",
-    "metalsmith-markdown": "0.2.1",
+    "metalsmith-layouts": "1.6.5",
+    "metalsmith-markdown-remarkable": "0.1.1",
     "metalsmith-path": "0.1.0",
-    "metalsmith-templates": "0.7.0",
-    "metalsmith-watch": "1.0.1",
+    "metalsmith-watch": "1.0.3",
     "swig": "1.4.2"
   },
   "devDependencies": {

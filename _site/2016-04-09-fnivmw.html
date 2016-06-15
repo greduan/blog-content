@@ -22,38 +22,39 @@
 					<p>2016-04-09</p>
 				</header>
 
-				<p>I&#39;m going to talk about a flow I&#39;ve developed recently, for myself, for
+				<p>I'm going to talk about a flow I've developed recently, for myself, for
 navigating files within Vim.</p>
 <p>Note I say Vim in the post title but I use Neovim, I just felt like saying that,
-because it makes no real difference to this post&#39;s content.</p>
-<p>Let&#39;s just start with saying that I use <a href="https://github.com/junegunn/fzf">fzf</a> for finding files in a fuzzy
+because it makes no real difference to this post's content.</p>
+<p>Let's just start with saying that I use <a href="https://github.com/junegunn/fzf">fzf</a> for finding files in a fuzzy
 matching manner.  This is incredibly convenient.  You can of course use
 <a href="https://github.com/ctrlpvim/ctrlp.vim">CtrlP</a> or whatever you prefer, but I use fzf.</p>
-<p>So that&#39;s one way I navigate them, another way that, in combination with the
+<p>So that's one way I navigate them, another way that, in combination with the
 above, is actually quite powerful, is with netrw-like or netrw enhancing
 plugins.</p>
 <p>Namely <a href="https://github.com/tpope/vim-vinegar">vim-vinegar</a> and <a href="https://github.com/justinmk/vim-dirvish">vim-dirvish</a>.</p>
 <p>Why do I use two conflicting-looking plugins?</p>
 <p>I use Vinegar because Vinegar provides a map of <code>-</code> to open the current folder
-in netrw, or go up one folder if already in netrw. But netrw isn&#39;t Dirvish,
-don&#39;t worry, cause Dirvish hijacks netrw so when you open netrw, Dirvish opens
+in netrw, or go up one folder if already in netrw. But netrw isn't Dirvish,
+don't worry, cause Dirvish hijacks netrw so when you open netrw, Dirvish opens
 instead.</p>
-<p>Dirvish is what makes this setup cool for me, so if you haven&#39;t already, read
+<p>Dirvish is what makes this setup cool for me, so if you haven't already, read
 its <a href="https://github.com/justinmk/vim-dirvish#readme">README file</a>.</p>
-<p>Anyway, I wanted to document that.  I&#39;ll also share my related rc config stuff
+<p>Anyway, I wanted to document that.  I'll also share my related rc config stuff
 so that you and I can reproduce this behaviour easily:</p>
-<pre><code>Plug &#39;junegunn/fzf&#39;, { &#39;dir&#39;: &#39;~/.fzf&#39;, &#39;do&#39;: &#39;./install --no-update-rc&#39; }
-Plug &#39;junegunn/fzf.vim&#39;
-Plug &#39;tpope/vim-vinegar&#39;
-Plug &#39;justinmk/vim-dirvish&#39;
+<pre><code>Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --no-update-rc' }
+Plug 'junegunn/fzf.vim'
+Plug 'tpope/vim-vinegar'
+Plug 'justinmk/vim-dirvish'
 
 &quot; Relative line numbers in a Dirvish buffer
 autocmd! FileType dirvish setlocal relativenumber
-</code></pre><h2 id="update-2016-06-14">Update 2016-06-14</h2>
-<p>Somebody on Twitter actually let me know that you don&#39;t need vim-vinegar to have
+</code></pre>
+<h2>Update 2016-06-14</h2>
+<p>Somebody on Twitter actually let me know that you don't need vim-vinegar to have
 the usage of the <code>-</code> keybind, vim-dirvish added it to itself now, which is
 great.</p>
-<p>So you can just have vim-dirvish installed now and that&#39;ll work out great. :)</p>
+<p>So you can just have vim-dirvish installed now and that'll work out great. :)</p>
 
 			</article>
 

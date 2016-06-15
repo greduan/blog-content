@@ -26,60 +26,60 @@
 including the fact that I was trying to compare an extensible editor to Emacs,
 the most extensible of them all.  I wrote about it later on briefly in a
 <a href="http://blog.greduan.com/2014-08-08-awwe.html">blog post</a>.</strong></p>
-<p>The title may be misleading so I&#39;m gonna make it clear right now.  I couldn&#39;t
-come up with anything better.  It&#39;s gonna stay like that, so you can make
-suggestions for a better title but I won&#39;t change the title.</p>
-<p>So let me explain why I chose this title.  That&#39;s what this post is about.</p>
+<p>The title may be misleading so I'm gonna make it clear right now.  I couldn't
+come up with anything better.  It's gonna stay like that, so you can make
+suggestions for a better title but I won't change the title.</p>
+<p>So let me explain why I chose this title.  That's what this post is about.</p>
 <p>There is a popular saying that Vim users love to use against Emacs users in the
 holy editor wars.  That saying is &quot;Emacs would make a great OS, if only it had
 a good text editor&quot; or something along those lines.</p>
-<p>And I can sort of agree with that.  Emacs&#39; editor is not superior to Vim&#39;s in
-almost any front.  But let&#39;s look at the bright side of that saying.</p>
-<p>They&#39;re criticizing the text editor.  But they&#39;re acknowledging it as an OS.  In
+<p>And I can sort of agree with that.  Emacs' editor is not superior to Vim's in
+almost any front.  But let's look at the bright side of that saying.</p>
+<p>They're criticizing the text editor.  But they're acknowledging it as an OS.  In
 other words it apparently can be extended immensely.  And it has proven to be
 able to do just that.  It has just about anything that can be done in text.
-Email reader, news reader, chat, calendar, you name it.  And if it isn&#39;t already
+Email reader, news reader, chat, calendar, you name it.  And if it isn't already
 implemented, you can do it yourself! ;)</p>
 <p>And of course, it can be extended immensely towards developing.  Debuggers, the
 CLI, automatic compiling functionality, people have made it an IDE as well.  So
-its limits are practically none.  Oh and let&#39;s not forget about the language you
+its limits are practically none.  Oh and let's not forget about the language you
 use to customize it.  Emacs Lisp, A.K.A. Elisp; Its own dialect of Lisp.  You
-can&#39;t get a lot more customizable than that.</p>
+can't get a lot more customizable than that.</p>
 <p>Except you can... Enter Light Table!</p>
 <p><a href="http://lighttable.com/">Light Table</a> is one of the new kids on the block.  It is coded in
 <a href="https://github.com/clojure/clojurescript">ClojureScript</a>, a Lisp dialect that essentially compiles to JS.  The other
-new kid is <a href="https://github.com/limetext/lime">Lime</a>, but he still hasn&#39;t got a working frontend (at the time
+new kid is <a href="https://github.com/limetext/lime">Lime</a>, but he still hasn't got a working frontend (at the time
 of writing).</p>
 <p><a href="http://www.chris-granger.com/">Chris Granger</a> (the main dev of Light Table) has created a unique
 architecture with Light Table.  (As I understand it) you can add or remove
-anything and everything.  Well maybe not everything since you&#39;ll always want
+anything and everything.  Well maybe not everything since you'll always want
 some stuff there but you know what I mean.  Think about the ECS
-(<a href="http://en.wikipedia.org/wiki/Entity_component_system">Entity Component System</a>), that&#39;s almost <em>exactly</em> what Light Table has
+(<a href="http://en.wikipedia.org/wiki/Entity_component_system">Entity Component System</a>), that's almost <em>exactly</em> what Light Table has
 as an architecture.  It is the first text editor of its kind in this sense.</p>
 <p>He has created a very interesting system with Light Table where the basic text
 editor is loaded by default.  All of the text editor you get by default are just
-behaviours.  These behaviours can be added, removed, disabled, enabled.  I&#39;m
-sure you get where I&#39;m going with this.</p>
+behaviours.  These behaviours can be added, removed, disabled, enabled.  I'm
+sure you get where I'm going with this.</p>
 <p>It could be anything and everything with due time!  It could be the first real
-competitor for Emacs as well in terms of customizability.  Think about it, it&#39;s
+competitor for Emacs as well in terms of customizability.  Think about it, it's
 written in ClojureScript, a Lisp dialect, you can add or remove behaviours, to
 the point where you can make it a NotePad or a browser if you liked.</p>
 <p>One thing to note is that it is using <a href="http://nwjs.io/">node-webkit</a> (<strong>Notice from 2015:
-node-webkit has been renamed to nw.js</strong>) as it&#39;s platform.  It allows you to
-call Node.js from the DOM.  That&#39;s right, Light Table the text editor with
+node-webkit has been renamed to nw.js</strong>) as it's platform.  It allows you to
+call Node.js from the DOM.  That's right, Light Table the text editor with
 almost no limits is technically a web browser.</p>
-<p>That means JS is its limit.  If you can&#39;t do it with JS (and <a href="http://nodejs.org/">Node.js</a>) you
-can&#39;t do it in Light Table.  But if you can do it in JS you can do it in Light
+<p>That means JS is its limit.  If you can't do it with JS (and <a href="http://nodejs.org/">Node.js</a>) you
+can't do it in Light Table.  But if you can do it in JS you can do it in Light
 Table.  JS is quickly becoming the one language to write.  JS is found almost
 everywhere nowadays.  So I think Chris has made a smart decision when he decided
 to write it in ClojureScript.</p>
-<p>The main point is, it&#39;s got (almost) no limit on what can be added <em>and</em> no
+<p>The main point is, it's got (almost) no limit on what can be added <em>and</em> no
 limit on what can be removed, something Emacs is missing.</p>
 <p>Oh and one more thing.  Emacs is millions of lines of Elisp plus the C code it
 uses.  Light Table is only around twelve thousand lines of ClojureScript, at the
 time of writing (v0.5.18).</p>
-<p>So yeah.  My point is, it&#39;ll possibly be <em>the</em> text editor once a couple of
-years pass after it&#39;s full release and it is more mature.</p>
+<p>So yeah.  My point is, it'll possibly be <em>the</em> text editor once a couple of
+years pass after it's full release and it is more mature.</p>
 
 			</article>
 

@@ -2,31 +2,31 @@
 
 var Metalsmith = require('metalsmith'),
   drafts = require('metalsmith-drafts'),
-  md = require('metalsmith-markdown'),
-  temp = require('metalsmith-templates'),
+  markdown = require('metalsmith-markdown-remarkable'),
+  layouts = require('metalsmith-layouts'),
   path = require('metalsmith-path'),
-  coll = require('metalsmith-collections')
+  collection = require('metalsmith-collections'),
+  watch = require('metalsmith-watch');
 
-var ms = Metalsmith(__dirname)
-.source('./src')
-.destination('./_site')
-.use(drafts())
-.use(md())
-.use(path())
-/*
-.use(coll({
-  posts: {
-    pattern: '*.html',
-    sortBy: 'date',
-  }
-}))
-*/
-.use(temp({
-  engine: 'swig',
-  directory: 'templates',
-}))
-.build(function (err) {
-  if (err) {
-    throw err
-  }
-})
+Metalsmith(__dirname)
+  .source('./src')
+  .destination('./_site')
+  .use(drafts())
+  .use(markdown())
+  .use(path())
+  .use(layouts({
+    engine: 'swig',
+    directory: 'templates',
+  }))
+  .use(watch({
+    paths: {
+      '${source}/**/*': true,
+      'templates/**/*': '**/*',
+    },
+    livereload: false,
+  }))
+  .build(function (err) {
+    if (err) {
+      throw err;
+    }
+  });

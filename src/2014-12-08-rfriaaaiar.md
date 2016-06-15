@@ -1,6 +1,6 @@
 ---
 title: Respect, for respect is acknowledgement, and acknowledgement is a right
-template: post.html
+layout: post.html
 date: 2014-12-08
 ---
 
