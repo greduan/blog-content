@@ -5,14 +5,19 @@ var Metalsmith = require('metalsmith'),
   markdown = require('metalsmith-markdown-remarkable'),
   layouts = require('metalsmith-layouts'),
   path = require('metalsmith-path'),
-  collection = require('metalsmith-collections'),
+  collections = require('metalsmith-collections'),
   watch = require('metalsmith-watch');
 
 Metalsmith(__dirname)
-  .source('./src')
-  .destination('./_site')
+  .source('src')
+  .destination('_site')
   .use(drafts())
-  .use(markdown())
+  .use(markdown('commonmark')) // commonmark settings preset
+  .use(collections({
+    posts: {
+      layout: 'post.html',
+    },
+  }))
   .use(path())
   .use(layouts({
     engine: 'swig',
