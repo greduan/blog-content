@@ -21,6 +21,7 @@ Metalsmith(__dirname)
     },
   }))
   .use(markdown('commonmark')) // commonmark settings preset
+  .use(path())
   .use(layouts({
     engine: 'atpl',
     partials: 'partials',
@@ -30,7 +31,6 @@ Metalsmith(__dirname)
       '${source}/**/*': true,
       'layouts/**/*': '**/*',
       'partials/**/*': '**/*',
-      'index.js': '**/*',
     },
     livereload: false,
   }))
