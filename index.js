@@ -14,13 +14,11 @@ Metalsmith(__dirname)
   .use(drafts())
   .use(collections({
     posts: {
-      pattern: '*.md',
       sortBy: 'date',
       reverse: true,
-      refer: false,
     },
   }))
-  .use(markdown('commonmark')) // commonmark settings preset
+  .use(markdown('commonmark'))
   .use(path())
   .use(layouts({
     engine: 'atpl',
