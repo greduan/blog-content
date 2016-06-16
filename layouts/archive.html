@@ -3,7 +3,9 @@
 <main role="main">
   <ul>
     {% for post in collections.posts %}
-      <li>{{ post.date | date('Y-m-d') }} &raquo; <a href="{{ post.path }}">{{ post.title }}</a></li>
+      {% if post.title %}
+        <li>{{ post.date | date('Y-m-d') }} &raquo; <a href="{{ post.path }}">{{ post.title }}</a></li>
+      {% endif %}
     {% endfor %}
   </ul>
 </main>
