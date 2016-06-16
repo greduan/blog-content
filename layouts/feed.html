@@ -5,7 +5,7 @@
 		<description>Blog of the man named Greduan, A.K.A. Eduan</description>
 		<link>http://blog.greduan.com</link>
 		<atom:link href="http://blog.greduan.com/feed.xml" rel="self" type="application/rss+xml" />
-		{% for post in posts %}
+		{% for post in collections.posts %}
 		<item>
 			<title>{{ post.title | safe }}</title>
 			<description>{{ post.content | safe }}</description>

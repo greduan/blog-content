@@ -12,21 +12,25 @@ Metalsmith(__dirname)
   .source('src')
   .destination('_site')
   .use(drafts())
-  .use(markdown('commonmark')) // commonmark settings preset
   .use(collections({
     posts: {
-      layout: 'post.html',
+      pattern: '*.md',
+      sortBy: 'date',
+      reverse: true,
+      refer: false,
     },
   }))
-  .use(path())
+  .use(markdown('commonmark')) // commonmark settings preset
   .use(layouts({
-    engine: 'swig',
-    directory: 'templates',
+    engine: 'atpl',
+    partials: 'partials',
   }))
   .use(watch({
     paths: {
       '${source}/**/*': true,
-      'templates/**/*': '**/*',
+      'layouts/**/*': '**/*',
+      'partials/**/*': '**/*',
+      'index.js': '**/*',
     },
     livereload: false,
   }))

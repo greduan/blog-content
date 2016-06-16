@@ -1,0 +1,11 @@
+{% include "partials/header.html" %}
+
+<main role="main">
+  <ul>
+    {% for post in collections.posts %}
+      <li>{{ post.date | date('Y-m-d') }} &raquo; <a href="{{ post.path }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+</main>
+
+{% include "partials/footer.html" %}
