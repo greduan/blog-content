@@ -1,25 +1,38 @@
 'use strict'
 
-var Metalsmith = require('metalsmith'),
+var metalsmith = require('metalsmith'),
   drafts = require('metalsmith-drafts'),
   markdown = require('metalsmith-markdown-remarkable'),
   layouts = require('metalsmith-layouts'),
   path = require('metalsmith-path'),
   collections = require('metalsmith-collections'),
+  feed = require('metalsmith-feed'),
   watch = require('metalsmith-watch');
 
-Metalsmith(__dirname)
+metalsmith(__dirname)
   .source('src')
   .destination('_site')
+  .metadata({
+    site: {
+      title: 'Greduan\'s Blog',
+      url: 'http://blog.greduan.com',
+      author: 'Eduardo Lavaque',
+    },
+  })
   .use(drafts())
   .use(collections({
     posts: {
       sortBy: 'date',
       reverse: true,
+      refer: false,
     },
   }))
   .use(markdown('commonmark'))
   .use(path())
+  .use(feed({
+    collection: 'posts',
+    limit: false,
+  }))
   .use(layouts({
     engine: 'atpl',
     partials: 'partials',
