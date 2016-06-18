@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width">
+		<title>How to run a Promises array synchronously - Blog - Greduan.com</title>
+
+		<link rel="stylesheet" href="/css/normalize.css">
+		<link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.4.0/styles/default.min.css">
+	</head>
+	<body>
+    <header role="banner">
+      <h1><a href="/">Greduan's Blog</a></h1>
+    </header>
+
+
+<main role="main">
+
+  <article class="post">
+    <header>
+      <h1>How to run a Promises array synchronously</h1>
+      <p>2016-06-16</p>
+    </header>
+
+    <p>Put the following code in a file and run it with Node.js:</p>
+<pre><code class="language-javascript">var calls = [];
+
+var promises = [
+  new Promise(function (resolve) {
+    setTimeout(function () {
+      calls.push('first');
+
+      resolve();
+    }, 100);
+  }),
+  new Promise(function (resolve) {
+    calls.push('second');
+
+    resolve();
+  }),
+];
+
+setTimeout(function () {
+  console.log(calls);
+}, 100);
+</code></pre>
+<p>Please be aware the following code is bad practice, I'm creating a side-effect
+with a Promise, and side-effects like that can be hard to debug.</p>
+<p>Why did <code>calls</code> have content?  And why was it <code>['second', 'first']</code> and not the
+other way around?  That's because of how Promises behave, they execute as soon
+as the JS engine goes over them, not when you call <code>.then()</code> on them, and the
+first one runs (approximately) 100ms after the second one because of the
+<code>setTimeout</code>.</p>
+<p>So then, can we somehow run Promises synchronously?  Even if that sorta defeats
+the point of Promises?  Yes you can.</p>
+<p>You can game the JS engine a bit.</p>
+<p>Try running the following:</p>
+<pre><code class="language-javascript">var Promise = require('bluebird');
+
+var calls = [];
+
+var promises = [
+  function () {
+    return new Promise(function (resolve) {
+      setTimeout(function () {
+        calls.push('first');
+
+        resolve();
+      }, 100);
+    });
+  },
+  function () {
+    return new Promise(function (resolve) {
+      calls.push('second');
+
+      resolve();
+    });
+  },
+];
+
+Promise
+  .each(promises, function (promise) {
+    return promise();
+  })
+  .then(function () {
+    console.log(calls);
+  });
+</code></pre>
+<p>The output is <code>['first', 'second']</code>!  How are the Promises running
+synchronously?</p>
+<p>The answer is simple, first, they are now defined inside function, the
+function's contents aren't executed until the function is invoked, which is done
+by the <code>Promise.each</code>, and the way <code>Promise.each</code> works is that if you return a
+then-able it will wait until the then-able resolves in order to continue with
+the next thing in the loop.</p>
+<p>And that's it, because we're not executing the function until the previous
+function's output's then-able resolves, the Promises are run in order.</p>
+<p>It's a simple yet clever trick.  Many thanks to my coworker
+<a href="https://twitter.com/pateketrueke">@pateketrueke</a> for figuring this stuff out with me.</p>
+
+  </article>
+
+</main>
+
+		<footer role="contentinfo">
+			<a href="http://greduan.com">Greduan.com</a> -
+			<a href="https://github.com/greduan/greduan.blog">Website's source</a> -
+			<a href="http://greduan.com/contact.html">Contact</a>
+		</footer>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.4.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+	</body>
+</html>
+
