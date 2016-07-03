@@ -1,5 +1,5 @@
 ---
-title: How to run a Promises array synchronously
+title: How to run a Promises array in a series
 collection: posts
 layout: post.html
 date: 2016-06-17
