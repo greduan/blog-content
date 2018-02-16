@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width">
+		<title>My take on Vim vs. Emacs - Blog - Greduan.com</title>
+
+		<link rel="stylesheet" href="/css/normalize.css">
+		<link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.4.0/styles/default.min.css">
+	</head>
+	<body>
+    <header role="banner">
+      <h1><a href="/">Greduan's Blog</a></h1>
+    </header>
+
+
+<main role="main">
+
+  <article class="post">
+    <header>
+      <h1>My take on Vim vs. Emacs</h1>
+      <p>2014-05-30</p>
+    </header>
+
+    <p>This is not meant to create any kind of flamewar or anything, this is just my
+take on the real differences, technical or otherwise.</p>
+<p>Let's start with the fact that they are completely different things if you look
+at them, for very different publics.  Emacs is the platform, Vim is the editor.
+Vim could never beat Emacs as a platform, Emacs couldn't beat Vim as an editor.
+And those are facts.</p>
+<p>Vim has the most impressive things in it in order to edit text in the most
+impressive ways possible.  You see some Vim users and they just move ALL around
+the place, sometimes it's even hard to see their cursor from their speed.
+Sometimes it's hard to figure out what they are doing because they are doing it
+so fast.</p>
+<p>Emacs has the most impressive things in it in order to be able to basically do
+whatever the hell you want in it.  Users can really have everything running on
+Emacs if they so desired.  Here's a short list of some of the stuff Emacs can do
+by default:</p>
+<ul>
+<li>Tetris</li>
+<li>A browser</li>
+<li>IRC chat</li>
+<li>Calendar</li>
+<li>Built-in shell</li>
+<li>Async OMG!</li>
+</ul>
+<p>Vim has trouble with async, but its community has found several ways to achieve
+async in Vim, <a href="https://github.com/Shougo/vimproc.vim">vimproc.vim</a> for example.  I think there are several
+ways anyway...</p>
+<p>Emacs handles async like a champ since the moment you install it.</p>
+<p>Vim startups in like 2 tenths of a second, with several plugins installed, for
+me.  Practically instantly with <code>vim -u NONE</code>.</p>
+<p>Emacs, with <code>emacs -q</code> quite quick, maybe like my usual Vim config.  But with my
+init file it takes one or two seconds.  Granted my config really has to be
+cleaned up.</p>
+<p>Vim uses VimL, which is slow, quirky and not all that powerful, although some
+people have done some really cool stuff with it.</p>
+<p>Emacs uses Elisp, a variation of Common Lisp.  It is a Lisp, what more is there
+to say?  It's awesome automatically<a href="http://clojure.org/">.</a></p>
+<p>Now here is an interesting fact about Emacs.  It technically has all the power
+and potential needed to make it as good as Vim at editing text, to an extent,
+except its interface sucks and isn't modal.  There's a thing called <a href="http://www.emacswiki.org/emacs/Evil">Evil</a>
+that tries to fix that.  It does quite a good job, but for the advanced Vim
+users, like Drew Neil and Tim Pope, I don't really think it cuts it.</p>
+<p>Vim users are, as bling once said, tenacious.  You will most often find
+something be implemented in Vim first before it's implemented in Emacs, no
+matter how hacky or dirty the method is, they will most certainly do it first.
+Except stuff that is just plain impossible in Vim. Like this:
+<a href="https://github.com/zk-phi/sublimity">https://github.com/zk-phi/sublimity</a></p>
+<p>That is how I see it. I'd really love to see Emacs as a platform that runs Vim
+on top of it and that would practically be the best text editor.</p>
+
+  </article>
+
+</main>
+
+		<footer role="contentinfo">
+			<a href="http://greduan.com">Greduan.com</a> -
+			<a href="https://github.com/greduan/greduan.blog">Website's source</a> -
+			<a href="http://greduan.com/contact.html">Contact</a>
+		</footer>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.4.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+	</body>
+</html>
+

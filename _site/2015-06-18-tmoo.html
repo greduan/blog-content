@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width">
+		<title>Two months of OpenBSD - Blog - Greduan.com</title>
+
+		<link rel="stylesheet" href="/css/normalize.css">
+		<link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.4.0/styles/default.min.css">
+	</head>
+	<body>
+    <header role="banner">
+      <h1><a href="/">Greduan's Blog</a></h1>
+    </header>
+
+
+<main role="main">
+
+  <article class="post">
+    <header>
+      <h1>Two months of OpenBSD</h1>
+      <p>2015-06-17</p>
+    </header>
+
+    <p><strong>September 1st: This blog post was originally written back in June 18th, and it
+was a draft so I didn't publish it, but it's been here for so long I decided to
+publish it.</strong></p>
+<p>If you haven't already, read my previous blog post about OpenBSD where I shared
+<a href="http://blog.greduan.com/2015-04-19-mstobfi.html">my experience of switching to OpenBSD</a>.</p>
+<p>OK, in this blog post I am going to share my experience of using OpenBSD on my
+main rig for 2 whole months, and why I switched back to Linux (gasp!).  I am
+writing this in Arch Linux which I just installed today, in case you're
+wondering.</p>
+<p>Let's start off by saying, it has probably been my favorite experience from an
+OS.  It is certainly the first OS (after the CRUX distro) that I did not feel
+dirty installing or using.  With Arch I always have this itch in the back of my
+head which makes me uncomfortable using the OS.</p>
+<p>The lack of GNU in my coreutils and ksh being the default shell was a very nice
+feeling.</p>
+<p>It certainly felt weird to not be using a rolling-release OS, and I never
+installed any patches or <code>-current</code> so I probably missed out on a whole
+experience.</p>
+<p>All I'm saying is, I didn't leave OpenBSD because I didn't like it.  I loved it!
+I am leaving OpenBSD because the Node.js support on it is weak.  And I know the
+guy maintaining the <code>node</code> package is doing his dangdest, but sadly without
+<a href="https://github.com/creationix/nvm"><code>nvm</code></a> or something similar one can't have a good Node.js dev environment,
+and <code>nvm</code> depends on the prebuilt binaries Node.js offers, which do not have
+BSD versions. :/</p>
+<p>For those unaware, when working with Node.js one often has to work with several
+versions of Node.  0.10 being stable, 0.12 being the stable but sorta new
+Node.js, and io.js being the absolute newest and least stable.  Because you work
+with different versions depending on your client or your project, you need to
+switch between these versions.  <code>nvm</code> offers a cool feature where you can do
+<code>nvm use 0.10</code> and boom, your path now has Node 0.10 in the PATH instead of 0.12
+or whatever.</p>
+<p>The lack of a tool like <code>nvm</code> is incredibly inconvenient, and that is why I'm
+switching back to Linux.  So it's nothing personal, it's just Node.js is my job
+and I need <code>nvm</code>.</p>
+<!--
+> TODO: Add link to blog post I haven't written yet. :P
+<p>Back to OpenBSD, I have written a blog post that will surely be of interest to
+any Linux person thinking about switching or that are in the process of
+switching.  It covers some of the questions that I myself had when switching.
+--&gt;</p>
+<p>In the future I will definitely be switching back to OpenBSD if the situation
+with Node.js improves, get on it devs! :)</p>
+
+  </article>
+
+</main>
+
+		<footer role="contentinfo">
+			<a href="http://greduan.com">Greduan.com</a> -
+			<a href="https://github.com/greduan/greduan.blog">Website's source</a> -
+			<a href="http://greduan.com/contact.html">Contact</a>
+		</footer>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.4.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+	</body>
+</html>
+

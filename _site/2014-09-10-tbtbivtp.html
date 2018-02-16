@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width">
+		<title>The bleeding terminal background inside Vim + Tmux problem - Blog - Greduan.com</title>
+
+		<link rel="stylesheet" href="/css/normalize.css">
+		<link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.4.0/styles/default.min.css">
+	</head>
+	<body>
+    <header role="banner">
+      <h1><a href="/">Greduan's Blog</a></h1>
+    </header>
+
+
+<main role="main">
+
+  <article class="post">
+    <header>
+      <h1>The bleeding terminal background inside Vim + Tmux problem</h1>
+      <p>2014-09-09</p>
+    </header>
+
+    <p>I need to document this as a reminder for myself and as a saviour blog post to
+any person out there in the internet that uses Vim and Tmux.</p>
+<p>Read the following blog post.  That is all I'm going to say.</p>
+<p><a href="http://sunaku.github.io/vim-256color-bce.html">http://sunaku.github.io/vim-256color-bce.html</a></p>
+<p>Solved a problem I've had for years in Vim.  Thank you random internet person.</p>
+<p>Hopefully this helps you as well, random internet person.</p>
+<p>EDIT:</p>
+<p>Thought I should probably post the solution as well:</p>
+<pre><code>if &amp;term =~ '256color'
+    &quot; disable Background Color Erase (BCE) so that color schemes
+    &quot; render properly when inside 256-color tmux and GNU screen.
+    &quot; see also http://sunaku.github.io/vim-256color-bce.html
+    set t_ut=
+endif&quot;
+</code></pre>
+
+  </article>
+
+</main>
+
+		<footer role="contentinfo">
+			<a href="http://greduan.com">Greduan.com</a> -
+			<a href="https://github.com/greduan/greduan.blog">Website's source</a> -
+			<a href="http://greduan.com/contact.html">Contact</a>
+		</footer>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.4.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+	</body>
+</html>
+

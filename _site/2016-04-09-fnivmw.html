@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width">
+		<title>File navigation in Vim (my way) - Blog - Greduan.com</title>
+
+		<link rel="stylesheet" href="/css/normalize.css">
+		<link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.4.0/styles/default.min.css">
+	</head>
+	<body>
+    <header role="banner">
+      <h1><a href="/">Greduan's Blog</a></h1>
+    </header>
+
+
+<main role="main">
+
+  <article class="post">
+    <header>
+      <h1>File navigation in Vim (my way)</h1>
+      <p>2016-04-08</p>
+    </header>
+
+    <p>I'm going to talk about a flow I've developed recently, for myself, for
+navigating files within Vim.</p>
+<p>Note I say Vim in the post title but I use Neovim, I just felt like saying that,
+because it makes no real difference to this post's content.</p>
+<p>Let's just start with saying that I use <a href="https://github.com/junegunn/fzf">fzf</a> for finding files in a fuzzy
+matching manner.  This is incredibly convenient.  You can of course use
+<a href="https://github.com/ctrlpvim/ctrlp.vim">CtrlP</a> or whatever you prefer, but I use fzf.</p>
+<p>So that's one way I navigate them, another way that, in combination with the
+above, is actually quite powerful, is with netrw-like or netrw enhancing
+plugins.</p>
+<p>Namely <a href="https://github.com/tpope/vim-vinegar">vim-vinegar</a> and <a href="https://github.com/justinmk/vim-dirvish">vim-dirvish</a>.</p>
+<p>Why do I use two conflicting-looking plugins?</p>
+<p>I use Vinegar because Vinegar provides a map of <code>-</code> to open the current folder
+in netrw, or go up one folder if already in netrw. But netrw isn't Dirvish,
+don't worry, cause Dirvish hijacks netrw so when you open netrw, Dirvish opens
+instead.</p>
+<p>Dirvish is what makes this setup cool for me, so if you haven't already, read
+its <a href="https://github.com/justinmk/vim-dirvish#readme">README file</a>.</p>
+<p>Anyway, I wanted to document that.  I'll also share my related rc config stuff
+so that you and I can reproduce this behaviour easily:</p>
+<pre><code>Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --no-update-rc' }
+Plug 'junegunn/fzf.vim'
+Plug 'tpope/vim-vinegar'
+Plug 'justinmk/vim-dirvish'
+
+&quot; Relative line numbers in a Dirvish buffer
+autocmd! FileType dirvish setlocal relativenumber
+</code></pre>
+<h2>Update 2016-06-14</h2>
+<p>Somebody on Twitter actually let me know that you don't need vim-vinegar to have
+the usage of the <code>-</code> keybind, vim-dirvish added it to itself now, which is
+great.</p>
+<p>So you can just have vim-dirvish installed now and that'll work out great. :)</p>
+
+  </article>
+
+</main>
+
+		<footer role="contentinfo">
+			<a href="http://greduan.com">Greduan.com</a> -
+			<a href="https://github.com/greduan/greduan.blog">Website's source</a> -
+			<a href="http://greduan.com/contact.html">Contact</a>
+		</footer>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.4.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+	</body>
+</html>
+
