@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{title}}</title>
+
+    <link href="/css/normalize.css" rel="stylesheet">
+    <link href="/css/main.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="content">
+      <h1>{{{title}}}</h1>
+      <p>
+        <a href="/">Go back to home page.</a>
+      </p>
+      <ul>
+        {{#each blogPosts}}
+        <li><a href="/{{{path}}}">{{title}}</a></li>
+        {{/each}}
+      </ul>
+    </div>
+  </body>
+</html>
+
