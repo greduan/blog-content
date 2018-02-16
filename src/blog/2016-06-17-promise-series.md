@@ -1,9 +1,7 @@
 ---
 title: How to run a Promises array in a series
-collection: posts
-layout: post.html
+layout: post.hbs
 date: 2016-06-17
-tags: javascript
 ---
 
 Put the following code in a file and run it with Node.js:
