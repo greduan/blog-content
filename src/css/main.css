@@ -2,3 +2,14 @@
   max-width: 600px;
   margin: 100px auto;
 }
+
+body {
+  font-size: 18px;
+}
+
+pre {
+  overflow-x: scroll;
+  background-color: #eee;
+  border-radius: 2px;
+  padding: 10px;
+}

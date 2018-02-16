@@ -10,6 +10,9 @@ in nature), programming, and learning game development (a slow endeavour).
 
 [impala]: https://getimpala.com/
 
+Please note that any views expressed herein are not the views of my employer,
+in this case Impala.
+
 You can get in contact with me through my email [me@greduan.com][email].  If you
 fancy using GPG/PGP, you can find my public key at [`/gpg`][gpg].
 
