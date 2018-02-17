@@ -6,6 +6,8 @@ const layouts = require('metalsmith-layouts')
 const mPath = require('metalsmith-path')
 const drafts = require('metalsmith-drafts')
 
+const fecha = require('fecha')
+
 Metalsmith(__dirname)
   .source(path.resolve(__dirname, 'src'))
   .destination(path.resolve(__dirname, 'dist'))
@@ -21,6 +23,12 @@ Metalsmith(__dirname)
   .use(drafts())
   .use(layouts({
     engine: 'handlebars',
+    engineOptions: {
+      helpers: {
+        formatDate: (date) =>
+          `<time datetime="${date}">${fecha.format(date, 'YYYY-MM-DD')}</time>`,
+      },
+    },
   }))
   .use(mPath({
     baseDirectory: '/',

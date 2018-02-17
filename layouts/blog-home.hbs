@@ -12,9 +12,9 @@
       <p>
         <a href="/">Go back to home page.</a>
       </p>
-      <ul>
+      <ul class="nodots">
         {{#each blogPosts}}
-        <li><a href="/{{{path}}}">{{title}}</a></li>
+        <li>{{{formatDate date}}} &raquo; <a href="/{{path}}">{{{title}}}</a></li>
         {{/each}}
       </ul>
     </div>

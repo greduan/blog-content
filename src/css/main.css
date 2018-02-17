@@ -13,3 +13,8 @@ pre {
   border-radius: 2px;
   padding: 10px;
 }
+
+ul.nodots {
+  list-style-type: none;
+  padding-left: 0;
+}
