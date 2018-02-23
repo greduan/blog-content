@@ -4,7 +4,7 @@ layout: post.hbs
 date: 2018-02-19
 ---
 
-So there's a new website and blog, in both design, engine.
+So there's a new website and blog, in both design and engine.
 
 So the basic changes are:
 
