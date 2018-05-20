@@ -8,10 +8,7 @@ const app = fastify({ logger: true })
 const gpg = fs.readFileSync(path.join(__dirname, 'gpg-pub.txt'), 'utf8')
 
 app.get('/gpg', (request, reply) => {
-  reply
-    .code(200)
-    .header('Content-Type', 'text/plain; charset=us-ascii')
-    .send(gpg)
+  reply.redirect('http://pgp.mit.edu/pks/lookup?op=get&search=0x99C9826C54CFDECB')
 })
 
 app.register(fastifyStatic, {
