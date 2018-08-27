@@ -29,7 +29,8 @@ be aware of if you wanna use `--global` or not.
 These are basics, actually you need at least this to be able to run Git.  I
 believe this is in every Git "getting started" guide or something like that.
 
-Though the `github.user` one is just a helper for 
+Though the `github.user` used to be recommended by GitHub some years ago, I
+think it's no longer necessary or relevant.
 
     commit.gpgsign true
 
