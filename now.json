@@ -1,3 +1,14 @@
 {
-  "alias": "greduan.com"
+  "name": "greduan.com",
+  "alias": "greduan.com",
+  "scale": {
+    "sfo1": {
+      "min": 1,
+      "max": "auto"
+    },
+    "bru1": {
+      "min": 1,
+      "max": "auto"
+    }
+  }
 }
