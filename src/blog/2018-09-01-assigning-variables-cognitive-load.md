@@ -8,8 +8,8 @@ Something I see I have to point out during code reviews with some degree of
 frequency is the concept of code layout and how it affects cognitive load.
 
 I don't remember where I learnt this originally, but it was probably
-a combination of articles and it was some time go, it would thus be hard to give
-you a list of sources.
+a combination of articles and it was some time ago, it would thus be hard to
+give you a list of sources.
 
 But here is the basic concept of it.
 
@@ -22,7 +22,8 @@ function, the function arguments etc.
 But, there are things a programmer can do to worsen the cognitive load, and
 reversely, to improve it.
 
-In this post we'll explore just variables.  The simple ways in which you can improve cognitive load by simply using less variables.
+In this post we'll explore just variables.  The simple ways in which you can
+improve cognitive load by simply using less variables.
 
 Let's start with an easy example:
 
@@ -108,6 +109,10 @@ The basic concept is as follows:
 2. Use the direct value instead of a variable where possible.
 3. If you must use a variable, define them as close to their usage as possible.
 
+_Note: The following section is not really convincing with its example, so I
+want you to think about the point I'm making as opposed to the exact example
+I'm showcasing. :)_
+
 Now, somebody will be sharp enough to notice that these examples don't apply to
 duplication.  What about deduplication?  I use one variable several times?
 
@@ -116,7 +121,9 @@ Then the conditions change.
 Now I swear I read this in an article pointing this out, but I can't find it so
 I'll do my best to present the argument.
 
-Let's say you have a function which takes in an argument and returns a result from it.  At some point, the input has to be squared and it's used in several spots.
+Let's say you have a function which takes in an argument and returns a result
+from it.  At some point, the input has to be squared and it's used in several
+spots.
 
 ```javascript
 const getSomeNumber = inNumber => {
