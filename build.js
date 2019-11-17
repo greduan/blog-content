@@ -10,7 +10,7 @@ const fecha = require('fecha')
 
 Metalsmith(__dirname)
   .source(path.resolve(__dirname, 'src'))
-  .destination(path.resolve(__dirname, 'dist'))
+  .destination(path.resolve(__dirname, 'public'))
   .clean(true)
   .use(markdown())
   .use(collections({
