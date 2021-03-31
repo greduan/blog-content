@@ -1,0 +1,125 @@
+---
+title: My explanation of The Zone
+layout: blogpost
+date: 2014-02-19
+---
+
+**Notice from 2015: In retrospect, this seems kind of obvious, doesn't it?  Feel
+free to skip this blog post cause it doesn't help you in life. lol
+
+Also in this time of my life I had a tick of saying "so", so get ready for that.
+lol**
+
+So.  A lot of programmers talk about "the zone", this high performance mode that
+programmers get into is one that the most pro of the athletes also seem to
+experience.  It is described as a "zone" where the people that experience it are
+just so concentrated that nothing distracts them and they can get great work
+done very quickly.
+
+Most scientists can't explain this and the best explanation I have seen of this
+(IIRC) is that it's a result of "time slowing down", where your senses just get
+so sharp you can feel time slowing down, or so it is described.
+
+You may notice I am mixing two kinds of "zones" here, the programmer's zone and
+the athlete's zone, this is on purpose, you'll see later on why.
+
+## Hammock Driven Development
+
+So, I got thinking about this originally because of
+[Rich Hickey's Hammock Driven Development][hdd].  I got thinking about his idea.
+There is an excellent summary by the website [Data Sorcery With Clojure]() which
+can be found here: <http://data-sorcery.org/2010/12/29/hammock-driven-dev/>
+
+[hdd]: http://youtu.be/f84n5oFoZBc
+[ds]: http://data-sorcery.org/
+
+Here's the image:
+
+<img src="http://incanter.org/images/misc/hammock-driven-dev.png" alt="Hammock Driven Development cheatsheet">
+
+Now.  I disagree with him partially.  I do not think it works that way, but
+that's certainly seems to be the result.  So it works, but not for the right
+reasons, you could say.
+
+So Rich is right, partially.  Results, OK, reasons, nein.
+
+## My theory of Hammock Driven Development
+
+So how Rich explains it is that there's basically two minds.  Evaluation and
+Preparation.  Probably don't go by these names in Rich's world, but you get the
+idea.
+
+Now here's where I disagree.  There's only one mind in my book, it just has
+different priorities, now let me explain that cause it's not that simple.
+
+## Attention units
+
+For now assume attention units are just some kind of unit of concentration or
+something, I'll explain it soon enough.
+
+OK, so, here's my idea of how the mind actually works, in terms of the zone.
+One mind, different priorities.
+
+So let's say I'm just standing still.  My mind at this point is doing all kinds
+of shit.  Keeping track of bodily functions, breathing, blood pumping, all of
+the organs that process food and stuff, recording perceptions and evaluating
+them, keeping balance of the body.  All of this shit is happening real time,
+often so quickly and so easily we don't pay much attention to it, but it's still
+happening.  It is still doing all of that stuff.
+
+Now, consider when you are sleeping or just relaxing.  A *lot* of these senses
+are dulled or just completely shut down. When I'm sleeping all that's happening
+is breathing, blood pumping, and some bodily functions, but in general my body
+is quiet. My senses are practically hibernating (in computer terms), just
+awaiting the call that is "I've slept enough" or some kind of waking up call, of
+any kind.
+
+Now, consider the mind's availability in both of these situations. In the first
+it's busy, in the second it's got free time.  People often consider dreams as
+just your mind processing and organizing the stuff that happened during the day,
+that might very well be it entertaining itself, but that's another topic.
+
+OK so now, what are attention units? Let's say you are... thinking about cats
+with your eyes closed while sitting down or laying down.  Most of your attention
+units are on the cats, that's what you're thinking about, some are on perceptics
+etc. There are also some on what you're going to eat next, mental memos, that
+call you need to do right after thinking of cats etc.  Everything you have *any*
+attention of *any* kind has some of your attention units.
+
+Some people have more of these attention units at their disposal, because of
+their environment, their natural "talent" (not my favorite word to be honest)
+etc.
+
+Now, according to Rich, all the problems we've solved have been solved by the
+Evaluation mind at some point, and while we consider ourselves smart because we
+think of solutions fast it's just because at some point this problem had already
+been solved by the Evaluation mind and you just need to call it back to your
+Preparation mind. Rich is actually quite vague IIRC on this, but that's the
+general idea AFAIK.
+
+So here is my opinion, that's wrong.  It's one mind, just different priorities
+at different times with different problems and different amounts of attention
+units.  Turns out while sleeping it has more time to spend attention units on
+your problem, thus solve it.
+
+People that are good at maths (without being some sort of parrot) just have
+attention units at their disposal... and practice.  They have these attention
+units in order to have "variables" in their mind of number values that they need
+to keep floating around.  Plus good mind processor.
+
+## Summary
+
+- Not two minds, only one.
+- Mind has different priorities.
+- While sleeping the priorities are few, thus more time for your problems.
+- While awake, you can still solve problems from scratch, speed depends from
+  person to person...
+
+Of course, this depends *greatly* on the person. His emotional and mental status
+and aptitude.
+
+That's just my two cents.
+
+**P.S.:** Forgot to talk about the zone.  Oops.  Basically, just *all* of your
+attention units are on what matters to you, thus you have more time to think and
+nothing distracts you since your attention units aren't on that.

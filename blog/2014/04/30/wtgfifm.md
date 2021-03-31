@@ -1,0 +1,72 @@
+---
+title: What the gut feeling is for me
+layout: blogpost
+date: 2014-04-30
+---
+
+**Notice from 2015: Why even try to describe this without body language?  Such
+a dumb idea from me.**
+
+I acknowledge that the gut feeling works different for everyone, and it seems
+women have a different kind of gut feeling called a "woman's instinct" or
+something like that.  But I'm gonna talk about my experience with my gut feeling
+and how maybe you could start using it.
+
+Now, in my experience, the gut feeling has not been what I feel in my gut, so
+let's start by putting that out there.
+
+Now, the gut feeling for me has been an interesting experience.  The way my gut
+feeling comes for me is the first thought that comes to mind pretty much.
+
+I am better at judging people I just met by gut feeling than by analysis.  The
+first time I meet someone I trust my gut feeling as what I work off from to
+analyze.  No matter how nice or how insensitive a person seems, it's the gut
+feeling that tells me if they could be good friends, bad friends, or the kind
+that seems like a good friend but screws you over behind your back.
+
+For example, if I meet someone and they're very charming and all, but something
+at the back of my head pokes at me like "I don't like this person", I will trust
+that poke, because most of the time it has been right, and if it was wrong,
+there's always a second chance, the analysation stage.  BTW, one of the reasons
+I don't hangout with as much people as I probably should, gut feeling telling me
+no.
+
+But that's just meeting people.  Eating food works similarly, except this one
+could save my life quite directly.  I have never eaten something that gives me
+a bad feeling.  I don't judge meat by how it looks, I judge it by my body saying
+yes or no.
+
+I should mention at this point, gut feeling is not always everything.  You know,
+you're not gonna cheat on your wife or girlfriend because your body is saying
+yes, it's times like these that the mind has to come in and put the body under
+control and say "NO".
+
+Have you ever had that feeling where you just feel like you have to do
+something?  Or you've done it before you realize?  I haven't had quite an like
+that experience myself, but I was witness to one.
+
+While in Argentina there was this pizza delivery-man, he was leaving for a
+delivery and had the pizza on the back, whatever.  He stored the pizza and got
+on the bike (a motorcycle), as he was starting it, with the most fluid of
+movements he got off.  Like 1 second later a car crashed against his bike
+(lightly).  Now what's interesting is that the car came from nowhere, he could
+not see it or hear it, I didn't myself as I was facing the same general
+direction he was.
+
+When the car crashed the guy was bewildered, he looked bewildered at least, he
+had no idea what had just happened.  He just got off his bike without knowing
+why and a second later a car crashed against his bike.
+
+The way I see it, that's gut feeling and your body answering without giving you
+a choice.  My mom experienced something similar, had she not scooted over by
+like 10 or 20cm, a car would have hit her, this is one time she was coming out
+of a cab, although I didn't see this one myself, it's a story she shared with
+me.
+
+This is a long post, but in the end I guess the point is, don't ignore your gut
+feeling.  And everybody has it, those that have it more just know how or when to
+listen to it.
+
+Next time you met a person, trust your gut feeling, it'll probably something so
+basic you'll almost miss.  For me most of my gut feelings are the first thought
+in my head when I am given a choice of some sort.
