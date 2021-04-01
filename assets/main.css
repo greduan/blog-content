@@ -1,0 +1,17 @@
+body {
+  font-size: 18px;
+  max-width: 600px;
+  margin: 100px auto;
+}
+
+pre {
+  overflow-x: scroll;
+  background-color: #eee;
+  border-radius: 2px;
+  padding: 10px;
+}
+
+ul.nodots {
+  list-style-type: none;
+  padding-left: 0;
+}

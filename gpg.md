@@ -1,3 +1,9 @@
+---
+title: GPG/PGP Key
+layout: page
+---
+
+```
 -----BEGIN PGP PUBLIC KEY BLOCK-----
 Version: GnuPG v2
 
@@ -50,3 +56,4 @@ axRxHWNA0tLSRLzdcO9mPR+LFnOJT8+HcNC85GTdTRcnfuPY7OVN4L5jyQLOlOah
 PuEsPJ7H7Bq0sQ==
 =7trm
 -----END PGP PUBLIC KEY BLOCK-----
+```
