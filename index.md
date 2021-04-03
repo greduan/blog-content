@@ -1,4 +1,4 @@
 ---
 title: Home - Eduardo Lavaque
-layout: page
+layout: home
 ---
