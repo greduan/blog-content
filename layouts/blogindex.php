@@ -35,7 +35,8 @@ class Layout {
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <title>Eduardo Lavaque's Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Blog - Eduardo Lavaque</title>
   <link href="/assets/normalize.css" rel="stylesheet">
   <link href="/assets/main.css" rel="stylesheet">
 </head>

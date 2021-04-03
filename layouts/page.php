@@ -8,13 +8,16 @@ class Layout {
 <html lang="en">
 <head>
   <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title><?php echo $metadata['title']; ?></title>
   <link href="/assets/normalize.css" rel="stylesheet">
   <link href="/assets/main.css" rel="stylesheet">
 </head>
 <body>
 <?php render_header(); ?>
-<?php echo $parser->parse_contents($contents); ?>
+<article>
+  <?php echo $parser->parse_contents($contents); ?>
+</article>
 </body>
 </html>
     <?php
