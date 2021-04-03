@@ -1,4 +1,6 @@
 <?php
+require_once dirname(__FILE__) . '/_header.php';
+
 class Layout {
   private function get_blog_posts() {
     // Get list of posts
@@ -38,8 +40,25 @@ class Layout {
   <link href="/assets/main.css" rel="stylesheet">
 </head>
 <body>
-<h1><?php echo $metadata['title']; ?></h1>
-<p><a href="/">Go back to home page.</a></p>
+<?php render_header(); ?>
+<table id="blogindex">
+  <tbody>
+    <?php foreach ($this->get_blog_posts() as $post) { ?>
+      <tr>
+        <td>
+          <time datetime="<?php echo date('Y-m-d', $post['date']); ?>">
+            <?php echo date('Y-m-d', $post['date']); ?>
+          </time>
+        </td>
+        <td>
+          <a href="<?php echo $post['_uri']; ?>"><?php echo $post['title']; ?></a>
+        </td>
+      </tr>
+    <?php } ?>
+  </tbody>
+</table>
+
+<!--
 <ul class="nodots">
   <?php foreach ($this->get_blog_posts() as $post) { ?>
     <li>
@@ -51,6 +70,7 @@ class Layout {
     </li>
   <?php } ?>
 </ul>
+-->
 </body>
 </html>
     <?php

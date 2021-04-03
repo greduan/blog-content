@@ -2,6 +2,56 @@ body {
   font-size: 18px;
   max-width: 600px;
   margin: 100px auto;
+  font-family: arial, sans-serif;
+}
+
+#masthead ul ruby rt {
+  /* For some reason the Ruby overflows to the right side */
+  margin-right: 4px;
+}
+
+#masthead {
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.colorful {
+  display: inline-block;
+  border-radius: 3px;
+  text-decoration: none;
+  font-style: normal;
+}
+
+.colorful:hover {
+  background-color: lightblue;
+  color: white;
+}
+
+.active.colorful,
+.active .colorful {
+  background-color: lightpink;
+  color: white;
+}
+
+#masthead li {
+  display: inline-block;
+}
+
+#masthead li:not(:first-of-type) {
+  margin-left: 10px;
+}
+
+#masthead a {
+  display: block;
+  padding: 6px 10px;
+}
+
+article header {
+  text-align: center;
+}
+
+a:visited {
+  color: blue;
 }
 
 pre {
@@ -9,9 +59,31 @@ pre {
   background-color: #eee;
   border-radius: 2px;
   padding: 10px;
+  font-size: 16px;
 }
 
 ul.nodots {
   list-style-type: none;
   padding-left: 0;
+}
+
+address {
+  display: inline-block;
+}
+
+address a {
+  text-decoration: none;
+}
+
+table#blogindex {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+table#blogindex td {
+  vertical-align: top;
+}
+
+table#blogindex td:not(:first-of-type) {
+  padding-left: 20px;
 }

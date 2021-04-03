@@ -1,4 +1,6 @@
 <?php
+require_once dirname(__FILE__) . '/_header.php';
+
 class Layout {
   public function render($metadata, $contents, $parser) {
     ?>
@@ -11,16 +13,21 @@ class Layout {
   <link href="/assets/main.css" rel="stylesheet">
 </head>
 <body>
-<h1><?php echo $metadata['title']; ?></h1>
-<p>
-  Dated as
-  <time datetime="<?php echo date('Y-m-d', $metadata['date']); ?>">
-    <?php echo date('Y-m-d', $metadata['date']); ?>
-  </time>
-</p>
-<?php echo $parser->parse_contents($contents); ?>
-<hr />
-<p><a href="/blog">Go back to blog posts list.</a></p>
+<?php render_header(); ?>
+<article>
+  <header>
+    <h1><?php echo $metadata['title']; ?></h1>
+    <div class="byline">
+      <time pubdate datetime="<?php echo date('Y-m-d', $metadata['date']); ?>">
+        <?php echo date('Y-m-d', $metadata['date']); ?>
+      </time>
+      ・
+      <address><a class="colorful" rel="author" href="/about">Eduardo Lavaque</a></address>
+    </div>
+  </header>
+
+  <?php echo $parser->parse_contents($contents); ?>
+</article>
 </body>
 </html>
     <?php

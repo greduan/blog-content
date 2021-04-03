@@ -1,4 +1,6 @@
 <?php
+require_once dirname(__FILE__) . '/_header.php';
+
 class Layout {
   public function render($metadata, $contents, $parser) {
     ?>
@@ -11,7 +13,7 @@ class Layout {
   <link href="/assets/main.css" rel="stylesheet">
 </head>
 <body>
-<h1><?php echo $metadata['title']; ?></h1>
+<?php render_header(); ?>
 <?php echo $parser->parse_contents($contents); ?>
 </body>
 </html>
