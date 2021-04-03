@@ -1,5 +1,6 @@
 <?php
 require_once dirname(__FILE__) . '/_header.php';
+require_once dirname(__FILE__) . '/_footer.php';
 
 class Layout {
   public function render($metadata, $contents, $parser) {
@@ -18,6 +19,7 @@ class Layout {
 <article>
   <?php echo $parser->parse_contents($contents); ?>
 </article>
+<?php render_footer(); ?>
 </body>
 </html>
     <?php

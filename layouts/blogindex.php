@@ -1,5 +1,6 @@
 <?php
 require_once dirname(__FILE__) . '/_header.php';
+require_once dirname(__FILE__) . '/_footer.php';
 
 class Layout {
   private function get_blog_posts() {
@@ -58,20 +59,7 @@ class Layout {
     <?php } ?>
   </tbody>
 </table>
-
-<!--
-<ul class="nodots">
-  <?php foreach ($this->get_blog_posts() as $post) { ?>
-    <li>
-      <time datetime="<?php echo date('Y-m-d', $post['date']); ?>">
-        <?php echo date('Y-m-d', $post['date']); ?>
-      </time>
-      &raquo;
-      <a href="<?php echo $post['_uri']; ?>"><?php echo $post['title']; ?></a>
-    </li>
-  <?php } ?>
-</ul>
--->
+<?php render_footer(); ?>
 </body>
 </html>
     <?php

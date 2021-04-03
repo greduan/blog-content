@@ -93,3 +93,15 @@ table#blogindex td {
 table#blogindex td:not(:first-of-type) {
   padding-left: 20px;
 }
+
+footer {
+  text-align: center;
+  margin-top: 40px;
+}
+
+footer .top-border {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  border-top: lightgray 1px solid;
+}
