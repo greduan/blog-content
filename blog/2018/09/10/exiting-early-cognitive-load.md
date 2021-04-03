@@ -8,7 +8,7 @@ Continuing from our [last post about cognitive load][last-post], today we'll
 talk about another general practice that will do you good to simplify your
 code's logic and reduce its cognitive load.
 
-[last-post]: 2018-09-01-assigning-variables-cognitive-load.html
+[last-post]: https://greduan.com/blog/2018/09/01/assigning-variables-cognitive-load
 
 This post will be about a pattern that I think is referred to as returning early
 or something to this effect, but since you could also throw to get out of it

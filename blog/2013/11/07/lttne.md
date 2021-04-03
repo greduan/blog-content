@@ -9,7 +9,7 @@ including the fact that I was trying to compare an extensible editor to Emacs,
 the most extensible of them all.  I wrote about it later on briefly in a
 [blog post][awwe].**
 
-[awwe]: http://blog.greduan.com/2014-08-08-awwe.html
+[awwe]: https://greduan.com/blog/2014/08/08/awwe
 
 The title may be misleading so I'm gonna make it clear right now.  I couldn't
 come up with anything better.  It's gonna stay like that, so you can make

@@ -11,7 +11,7 @@ publish it.**
 If you haven't already, read my previous blog post about OpenBSD where I shared
 [my experience of switching to OpenBSD][sto].
 
-[sto]: http://blog.greduan.com/2015-04-19-mstobfi.html
+[sto]: https://greduan.com/blog/2015/04/19/mstobfi
 
 OK, in this blog post I am going to share my experience of using OpenBSD on my
 main rig for 2 whole months, and why I switched back to Linux (gasp!).  I am

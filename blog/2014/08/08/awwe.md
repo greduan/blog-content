@@ -129,7 +129,7 @@ In Vim it's not pleasant either but at least it's straightforward.
 
 **Notice from 2015: I [figured it out][bp]. :3**
 
-[bp]: http://blog.greduan.com/2015-04-29-iahie.html
+[bp]: https://greduan.com/blog/2015/04/29/iahie
 
 ### Elisp
 
