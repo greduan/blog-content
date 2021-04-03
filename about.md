@@ -9,9 +9,10 @@ You can get in contact with me through my email
 find my public key at [`/gpg`](/gpg).
 
 You can find this website's licensing information under
-[`/licenses`](/licenses).
+[`/licenses`](/licenses).  And you can find its source on GitHub
+[`greduan/blog-content`](https://greduan.com/blog-content).
 
-Other website's you can find me at are:
+Other websites you can find me at are:
 
 - [GitHub](https://github.com/greduan)
 - [GitLab](https://gitlab.com/greduan)
