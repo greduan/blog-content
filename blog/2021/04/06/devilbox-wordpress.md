@@ -11,9 +11,11 @@ date: 2021-04-06
 
 じゃあさっそく使ってみましょう。
 
+この記事はほぼ[デビルボックスのインストールの説明書](https://devilbox.readthedocs.io/en/latest/getting-started/install-the-devilbox.html)と同じ内容になりますけど、日本語訳としてやくにたつと思います。
+
 ## デビルボックスをインストール
 
-この記事はほぼ[デビルボックスのインストールの説明書](https://devilbox.readthedocs.io/en/latest/getting-started/install-the-devilbox.html)と同じ内容になりますけど、日本語訳としてやくにたつと思います。
+これは[デビルボックスのインストールの説明書](https://devilbox.readthedocs.io/en/latest/getting-started/start-the-devilbox.html)とほぼ同じ内容なんですけど、日本語訳としてやくにたつと思います。
 
 まずは最初に必要となるのはDockerなので、まだインストールしていない場合そこから初めてください、インストールをやり終わったらこの記事に戻ってください。
 
@@ -52,7 +54,7 @@ MOUNT_OPTIONS=,cached
 
 ## デビルボックスの起動の仕方
 
-これは[デビルボックスの起動の仕方の説明書](https://devilbox.readthedocs.io/en/latest/getting-started/start-the-devilbox.html)なんですけど、日本語訳としてやくにたつと思います。
+これは[デビルボックスの起動の仕方の説明書](https://devilbox.readthedocs.io/en/latest/getting-started/start-the-devilbox.html)とほぼ同じ内容なんですけど、日本語訳としてやくにたつと思います。
 
 ### 起動
 
