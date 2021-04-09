@@ -1,5 +1,5 @@
 ---
-title: Devilboxを使ってローカルのWordPressサイトを最初のセットアップしよ
+title: Devilboxを使ってローカルのWordPressサイトの最初のセットアップしよ
 layout: blogpost
 date: 2021-04-06
 ---
