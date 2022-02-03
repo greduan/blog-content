@@ -16,7 +16,7 @@ RabbitMQ _does_, however, support them. And it's actually relatively straightfor
 
 This post assumes you:
 
-- Have a RabbitMQ setup in your k8s cluster via Helm charts (or that's how we do it).
+- Have a RabbitMQ setup in your k8s cluster via [Bitnami's Helm charts][bitnami].
 - You already figured out how to revoke a certificate and generate the CRL .pem file.
 
 For reference you can check the following pages:
@@ -118,7 +118,7 @@ There are some things that cannot be specified via that format, but that we do n
 
 We copy the values from the normal config, and then at the end we add the two important config values for us.
 
-`{crl_check, true}`, when true, enables checking certificates against the CRL we setup above.  You can quickly disable this feature by changing it to `false`.  Of course not that that would make all the revoked certificates, valid again.
+`{crl_check, true}`, when true, enables checking certificates against the CRL we setup above.  You can quickly disable this feature by changing it to `false`.  Of course note that that would make all the revoked certificates, valid again.
 
 `{crl_cache, {ssl_crl_hash_dir, {internal, [{dir, "/etc/crl/"}]}}}` here we're basically just saying "look in `/etc/crl` for the CRL".
 
@@ -137,4 +137,5 @@ References:
 - The documentation for `ssl_crl_hash_dir` can be found at: https://www.erlang.org/doc/man/ssl.html#type-crl_cache_opts
   - Note it describes the funky `crl/` folder that you need to setup, and tells you about `c_rehash`.
 
+[bitnami]: https://github.com/bitnami/charts/tree/master/bitnami/rabbitmq
 [mailing-list]: https://groups.google.com/g/rabbitmq-users/c/axRy_eeB7xk
