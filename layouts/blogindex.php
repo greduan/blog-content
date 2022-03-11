@@ -40,6 +40,7 @@ class Layout {
   <title>Blog - Eduardo Lavaque</title>
   <link href="/assets/normalize.css" rel="stylesheet">
   <link href="/assets/main.css" rel="stylesheet">
+  <script defer data-domain="greduan.com" src="https://plausible.io/js/plausible.js"></script>
 </head>
 <body>
 <?php render_header(); ?>
