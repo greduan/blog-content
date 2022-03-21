@@ -1,5 +1,5 @@
 ---
-title: Generating a Swagger file from ASP.Net Core and generating API code for Angular
+title: Generating a Swagger file with ASP.Net Core and generating API code for Angular
 layout: blogpost
 date: 2022-03-20
 ---
@@ -57,9 +57,6 @@ And that should be it.  If it's working, when you build your project you should 
 
 We're going to use a project named [ng-openapi-gen](ng-openapi-gen) to generate the front end models and services, based on the `swagger.json` file.  And we'll use [chokidar-cli] to run ng-openapi-gen automatically whenever the `swagger.json` file changes.
 
-[ng-openapi-gen]: https://www.npmjs.com/package/ng-openapi-gen
-[chokidar-cli]: https://www.npmjs.com/package/chokidar-cli
-
 So first, we configure ng-openapi-gen via the `ng-openapi-gen.json` file, we put that in our front end project's root dir:
 
 ```json
@@ -92,11 +89,23 @@ Now you can automatically generate front end code, and stop writing the same cod
 
 ## Misc.
 
+### Setting up Angular
+
+Make sure to follow the instructions on [ng-openapi-gen](ng-openapi-gen) to setup Angular properly to use the generated code for the various cases it supports.
+
+### Git
+
 My `.gitignore` includes these lines for the back end:
 
 ```
-ShareAFile.Web/swagger/
-ShareAFile.Web/swagger/v1/.keepme
+MySolution.Web/swagger/
+```
+
+The build process fails if the folders don't exist though.  So I suggest you also run the following commands, in order to make sure the folder isn't lost:
+
+```shell
+touch MySolution.Web/swagger/v1/.keepme
+git add -f MySolution.Web/swagger/v1/.keepme
 ```
 
 And for the front end:
@@ -108,3 +117,6 @@ src/app/api/
 ## In conclusion
 
 With the above the back end's code is used as the source for the `swagger.json` file, and the front end automatically generates code you can use to access those endpoints, and with TypeScript types to go along with it, so you're all typed up.
+
+[ng-openapi-gen]: https://www.npmjs.com/package/ng-openapi-gen
+[chokidar-cli]: https://www.npmjs.com/package/chokidar-cli
