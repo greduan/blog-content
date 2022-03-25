@@ -44,22 +44,20 @@ class Layout {
 </head>
 <body>
 <?php render_header(); ?>
-<table id="blogindex">
-  <tbody>
-    <?php foreach ($this->get_blog_posts() as $post) { ?>
-      <tr>
-        <td>
-          <time datetime="<?php echo date('Y-m-d', $post['date']); ?>">
-            <?php echo date('Y-m-d', $post['date']); ?>
-          </time>
-        </td>
-        <td>
-          <a href="<?php echo $post['_uri']; ?>"><?php echo $post['title']; ?></a>
-        </td>
-      </tr>
-    <?php } ?>
-  </tbody>
-</table>
+<div id="blogindex">
+  <?php foreach ($this->get_blog_posts() as $post) { ?>
+    <div class="blogpost">
+      <div class="date">
+        <time datetime="<?php echo date('Y-m-d', $post['date']); ?>">
+          <?php echo date('Y-m-d', $post['date']); ?>
+        </time>
+      </div>
+      <div class="link">
+        <a href="<?php echo $post['_uri']; ?>"><?php echo $post['title']; ?></a>
+      </div>
+    </div>
+  <?php } ?>
+</div>
 <?php render_footer(); ?>
 </body>
 </html>

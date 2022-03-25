@@ -10,7 +10,7 @@ find my public key at [`/gpg`](/gpg).
 
 You can find this website's licensing information under
 [`/licenses`](/licenses).  And you can find its source on GitHub
-[`greduan/blog-content`](https://greduan.com/blog-content).
+[`greduan/blog-content`](https://github.com/greduan/blog-content).
 
 Other websites you can find me at are:
 

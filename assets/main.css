@@ -16,9 +16,15 @@ body {
   }
 }
 
-#masthead ul ruby rt {
+#masthead ruby {
+  display: block;
+  display: ruby;
+}
+
+#masthead rt {
   /* For some reason the Ruby overflows to the right side */
   margin-right: 4px;
+  display: ruby-text;
 }
 
 #masthead {
@@ -64,6 +70,9 @@ article header {
 a:visited {
   color: blue;
 }
+a:visited {
+  color: blue;
+}
 
 pre {
   overflow-x: scroll;
@@ -86,12 +95,24 @@ address a {
   text-decoration: none;
 }
 
-table#blogindex td {
-  vertical-align: top;
+#blogindex {
+  display: flex;
+  flex-flow: column nowrap;
 }
 
-table#blogindex td:not(:first-of-type) {
-  padding-left: 20px;
+#blogindex .blogpost {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+#blogindex .date {
+  min-width: fit-content;
+}
+
+#blogindex .link {
 }
 
 footer {
