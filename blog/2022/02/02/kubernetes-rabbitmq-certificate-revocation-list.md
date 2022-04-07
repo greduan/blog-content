@@ -56,6 +56,17 @@ We will explain later what this step is for, just know the files `b0a7999f.r0` a
 
 This folder should now be available to the RabbitMQ charts, so it should live under `rabbitmq/crl`.  **Note** we removed the `crl.pem` file from that copy of the folder, honestly not sure if that's necessary.
 
+**Expiration**
+
+Note, a CRL file has a built-in expiration.  This means you need to refresh it regularly.  Or, with the `-crldays` flag, extending that expiration date into the far future.  For example:
+
+```shell
+# extended 100 years into the future
+openssl ca -gencrl -crldays 36500 -keyfile ca/ca-key.pem -cert ca/ca-cert.pem -out crl/crl.pem -config openssl.cnf
+```
+
+If you don't do this, when it expires RabbitMQ will have trouble connecting ANY clients as the CRL file is considered then invalid or broken.
+
 ### Mounting the `crl/` folder
 
 In the RabbitMQ charts values config, you can use the following:
