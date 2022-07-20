@@ -67,9 +67,11 @@ article header {
   text-align: center;
 }
 
-a:visited {
-  color: blue;
+article img {
+  width: 100%;
 }
+
+a,
 a:visited {
   color: blue;
 }
