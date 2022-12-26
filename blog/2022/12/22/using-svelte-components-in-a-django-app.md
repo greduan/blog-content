@@ -10,8 +10,10 @@ other variations.
 But I haven't found a guide on how to integrate individual Svelte components
 into Django. Not to run the app, but rather to *enhance* the app.
 
-Note this guide doesn't include how to include CSS/Tailwind styles. There will
-be a follow up guide for that.
+There is a follow-up guide for [how to add Tailwind styles to your Svelte
+components in your Django app][part-2].
+
+[part-2]: https://greduan.com/blog/2022/12/26/adding-tailwind-to-svelte-components-in-a-django-app
 
 ## The short version
 
@@ -175,7 +177,7 @@ const app = new SlimeChat({
 });
 ```
 
-Of course I included some Django templating, because I need to grab the data
+Of course, I included some Django templating, because I need to grab the data
 from the back end, but you can do that in any which way you like.
 
 As you can see it's a similar usage to when you are creating a Svelte SPA.
