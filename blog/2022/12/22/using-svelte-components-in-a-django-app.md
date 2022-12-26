@@ -23,8 +23,7 @@ cd mysite
 mkdir svelte
 pnpm init
 pnpm i svelte
-pnpm i -D @rollup/plugin-node-resolve @rollup/plugin-typescript rollup
-rollup-plugin svelte typescript
+pnpm i -D @rollup/plugin-node-resolve rollup rollup-plugin-svelte
 touch rollup.config.js .gitignore
 ```
 
