@@ -1,5 +1,6 @@
 <?php
 require_once dirname(__FILE__) . '/_header.php';
+require_once dirname(__FILE__) . '/_blogindex.php';
 
 class Layout {
   public function render($metadata, $contents, $parser) {
@@ -19,6 +20,7 @@ class Layout {
 <article>
   <?php echo $parser->parse_contents($contents); ?>
 </article>
+<?php render_blog_posts(10); ?>
 </body>
 </html>
     <?php
