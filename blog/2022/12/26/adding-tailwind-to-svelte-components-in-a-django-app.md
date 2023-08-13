@@ -14,6 +14,10 @@ We essentially use Rollup for that Svelte setup, so we need to make sure that
 our Tailwind classes are detected within the Svelte files and the resulting CSS
 is injected in the JS files generated for the Svelte components.
 
+**[There is a new guide updated for Svelte v4.][part-3]**
+
+[part-3]: https://greduan.com/blog/2023/08/07/svelte-v4-in-django-using-webpack
+
 ## The short version
 
 ```shell

@@ -15,12 +15,17 @@ components in your Django app][part-2].
 
 [part-2]: https://greduan.com/blog/2022/12/26/adding-tailwind-to-svelte-components-in-a-django-app
 
+**[There is a new guide updated for Svelte v4.][part-3]**
+
+[part-3]: https://greduan.com/blog/2023/08/07/svelte-v4-in-django-using-webpack
+
 ## The short version
 
 ```shell
 django-admin startproject mysite
 cd mysite
 mkdir svelte
+cd svelte
 pnpm init
 pnpm i svelte
 pnpm i -D @rollup/plugin-node-resolve rollup rollup-plugin-svelte
