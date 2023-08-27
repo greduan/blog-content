@@ -19,6 +19,11 @@ class Layout {
 </head>
 <body>
 <?php render_header(); ?>
+<p>
+  <a href="https://politepol.com/fd/dA7bW5ovlLrk" target="_blank" rel="noopener">
+    RSS feed via PolitePol.com
+  </a>
+</p>
 <?php render_blog_posts(0); ?>
 <?php render_footer(); ?>
 </body>
