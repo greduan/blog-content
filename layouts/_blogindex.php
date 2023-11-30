@@ -28,6 +28,13 @@ function get_blog_posts() {
 
 function render_blog_posts($only_first_x) {
   $posts = get_blog_posts();
+
+  // Filter out posts that are in the future
+  $today = strtotime(date('Y-m-d'));
+  $posts = array_filter($posts, function($post) use ($today) {
+    return strtotime(date('Y-m-d', $post['date'])) <= $today;
+  });
+
   if ($only_first_x > 0) {
     $posts = array_slice($posts, 0, $only_first_x);
   }
