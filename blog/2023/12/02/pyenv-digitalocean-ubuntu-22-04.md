@@ -74,15 +74,15 @@ If you manage to fix that one, you'll be bothered with the next one, and the nex
 So here we go, I will share with you all the libraries you need to install.
 
 ```
-sudo apt-get install libbz2-dev libncurses5-dev libncursesw5-dev libffi-dev libreadline-dev libssl-dev libsqlite3-dev liblzma-dev
+sudo apt-get install build-essential libbz2-dev libncurses5-dev libncursesw5-dev libffi-dev libreadline-dev libssl-dev libsqlite3-dev liblzma-dev zlib1g-dev
 ```
 
 But then in that case you might run into the following errors when you run `sudo apt-get update`, because you're using an older version of Ubuntu!
 
 ```
 Hit:1 http://old-releases.ubuntu.com/ubuntu hirsute-security InRelease
-Get:2 https://download.docker.com/linux/ubuntu hirsute InRelease [48.9 kB]                                                               
-Ign:3 http://mirrors.digitalocean.com/ubuntu hirsute InRelease                                                                           
+Get:2 https://download.docker.com/linux/ubuntu hirsute InRelease [48.9 kB]
+Ign:3 http://mirrors.digitalocean.com/ubuntu hirsute InRelease
 Ign:4 http://mirrors.digitalocean.com/ubuntu hirsute-updates InRelease
 Hit:5 https://repos-droplet.digitalocean.com/apt/droplet-agent main InRelease
 Ign:6 http://mirrors.digitalocean.com/ubuntu hirsute-backports InRelease

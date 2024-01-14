@@ -1,7 +1,7 @@
 ---
 title: Python project setup
 layout: blogpost
-date: 2023-11-03
+date: 2023-12-03
 ---
 
 I've been playing around with my Python project setup a little bit, and I have found the following setup to be quite convenient and comfortable.
